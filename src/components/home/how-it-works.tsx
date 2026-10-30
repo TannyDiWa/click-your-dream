@@ -37,11 +37,8 @@ const STEPS: Step[] = [
 
 export function HowItWorks() {
   return (
-    <section
-      aria-labelledby="how-it-works"
-      className="relative z-10 mx-auto -mt-28 w-full max-w-6xl px-4 pb-16 sm:px-8"
-    >
-      <div className="rounded-[2.5rem] bg-cream px-6 pb-12 pt-10 shadow-[0_-8px_30px_#2f3d7c12] sm:px-10">
+    <section aria-labelledby="how-it-works" className="bg-white">
+      <div className="mx-auto max-w-6xl px-4 pb-16 pt-12 sm:px-8 sm:pt-14">
         <h2
           id="how-it-works"
           className="flex items-center justify-center gap-3 text-2xl font-medium"
@@ -51,20 +48,20 @@ export function HowItWorks() {
           <StarIcon className="size-4 fill-white stroke-dream" strokeWidth={1.6} />
         </h2>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_220px] lg:items-center">
-          <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-10 sm:mt-10 lg:grid-cols-[1fr_220px] lg:items-center">
+          <ol className="grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-4">
             {STEPS.map(({ title, body, Icon, iconClass }, i) => (
               <li key={title} className="flex flex-col items-center text-center">
-                <span className="grid size-20 place-items-center rounded-full bg-bubble">
-                  <Icon className={`size-10 ${iconClass}`} strokeWidth={1.6} />
+                <span className="grid size-16 place-items-center rounded-full bg-bubble sm:size-20">
+                  <Icon className={`size-8 sm:size-10 ${iconClass}`} strokeWidth={1.6} />
                 </span>
-                <h3 className="mt-4 flex items-center gap-2 text-lg font-semibold">
-                  <span className="grid size-6 place-items-center rounded-full bg-[#5b8de0] text-sm font-medium text-white">
+                <h3 className="mt-3 flex items-center gap-2 text-base font-semibold sm:mt-4 sm:text-lg">
+                  <span className="grid size-6 shrink-0 place-items-center rounded-full bg-[#5b8de0] text-sm font-medium text-white">
                     {i + 1}
                   </span>
                   {title}
                 </h3>
-                <p className="mt-2 max-w-[14rem] text-sm leading-relaxed text-ink/80">{body}</p>
+                <p className="mt-2 max-w-[14rem] text-[13px] leading-relaxed text-ink/80 sm:text-sm">{body}</p>
               </li>
             ))}
           </ol>

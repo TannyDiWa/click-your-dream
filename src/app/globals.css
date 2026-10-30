@@ -22,16 +22,9 @@ body {
   color: var(--color-ink);
 }
 
-/* Soft cloud blobs over a sky-to-lavender gradient */
+/* Sky-to-lavender gradient behind the hero clouds */
 .sky {
-  background:
-    radial-gradient(closest-side, #ffffffcc, transparent) 4% 22% / 260px 120px no-repeat,
-    radial-gradient(closest-side, #ffffffb3, transparent) 30% 8% / 340px 140px no-repeat,
-    radial-gradient(closest-side, #ffffffb3, transparent) 72% 14% / 320px 130px no-repeat,
-    radial-gradient(closest-side, #ffffffcc, transparent) 96% 30% / 280px 130px no-repeat,
-    radial-gradient(closest-side, #ffffffa6, transparent) 12% 62% / 380px 160px no-repeat,
-    radial-gradient(closest-side, #ffffffa6, transparent) 88% 66% / 380px 160px no-repeat,
-    linear-gradient(180deg, var(--color-sky) 0%, #d3e6fa 55%, var(--color-lavender) 100%);
+  background: linear-gradient(180deg, var(--color-sky) 0%, #d3e6fa 55%, var(--color-lavender) 100%);
 }
 
 @keyframes bob {
@@ -39,10 +32,9 @@ body {
   50% { transform: translateY(-8px); }
 }
 
-.bob {
-  animation: bob 4s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bob { animation: none; }
+/* Phones skip the bobbing: six animated drop-shadowed images stall painting there */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .bob {
+    animation: bob 4s ease-in-out infinite;
+  }
 }

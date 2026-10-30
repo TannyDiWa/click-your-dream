@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader current="/" />
-      <main className="flex-1 bg-lavender">
+      <main className="flex-1 bg-white">
         <Hero />
         <HowItWorks />
       </main>
