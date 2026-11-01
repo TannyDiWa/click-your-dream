@@ -5,7 +5,7 @@ const NAV = [
   { href: "/", label: "หน้าแรก" },
   { href: "/about", label: "เกี่ยวกับเรา" },
   { href: "/quiz", label: "แบบทดสอบ" },
-  { href: "/history", label: "ผลลัพธ์ของฉัน" },
+  { href: "/result", label: "ผลลัพธ์ของฉัน" },
   { href: "/contact", label: "ติดต่อเรา" },
 ];
 
@@ -52,7 +52,7 @@ export function SiteHeader({ current = "/" }: { current?: string }) {
           แบบทดสอบ
         </Link>
         <Link
-          href="/history"
+          href="/result"
           aria-label="โปรไฟล์ของฉัน"
           className="hidden size-10 shrink-0 place-items-center rounded-full bg-bubble transition-colors hover:bg-sky sm:grid lg:ml-6"
         >

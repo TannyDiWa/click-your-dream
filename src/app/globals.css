@@ -27,6 +27,34 @@ body {
   background: linear-gradient(180deg, var(--color-sky) 0%, #d3e6fa 55%, var(--color-lavender) 100%);
 }
 
+/* Clouds start just off the left edge and leave past the right edge, then repeat */
+@keyframes drift {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100vw); }
+}
+
+.drift {
+  animation: drift linear infinite;
+  will-change: transform;
+}
+
+/* The cloud the phone mascots stand on sways in place instead of leaving */
+@keyframes sway {
+  from { transform: translateX(-6%); }
+  to { transform: translateX(6%); }
+}
+
+.sway {
+  animation: sway 9s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Reduced motion: freeze each cloud where its offset put it */
+@media (prefers-reduced-motion: reduce) {
+  .drift { animation-play-state: paused; }
+  .sway { animation: none; }
+}
+
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }

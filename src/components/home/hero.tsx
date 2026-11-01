@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Cloud } from "@/components/clouds";
+import { Cloud, DriftingCloud } from "@/components/clouds";
 import { ArrowRightIcon, StarIcon } from "@/components/icons";
 import { CHARACTERS, type RiasecType } from "@/lib/riasec/types";
 
@@ -135,14 +135,16 @@ export function Hero() {
   return (
     <section className="sky relative overflow-hidden pb-10 pt-8 sm:pb-14 md:pt-12">
       {/* Back clouds */}
-      <Cloud shape="wide" className="-left-16 top-[6%] w-[300px] opacity-90 md:w-[380px]" />
-      <Cloud shape="small" className="left-[28%] -top-4 hidden w-[260px] opacity-80 md:block" />
-      <Cloud shape="tall" className="right-[18%] top-[2%] hidden w-[300px] opacity-80 lg:block" />
-      <Cloud shape="wide" className="-right-20 top-[16%] w-[280px] opacity-90 md:w-[400px]" />
-      <Cloud shape="small" className="-left-10 top-[44%] w-[220px] opacity-80 md:w-[320px]" />
-      <Cloud shape="tall" className="-right-12 top-[50%] w-[240px] opacity-80 md:w-[360px]" />
-      <Cloud shape="wide" className="left-[8%] bottom-[2%] hidden w-[420px] opacity-90 md:block" />
-      <Cloud shape="wide" className="right-[6%] bottom-[4%] hidden w-[440px] opacity-90 md:block" />
+      {/* Back layer: smaller, fainter, slower */}
+      <DriftingCloud shape="tall" className="top-[1%] hidden w-[280px] opacity-70 md:block" duration={150} offset={20} />
+      <DriftingCloud shape="small" className="top-[12%] w-[200px] opacity-70" duration={130} offset={95} />
+      <DriftingCloud shape="small" className="top-[40%] hidden w-[240px] opacity-60 md:block" duration={160} offset={60} />
+      {/* Front layer: bigger and faster */}
+      <DriftingCloud shape="wide" className="top-[5%] w-[300px] md:w-[400px]" duration={95} offset={10} />
+      <DriftingCloud shape="wide" className="top-[20%] w-[280px] md:w-[420px]" duration={105} offset={62} />
+      <DriftingCloud shape="tall" className="top-[48%] w-[260px] md:w-[380px]" duration={90} offset={35} />
+      <DriftingCloud shape="small" className="top-[62%] hidden w-[260px] md:block" duration={100} offset={80} />
+      <DriftingCloud shape="wide" className="bottom-0 hidden w-[480px] md:block" duration={115} offset={5} />
 
       {SPARKLES.map((cls) => (
         <StarIcon
@@ -183,7 +185,9 @@ export function Hero() {
 
           {/* Phones: the six mascots sit on a cloud under the button */}
           <div className="relative mt-8 w-full max-w-sm md:hidden">
-            <Cloud shape="wide" className="-left-[12%] -bottom-[18%] w-[124%]" />
+            <div aria-hidden className="sway absolute -bottom-[18%] -left-[12%] w-[124%]">
+              <Cloud shape="wide" className="block h-auto w-full" />
+            </div>
             <ul className="relative grid grid-cols-3 justify-items-center gap-x-2 gap-y-1">
               {Object.values(CHARACTERS).map((c, i) => (
                 <li key={c.type}>
