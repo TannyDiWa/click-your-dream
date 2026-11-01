@@ -2,6 +2,7 @@
 
 @theme inline {
   --font-sans: var(--font-mali);
+  --font-hand: var(--font-patrick-hand);
 }
 
 /* Palette sampled from the Figma home design */
@@ -15,6 +16,14 @@
   --color-sun: #fff3a6;
   --color-blush: #f59bc8;
   --color-blush-deep: #ec7cb5;
+
+  /* Content pages (About Us) */
+  --color-navy: #345a9e;
+  --color-violet: #7667b8;
+  --color-muted: #7b87ad;
+  --color-paper: #fffdfa;
+  --color-chip: #ece9fb;
+  --color-badge: #e6ebfe;
 }
 
 body {
