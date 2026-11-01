@@ -252,9 +252,8 @@ export default function AboutPage() {
             </a>
           </div>
 
-          {/* Call to action */}
-          <div className="mt-8 flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left lg:justify-start lg:gap-[26px]">
-            <p className="text-lg leading-normal lg:w-[920px]">มารู้จักตัวเอง แล้วค่อย ๆ ก้าวไปหาความฝันด้วยกัน ♡</p>
+          {/* Back to top */}
+          <div className="mt-8 flex justify-center">
             <ScrollToTopButton className="cursor-pointer whitespace-nowrap rounded-[35px] bg-[#f6a0ce] px-[27px] py-4 text-lg font-bold text-white transition hover:-translate-y-0.5 hover:bg-blush-deep">
               กลับขึ้นด้านบน&nbsp;&nbsp;↑
             </ScrollToTopButton>
