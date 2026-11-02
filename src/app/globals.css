@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-mali);
+  --font-hand: var(--font-patrick-hand);
+}
+
+/* Palette sampled from the Figma home design */
+@theme {
+  --color-ink: #2f3d7c;
+  --color-dream: #5d58a8;
+  --color-cream: #fffdf4;
+  --color-sky: #c4e4fb;
+  --color-lavender: #dcd2f4;
+  --color-bubble: #e4f1fd;
+  --color-sun: #fff3a6;
+  --color-blush: #f59bc8;
+  --color-blush-deep: #ec7cb5;
+
+  /* Content pages (About Us) */
+  --color-navy: #345a9e;
+  --color-violet: #7667b8;
+  --color-muted: #7b87ad;
+  --color-paper: #fffdfa;
+  --color-chip: #ece9fb;
+  --color-badge: #e6ebfe;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Sky-to-lavender gradient behind the hero clouds */
+.sky {
+  background: linear-gradient(180deg, var(--color-sky) 0%, #d3e6fa 55%, var(--color-lavender) 100%);
+}
+
+/* Clouds start just off the left edge and leave past the right edge, then repeat */
+@keyframes drift {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100vw); }
+}
+
+.drift {
+  animation: drift linear infinite;
+  will-change: transform;
+}
+
+/* The cloud the phone mascots stand on sways in place instead of leaving */
+@keyframes sway {
+  from { transform: translateX(-6%); }
+  to { transform: translateX(6%); }
+}
+
+.sway {
+  animation: sway 9s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Reduced motion: freeze each cloud where its offset put it */
+@media (prefers-reduced-motion: reduce) {
+  .drift { animation-play-state: paused; }
+  .sway { animation: none; }
+}
+
+/* Pearl sparkles twinkle on a 6s loop (Figma "Glitter / twinkle" motion) */
+@keyframes twinkle {
+  0%, 77.5%, 100% { opacity: 0.6; }
+  8.3% { opacity: 1; }
+  21.7% { opacity: 0.35; }
+  36.7% { opacity: 0.85; }
+  51.7% { opacity: 0.4; }
+  66.7% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .twinkle {
+    animation: twinkle 6s ease-in-out infinite;
+  }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Phones skip the bobbing: six animated drop-shadowed images stall painting there */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .bob {
+    animation: bob 4s ease-in-out infinite;
+  }
+}
