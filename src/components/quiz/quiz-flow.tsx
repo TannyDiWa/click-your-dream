@@ -4,13 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
-import { clearDraft, saveDraft, saveResult, useDraft, useSavedResult, type Answers, type QuizDraft } from "@/lib/quiz-storage";
-import type { QuizQuestion, QuizScore } from "@/lib/riasec/api-types";
+import type { AnswerValue, Answers, QuizProgress, QuizQuestion, QuizState } from "@/lib/riasec/api-types";
 import { USER_GROUPS, type UserGroup } from "@/lib/riasec/types";
 
 // Step 0 = choose user group, steps 1..N = one question each.
 type Step = number;
-type AnswerValue = 1 | 2 | 3 | 4;
 
 const JOURNEY = ["① ตัวตนของคุณ", "② ความสนใจ", "③ เส้นทางที่ใช่"];
 
@@ -105,11 +103,16 @@ function ScaleChoice({ question, value, onChange, labelledBy }: { question: Quiz
   );
 }
 
-/** Loads questions from the API and the unfinished draft from storage, then starts the quiz. */
+async function getJson<T>(url: string): Promise<T> {
+  const res = await fetch(url);
+  const body = await res.json();
+  if (!res.ok) throw new Error(body.error ?? res.statusText);
+  return body;
+}
+
+/** Loads the questions and the visitor's unfinished quiz from the API, then starts the quiz. */
 export function QuizFlow() {
-  const draft = useDraft();
-  const previous = useSavedResult();
-  const [questions, setQuestions] = useState<QuizQuestion[] | null>(null);
+  const [data, setData] = useState<{ questions: QuizQuestion[]; state: QuizState } | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [attempt, setAttempt] = useState(0);
 
@@ -117,11 +120,12 @@ export function QuizFlow() {
     let cancelled = false;
     (async () => {
       try {
-        const res = await fetch("/api/questions");
-        const body = await res.json();
-        if (!res.ok) throw new Error(body.error ?? res.statusText);
+        const [{ questions }, state] = await Promise.all([
+          getJson<{ questions: QuizQuestion[] }>("/api/questions"),
+          getJson<QuizState>("/api/quiz"),
+        ]);
         if (!cancelled) {
-          setQuestions(body.questions);
+          setData({ questions, state });
           setLoadError(null);
         }
       } catch (e) {
@@ -154,8 +158,8 @@ export function QuizFlow() {
       </>
     );
   }
-  if (draft === undefined || questions === null) return <QuizHeading step={0} placeholder />;
-  return <QuizSteps questions={questions} initialDraft={draft} hasPreviousResult={previous !== null} />;
+  if (data === null) return <QuizHeading step={0} placeholder />;
+  return <QuizSteps questions={data.questions} initialProgress={data.state.progress} hasPreviousResult={data.state.hasResult} />;
 }
 
 function QuizHeading({ step, placeholder = false }: { step: Step; placeholder?: boolean }) {
@@ -182,11 +186,11 @@ function QuizHeading({ step, placeholder = false }: { step: Step; placeholder?: 
 
 function QuizSteps({
   questions,
-  initialDraft,
+  initialProgress,
   hasPreviousResult,
 }: {
   questions: QuizQuestion[];
-  initialDraft: QuizDraft | null;
+  initialProgress: QuizProgress | null;
   hasPreviousResult: boolean;
 }) {
   const router = useRouter();
@@ -195,16 +199,25 @@ function QuizSteps({
   const advanceTimer = useRef<number | undefined>(undefined);
   const total = questions.length;
 
-  const [step, setStep] = useState<Step>(() => Math.min(Math.max(initialDraft?.step ?? 0, 0), total));
-  const [userGroup, setUserGroup] = useState<UserGroup | null>(initialDraft?.userGroup ?? null);
-  const [answers, setAnswers] = useState<Answers>(initialDraft?.answers ?? {});
+  const [step, setStep] = useState<Step>(() => Math.min(Math.max(initialProgress?.step ?? 0, 0), total));
+  const [userGroup, setUserGroup] = useState<UserGroup | null>(initialProgress?.userGroup ?? null);
+  const [answers, setAnswers] = useState<Answers>(initialProgress?.answers ?? {});
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  // Keep progress so a guest can leave and continue later.
-  useEffect(() => {
-    saveDraft({ userGroup, answers, step });
-  }, [userGroup, answers, step]);
+  // Progress is saved in the database so the visitor can leave and continue
+  // later. Saves run one after another so they reach the server in order; a
+  // failed save only affects resuming, since submit sends every answer again.
+  const saveQueue = useRef<Promise<unknown>>(Promise.resolve());
+  function save(url: string, method: string, body: unknown) {
+    saveQueue.current = saveQueue.current.then(() =>
+      fetch(url, { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
+        .then((res) => {
+          if (!res.ok) console.warn(`Saving quiz progress failed (${res.status})`);
+        })
+        .catch((e) => console.warn("Saving quiz progress failed", e)),
+    );
+  }
 
   useEffect(() => () => window.clearTimeout(advanceTimer.current), []);
 
@@ -217,11 +230,14 @@ function QuizSteps({
   function goTo(next: Step) {
     window.clearTimeout(advanceTimer.current);
     setStep(next);
+    if (step === 0 && userGroup) save("/api/quiz/start", "POST", { userGroup });
+    else save("/api/quiz/progress", "PATCH", { step: next });
   }
 
   function choose(v: AnswerValue) {
     if (!question) return;
     setAnswers((a) => ({ ...a, [question.id]: v }));
+    save("/api/quiz/progress", "PATCH", { step: isLast ? step : step + 1, answer: { questionId: question.id, value: v } });
     // Move on by itself after a short pause, except on the last question.
     if (!isLast) {
       window.clearTimeout(advanceTimer.current);
@@ -244,16 +260,14 @@ function QuizSteps({
     setSubmitting(true);
     setSubmitError(null);
     try {
-      const res = await fetch("/api/score", {
+      await saveQueue.current;
+      const res = await fetch("/api/quiz/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ answers }),
+        body: JSON.stringify({ userGroup, answers }),
       });
       const body = await res.json();
       if (!res.ok) throw new Error(body.error ?? res.statusText);
-      const score = body as QuizScore;
-      saveResult({ ...score, userGroup, answers, completedAt: new Date().toISOString() });
-      clearDraft();
       router.push("/result");
     } catch (e) {
       setSubmitError(e instanceof Error ? e.message : String(e));

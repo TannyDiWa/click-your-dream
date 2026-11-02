@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Sparkle } from "@/components/decor";
-import { useSavedResult, type SavedResult } from "@/lib/quiz-storage";
-import type { ResultProfile } from "@/lib/riasec/api-types";
+import type { QuizResult, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
 import { CHARACTERS, USER_GROUPS } from "@/lib/riasec/types";
 
@@ -56,7 +55,7 @@ function EmptyState() {
   );
 }
 
-function ResultDetails({ result, profile }: { result: SavedResult; profile: ResultProfile }) {
+function ResultDetails({ result, profile }: { result: QuizResult; profile: ResultProfile }) {
   const type = result.topType;
   const character = CHARACTERS[type];
   const group = USER_GROUPS.find((g) => g.value === result.userGroup);
@@ -297,7 +296,7 @@ function ResultDetails({ result, profile }: { result: SavedResult; profile: Resu
 }
 
 /** Fetches the result content for the top type from the API, then shows the result. */
-function ProfileLoader({ result }: { result: SavedResult }) {
+function ProfileLoader({ result }: { result: QuizResult }) {
   const [state, setState] = useState<{ type: string; profile?: ResultProfile; error?: string } | null>(null);
   const [attempt, setAttempt] = useState(0);
 
@@ -345,8 +344,27 @@ function ProfileLoader({ result }: { result: SavedResult }) {
 }
 
 export function ResultView() {
-  // undefined = still reading storage, null = no result yet
-  const result = useSavedResult();
+  // undefined = still loading, null = no result yet
+  const [result, setResult] = useState<QuizResult | null | undefined>(undefined);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch("/api/result");
+        const body = await res.json();
+        if (!res.ok) throw new Error(body.error ?? res.statusText);
+        if (!cancelled) setResult(body.result);
+      } catch (e) {
+        if (!cancelled) setLoadError(e instanceof Error ? e.message : String(e));
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [attempt]);
 
   const hasResult = Boolean(result);
 
@@ -363,7 +381,22 @@ export function ResultView() {
             : "พื้นที่เล็ก ๆ สำหรับเก็บการค้นพบตัวเอง และเส้นทางความฝันของคุณ"}
         </p>
       </div>
-      {result === undefined ? (
+      {loadError ? (
+        <div role="alert" className="mx-auto mt-8 max-w-[880px] rounded-[32px] border-2 border-white bg-paper p-8 text-center">
+          <p className="text-xl font-bold">โหลดผลลัพธ์ไม่สำเร็จ</p>
+          <p className="mt-2 text-sm text-muted">{loadError}</p>
+          <button
+            type="button"
+            onClick={() => {
+              setLoadError(null);
+              setAttempt((a) => a + 1);
+            }}
+            className="mt-5 cursor-pointer rounded-[30px] bg-[#f6a0ce] px-6 py-3 font-bold text-white hover:bg-blush-deep"
+          >
+            ลองอีกครั้ง
+          </button>
+        </div>
+      ) : result === undefined ? (
         <div className="h-[600px]" aria-busy="true" />
       ) : result ? (
         <ProfileLoader result={result} />
