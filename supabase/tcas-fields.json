@@ -3503,12 +3503,12 @@
     },
     "การจัดการกิจการเพื่อสังคม": {
       "pattern": [
-        "กิจการเพื่อสังคม|ผู้ประกอบการสังคม|การประกอบการ"
+        "ธุรกิจเพื่อสังคม|กิจการเพื่อสังคม|ผู้ประกอบการสังคม|นวัตกรรมสังคม|การประกอบการสาธารณะ"
       ],
       "picked": [
         "https://course.mytcas.com/programs/10030128903109A",
-        "https://course.mytcas.com/programs/10060320500201A",
-        "https://course.mytcas.com/programs/10100220611101A"
+        "https://course.mytcas.com/programs/10090168610802A",
+        "https://course.mytcas.com/programs/10130114900001A"
       ],
       "programs": [
         {
@@ -3522,174 +3522,44 @@
           "fieldUrl": "https://course.mytcas.com/universities/003/faculties/28/fields/31"
         },
         {
-          "university": "มหาวิทยาลัยมหิดล",
-          "campus": "นครสวรรค์",
-          "faculty": "วิทยาเขตนครสวรรค์",
-          "field": "เกษตรศาสตร์",
-          "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเกษตรยั่งยืนเพื่อสุขภาพและการประกอบการ",
+          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
+          "campus": "ประสานมิตร",
+          "faculty": "คณะบริหารธุรกิจเพื่อสังคม",
+          "field": "บริหารธุรกิจ",
+          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาธุรกิจเพื่อสังคมและความยั่งยืน",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10060320500201A",
-          "fieldUrl": "https://course.mytcas.com/universities/006/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหิดล",
-          "campus": "นครสวรรค์",
-          "faculty": "วิทยาเขตนครสวรรค์",
-          "field": "การประกอบการ",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการประกอบการเชิงนิเวศวัฒนธรรม",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10060320900301A",
-          "fieldUrl": "https://course.mytcas.com/universities/006/faculties/20/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยสงขลานครินทร์",
-          "campus": "ปัตตานี",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "เศรษฐศาสตร์",
-          "program": "ศ.บ. เศรษฐศาสตร์การประกอบการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10100220611101A",
-          "fieldUrl": "https://course.mytcas.com/universities/010/faculties/20/fields/11"
+          "url": "https://course.mytcas.com/programs/10090168610802A",
+          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/68/fields/08"
         },
         {
           "university": "มหาวิทยาลัยแม่โจ้",
           "campus": "วิทยาเขตเชียงใหม่",
-          "faculty": "คณะเศรษฐศาสตร์",
-          "field": "เศรษฐศาสตร์",
-          "program": "หลักสูตรเศรษฐศาสตรบัณฑิต สาขาวิชาเศรษฐศาสตร์การประกอบการและการสหกรณ์",
+          "faculty": "คณะศิลปศาสตร์",
+          "field": "สังคมศาสตร์ทั่วไป",
+          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชานวัตกรรมสังคม",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10130112611107A",
-          "fieldUrl": "https://course.mytcas.com/universities/013/faculties/12/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-          "campus": "บางมด",
-          "faculty": "คณะวิศวกรรมศาสตร์",
-          "field": "วิศวกรรมอุตสาหการ",
-          "program": "หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมระบบอุตสาหกรรมและการประกอบการธุรกิจ ปริญญาตรี 4 ปี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10140107303549A",
-          "fieldUrl": "https://course.mytcas.com/universities/014/faculties/07/fields/35"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "สงขลา",
-          "faculty": "คณะเศรษฐศาสตร์และบริหารธุรกิจ",
-          "field": "บริหารธุรกิจ",
-          "program": "บริหารธุรกิจบัณฑิต สาขาวิชาการประกอบการและการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220107610801A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/07/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "พัทลุง",
-          "faculty": "คณะวิศวกรรมศาสตร์",
-          "field": "วิศวกรรมเชิงนวัตกรรม",
-          "program": "วิศวกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบเชิงวิศวกรรม นวัตกรรม และการประกอบการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220209303601A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/09/fields/36"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "พัทลุง",
-          "faculty": "คณะสหวิทยาการและการประกอบการ",
-          "field": "การจัดการ",
-          "program": "การจัดการบัณฑิต สาขาวิชาการประกอบการด้วยนวัตกรรม",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220213610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/13/fields/02"
-        },
-        {
-          "university": "สถาบันเทคโนโลยีจิตรลดา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "บริหารธุรกิจ",
-          "program": "บริหารธุรกิจบัณฑิต สาขาวิชาการประกอบการธุรกิจอาหาร",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10350101610802A",
-          "fieldUrl": "https://course.mytcas.com/universities/035/faculties/01/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "หลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "บธ.บ.บริหารธุรกิจ(การประกอบการธุรกิจ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21660103610307A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/03/fields/03"
+          "url": "https://course.mytcas.com/programs/10130114900001A",
+          "fieldUrl": "https://course.mytcas.com/universities/013/faculties/14/fields/00"
         },
         {
           "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลตะวันออก",
           "campus": "วิทยาเขตจักรพงษภูวนารถ",
           "faculty": "บริหารธุรกิจและเทคโนโลยีสารสนเทศ",
-          "field": "อังกฤษ",
-          "program": "ศิลปศาสตรบัณฑิต (ศศ.บ) สาขาวิชาภาษาอังกฤษเพื่อการประกอบการธุรกิจและการสื่อสารนานาชาติ",
+          "field": "บริหารธุรกิจ",
+          "program": "บริหารธุรกิจบัณฑิต (บธ.บ.) สาขาวิชาการจัดการทุนมนุษย์และนวัตกรรมสังคม",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31930204902501A",
-          "fieldUrl": "https://course.mytcas.com/universities/193/faculties/04/fields/25"
+          "url": "https://course.mytcas.com/programs/31930204610802A",
+          "fieldUrl": "https://course.mytcas.com/universities/193/faculties/04/fields/08"
         },
         {
-          "university": "มหาวิทยาลัยหอการค้าไทย",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะการสร้างเจ้าของธุรกิจสร้างสรรค์",
-          "field": "การประกอบการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการประกอบการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/40560110900301A",
-          "fieldUrl": "https://course.mytcas.com/universities/056/faculties/10/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยสยาม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "บธ.บ. สาขาวิชาการจัดการและการประกอบการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41810102610301A",
-          "fieldUrl": "https://course.mytcas.com/universities/181/faculties/02/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีสุรนารี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "สำนักวิชาวิศวกรรมศาสตร์",
-          "field": "วิศวกรรมการเงิน",
-          "program": "การประกอบการด้วยเทคโนโลยีดิจิทัล (หลักสูตรนอกเวลา)",
+          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
+          "campus": "ประสานมิตร",
+          "faculty": "คณะบริหารธุรกิจเพื่อสังคม",
+          "field": "บริหารธุรกิจ",
+          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาธุรกิจเพื่อสังคมและความยั่งยืน  (โครงการพิเศษ)",
           "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10170107300201B",
-          "fieldUrl": "https://course.mytcas.com/universities/017/faculties/07/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "บางเขน",
-          "faculty": "คณะเศรษฐศาสตร์",
-          "field": "เศรษฐศาสตร์",
-          "program": "ศศ.บ. สาขาวิชาเศรษฐศาสตร์การประกอบการ",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10020107611104E",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/07/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยธรรมศาสตร์",
-          "campus": "ศูนย์รังสิต",
-          "faculty": "วิทยาลัยโลกคดีศึกษา",
-          "field": "การประกอบการ",
-          "program": "ศศ.บ.สาขาวิชาความยั่งยืนโลกและการประกอบการสังคม (หลักสูตรนานาชาติ)  (GSSE)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10050228900301E",
-          "fieldUrl": "https://course.mytcas.com/universities/005/faculties/28/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยหอการค้าไทย",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "การประกอบการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต (กลุ่มวิชาการประกอบการด้วยเทคโนโลยีขั้นสูง)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/40560101900301E",
-          "fieldUrl": "https://course.mytcas.com/universities/056/faculties/01/fields/03"
+          "url": "https://course.mytcas.com/programs/10090168610802B",
+          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/68/fields/08"
         }
       ]
     },
@@ -4781,24 +4651,14 @@
     },
     "การจัดการธุรกิจสร้างสรรค์": {
       "pattern": [
-        "ธุรกิจสร้างสรรค์|อุตสาหกรรมสร้างสรรค์|ธุรกิจศิลปะ"
+        "ธุรกิจสร้างสรรค์|การจัดการผลิตสื่อและอุตสาหกรรมสร้างสรรค์|การจัดการศิลปวัฒนธรรม|ธุรกิจศิลปะ"
       ],
       "picked": [
-        "https://course.mytcas.com/programs/10050415800101A",
         "https://course.mytcas.com/programs/10190114900101A",
-        "https://course.mytcas.com/programs/11650106610803A"
+        "https://course.mytcas.com/programs/11650106610803A",
+        "https://course.mytcas.com/programs/21740103610801A"
       ],
       "programs": [
-        {
-          "university": "มหาวิทยาลัยธรรมศาสตร์",
-          "campus": "ศูนย์ลำปาง",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "การออกแบบ",
-          "program": "ศป.บ. สาขาวิชาออกแบบหัตถอุตสาหกรรมสร้างสรรค์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10050415800101A",
-          "fieldUrl": "https://course.mytcas.com/universities/005/faculties/15/fields/01"
-        },
         {
           "university": "มหาวิทยาลัยบูรพา",
           "campus": "หลัก",
@@ -4830,24 +4690,14 @@
           "fieldUrl": "https://course.mytcas.com/universities/174/faculties/03/fields/08"
         },
         {
-          "university": "มหาวิทยาลัยธรรมศาสตร์",
-          "campus": "ท่าพระจันทร์",
-          "faculty": "วิทยาลัยนวัตกรรม",
+          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
+          "campus": "ประสานมิตร",
+          "faculty": "คณะศิลปกรรมศาสตร์",
           "field": "ศิลปวัฒนธรรม",
-          "program": "ศศ.บ.สาขาวิชาการจัดการมรดกวัฒนธรรมและอุตสาหกรรมสร้างสรรค์ (โครงการพิเศษ) (ศึกษาที่ มธ.ท่าพระจันทร์)",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10050123904001B",
-          "fieldUrl": "https://course.mytcas.com/universities/005/faculties/23/fields/40"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
-          "campus": "ศาลายา",
-          "faculty": "วิทยาลัยผู้ประกอบการสร้างสรรค์นานาชาติรัตนโกสินทร์(ศาลายา)",
-          "field": "บริหารธุรกิจ",
-          "program": "บธ.บ. การเป็นผู้ประกอบการอุตสาหกรรมสร้างสรรค์สากล 4 ปี (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/31950111610801E",
-          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/11/fields/08"
+          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชานวัตกรรมการจัดการศิลปวัฒนธรรม (หลักสูตรสองภาษา)",
+          "type": "สองภาษา/สามภาษา",
+          "url": "https://course.mytcas.com/programs/10090110904001C",
+          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/40"
         }
       ]
     },
@@ -7855,758 +7705,6 @@
         }
       ]
     },
-    "การจัดการสำนักงานและธุรกิจ": {
-      "pattern": [
-        "การจัดการสำนักงาน|บริหารสำนักงาน|การจัดการธุรกิจ|สาขาวิชาการจัดการ$"
-      ],
-      "picked": [
-        "https://course.mytcas.com/programs/10020222610201A",
-        "https://course.mytcas.com/programs/10030121610802A",
-        "https://course.mytcas.com/programs/10090168620101A"
-      ],
-      "programs": [
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "กำแพงแสน",
-          "faculty": "คณะศิลปศาสตร์และวิทยาศาสตร์",
-          "field": "การจัดการ",
-          "program": "บธ.บ. สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020222610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/22/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "กำแพงแสน",
-          "faculty": "คณะอุตสาหกรรมบริการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "บธ.บ. สาขาวิชาการจัดการธุรกิจบริการและอุตสาหกรรมไมซ์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020233620101A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "กำแพงแสน",
-          "faculty": "คณะอุตสาหกรรมบริการ",
-          "field": "การบิน",
-          "program": "บธ.บ. สาขาวิชาการจัดการธุรกิจการบิน",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020233620201A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "ศรีราชา",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020326610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/26/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "เฉลิมพระเกียรติ จ.สกลนคร",
-          "faculty": "คณะศิลปศาสตร์และวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020431610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/31/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะบริหารธุรกิจและการบัญชี",
-          "field": "บริหารธุรกิจ",
-          "program": "บริหารธุรกิจบัณฑิต (การจัดการธุรกิจบริการและอีเว้นท์)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030121610802A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/21/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะบริหารธุรกิจเพื่อสังคม",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจบริการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090168620101A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/68/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยสงขลานครินทร์",
-          "campus": "สุราษฎร์ธานี",
-          "faculty": "คณะศิลปศาสตร์และวิทยาการจัดการ",
-          "field": "บริหารธุรกิจ",
-          "program": "บธ.บ. การจัดการธุรกิจ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10100431610801A",
-          "fieldUrl": "https://course.mytcas.com/universities/010/faculties/31/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยสงขลานครินทร์",
-          "campus": "สุราษฎร์ธานี",
-          "faculty": "คณะศิลปศาสตร์และวิทยาการจัดการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "บธ.บ. การจัดการธุรกิจการท่องเที่ยว",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10100431620101A",
-          "fieldUrl": "https://course.mytcas.com/universities/010/faculties/31/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยแม่โจ้",
-          "campus": "วิทยาเขตเชียงใหม่",
-          "faculty": "คณะพัฒนาการท่องเที่ยว",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการจัดการธุรกิจท่องเที่ยวและบริการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10130109620104A",
-          "fieldUrl": "https://course.mytcas.com/universities/013/faculties/09/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-          "campus": "ระยอง",
-          "faculty": "คณะวิทยาศาสตร์พลังงานและสิ่งแวดล้อม",
-          "field": "เทคโนโลยีพลังงาน",
-          "program": "วท.บ.เทคโนโลยีพลังงานและการจัดการธุรกิจอุตสาหกรรมในยุคดิจิทัล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10150313211402A",
-          "fieldUrl": "https://course.mytcas.com/universities/015/faculties/13/fields/14"
-        },
-        {
-          "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
-          "campus": "ลาดกระบัง",
-          "faculty": "คณะเทคโนโลยีการเกษตร",
-          "field": "สุขภาพสัตว์",
-          "program": "วท.บ. การพยาบาลสัตว์และการจัดการธุรกิจสัตว์เลี้ยง",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10160104112901A",
-          "fieldUrl": "https://course.mytcas.com/universities/016/faculties/04/fields/29"
-        },
-        {
-          "university": "มหาวิทยาลัยอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะเกษตรศาสตร์",
-          "field": "เทคโนโลยีการอาหาร",
-          "program": "ทล.บ.สาขาการผลิตและการจัดการธุรกิจอาหาร (หลักสูตรสหวิทยาการ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10180112211004A",
-          "fieldUrl": "https://course.mytcas.com/universities/018/faculties/12/fields/10"
-        },
-        {
-          "university": "มหาวิทยาลัยอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารศาสตร์",
-          "field": "การจัดการ",
-          "program": "บธ.บ.วิชาเอกการจัดการธุรกิจ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10180117610203A",
-          "fieldUrl": "https://course.mytcas.com/universities/018/faculties/17/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยแม่ฟ้าหลวง",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "การจัดการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "บธ.บ. การจัดการธุรกิจบริการ (จัดการเรียนการสอนเป็นภาษาอังกฤษ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10240112620102A",
-          "fieldUrl": "https://course.mytcas.com/universities/024/faculties/12/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยแม่ฟ้าหลวง",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "การจัดการ",
-          "field": "การบิน",
-          "program": "บธ.บ. การจัดการธุรกิจการบิน (จัดการเรียนการสอนเป็นภาษาอังกฤษ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10240112620201A",
-          "fieldUrl": "https://course.mytcas.com/universities/024/faculties/12/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยพะเยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจและนิเทศศาสตร์",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10270107610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/027/faculties/07/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยกาฬสินธุ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารศาสตร์",
-          "field": "บริหารธุรกิจ",
-          "program": "บธ.บ. การจัดการธุรกิจการค้าสมัยใหม่",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10280102610801A",
-          "fieldUrl": "https://course.mytcas.com/universities/028/faculties/02/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยสวนดุสิต",
-          "campus": "หลัก",
-          "faculty": "โรงเรียนการเรือน",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการจัดการธุรกิจอาหารและศิลปะการประกอบอาหาร",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/11650110610301A",
-          "fieldUrl": "https://course.mytcas.com/universities/165/faculties/10/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพระนคร",
-          "campus": "หลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. 4 ปี การจัดการธุรกิจการค้าสมัยใหม่",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21500104610202A",
-          "fieldUrl": "https://course.mytcas.com/universities/150/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพิบูลสงคราม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21520106610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/152/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "กจ.บ. การจัดการธุรกิจท่องเที่ยวและการบริการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640104620101A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/04/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะเทคโนโลยีการเกษตร",
-          "field": "คหกรรมศาสตร์",
-          "program": "ทล.บ. นวัตกรรมอาหารแะการจัดการธุรกิจ (หลักสูตรสหวิทยาการ) (เทียบโอน)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640105500301A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/05/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "หลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ.บริหารธุรกิจ(การจัดการธุรกิจบริการ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21660103610207A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "ศูนย์การศึกษาจังหวัดระนอง",
-          "faculty": "ศูนย์การศึกษาจังหวัดระนอง",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "บธ.บ.การจัดการธุรกิจบริการการท่องเที่ยวและการโรงแรม",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21661818620104A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/18/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุตรดิตถ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจบริการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21700105610301A",
-          "fieldUrl": "https://course.mytcas.com/universities/170/faculties/05/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุตรดิตถ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจสมัยใหม่",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21700105610302A",
-          "fieldUrl": "https://course.mytcas.com/universities/170/faculties/05/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจและการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ.การจัดการธุรกิจดิจิทัล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710104610235A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจและการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ.การจัดการธุรกิจระหว่างประเทศ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710104610237A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะแพทย์แผนไทยและแพทย์ทางเลือก",
-          "field": "การจัดการ",
-          "program": "วท.บ.การจัดการธุรกิจสุขภาพเพื่อการท่องเที่ยว",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710108110399A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/08/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การบริหารทรัพยากรมนุษย์",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจ ทรัพยากรมนุษย์และองค์การ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720104610401A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/04/fields/04"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "เศรษฐศาสตร์",
-          "program": "หลักสูตรเศรษฐศาสตรบัณฑิต สาขาวิชาเศรษฐศาสตร์การจัดการธุรกิจการค้าสมัยใหม่",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720104611105A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/04/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏจันทรเกษม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "การจัดการธุรกิจดิจิทัล (บธ.บ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21770104610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/177/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการ-นวัตกรรมการจัดการธุรกิจ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910105610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/05/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. (การจัดการธุรกิจสมัยใหม่)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31920105610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/192/faculties/05/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลตะวันออก",
-          "campus": "คณะ/สถาบันในส่วนกลาง",
-          "faculty": "มนุษยศาสตร์และสังคมศาสตร์",
-          "field": "การจัดการ",
-          "program": "บริหารธุรกิจบัณฑิต (บธ.บ.) สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31930105610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/193/faculties/05/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
-          "campus": "โชติเวช",
-          "faculty": "คณะเทคโนโลยีคหกรรมศาสตร์",
-          "field": "คหกรรมศาสตร์",
-          "program": "คศ.บ. ศิลปะการประกอบอาหารและการจัดการธุรกิจอาหาร",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31941207500302A",
-          "fieldUrl": "https://course.mytcas.com/universities/194/faculties/07/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
-          "campus": "ศาลายา",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "ระบบสารสนเทศ",
-          "program": "บธ.บ. เทคโนโลยีทางธุรกิจดิจิทัล-การจัดการธุรกิจดิจิทัล 4 ปี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31950105610905A",
-          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/05/fields/09"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีปทุม",
-          "campus": "บางเขน",
-          "faculty": "วิทยาลัยการบิน การท่องเที่ยว และการบริการ (กทม.)",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "ศศ.บ. สาขาวิชาการจัดการธุรกิจโรงแรมและการออกแบบประสบการณ์ท่องเที่ยว",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/40540107620101A",
-          "fieldUrl": "https://course.mytcas.com/universities/054/faculties/07/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีปทุม",
-          "campus": "วิทยาเขตขอนแก่น",
-          "faculty": "วิทยาลัยการบิน การท่องเที่ยว และการบริการ (วิทยาเขตขอนแก่น)",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "ศศ.บ. สาขาวิชาการจัดการธุรกิจโรงแรมและการออกแบบประสบการณ์ท่องเที่ยว",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/40540307620101A",
-          "fieldUrl": "https://course.mytcas.com/universities/054/faculties/07/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยหอการค้าไทย",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะการท่องเที่ยวและอุตสาหกรรมบริการ",
-          "field": "การบิน",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต (การจัดการธุรกิจการบิน)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/40560111620201A",
-          "fieldUrl": "https://course.mytcas.com/universities/056/faculties/11/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยบริหารธุรกิจนวัตกรรมและการบัญชี",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชานวัตกรรมการจัดการธุรกิจอสังหาริมทรัพย์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41030101610201A",
-          "fieldUrl": "https://course.mytcas.com/universities/103/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยบริหารธุรกิจนวัตกรรมและการบัญชี",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41030101610202A",
-          "fieldUrl": "https://course.mytcas.com/universities/103/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยสยาม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "บริหารธุรกิจ",
-          "program": "บธ.บ. สาขาวิชาการจัดการธุรกิจระหว่างประเทศ",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41810102610801A",
-          "fieldUrl": "https://course.mytcas.com/universities/181/faculties/02/fields/08"
-        },
-        {
-          "university": "สถาบันการจัดการปัญญาภิวัฒน์",
-          "campus": "แจ้งวัฒนะ นนทบุรี",
-          "faculty": "คณะการจัดการธุรกิจบริการ โรงแรม และการบิน",
-          "field": "การบิน",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจการบิน",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49180103620201A",
-          "fieldUrl": "https://course.mytcas.com/universities/918/faculties/03/fields/02"
-        },
-        {
-          "university": "สถาบันการจัดการปัญญาภิวัฒน์",
-          "campus": "แจ้งวัฒนะ นนทบุรี",
-          "faculty": "คณะการจัดการธุรกิจอาหาร",
-          "field": "บริหารธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจอาหาร วิชาเอกการจัดการธุรกิจอาหาร",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49180106610801A",
-          "fieldUrl": "https://course.mytcas.com/universities/918/faculties/06/fields/08"
-        },
-        {
-          "university": "สถาบันการจัดการปัญญาภิวัฒน์",
-          "campus": "แจ้งวัฒนะ นนทบุรี",
-          "faculty": "คณะการจัดการธุรกิจอาหาร",
-          "field": "บริหารธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจอาหาร วิชาเอกการจัดการธุรกิจค้าส่งอาหารสมัยใหม่",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49180106610802A",
-          "fieldUrl": "https://course.mytcas.com/universities/918/faculties/06/fields/08"
-        },
-        {
-          "university": "สถาบันการจัดการปัญญาภิวัฒน์",
-          "campus": "อีอีซี",
-          "faculty": "คณะการจัดการธุรกิจอาหาร",
-          "field": "บริหารธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจอาหาร วิชาเอกการจัดการธุรกิจค้าส่งอาหารสมัยใหม่",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49180206610802A",
-          "fieldUrl": "https://course.mytcas.com/universities/918/faculties/06/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "กำแพงแสน",
-          "faculty": "คณะศิลปศาสตร์และวิทยาศาสตร์",
-          "field": "การจัดการ",
-          "program": "บธ.บ. สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10020222610201B",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/22/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "กำแพงแสน",
-          "faculty": "คณะอุตสาหกรรมบริการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "บธ.บ. สาขาวิชาการจัดการธุรกิจบริการและอุตสาหกรรมไมซ์",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10020233620101B",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "กำแพงแสน",
-          "faculty": "คณะอุตสาหกรรมบริการ",
-          "field": "การบิน",
-          "program": "บธ.บ. สาขาวิชาการจัดการธุรกิจการบิน",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10020233620201B",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "ศรีราชา",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. สาขาวิชาการจัดการ",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10020326610201B",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/26/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "เพชรบุรี",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจและภาษา",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080312610202B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/12/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "เพชรบุรี",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจกีฬา นันทนาการ และเวลเนส",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080312610204B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/12/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "เมืองทองธานี",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจและภาษา",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080412610202B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/12/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะบริหารธุรกิจเพื่อสังคม",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจบริการ (โครงการพิเศษ)",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10090168620102B",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/68/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-          "campus": "ระยอง",
-          "faculty": "คณะวิทยาศาสตร์พลังงานและสิ่งแวดล้อม",
-          "field": "เทคโนโลยีพลังงาน",
-          "program": "วท.บ.เทคโนโลยีพลังงานและการจัดการธุรกิจอุตสาหกรรมในยุคดิจิทัล",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10150313211402B",
-          "fieldUrl": "https://course.mytcas.com/universities/015/faculties/13/fields/14"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. (การจัดการธุรกิจสมัยใหม่)",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/31920105610201B",
-          "fieldUrl": "https://course.mytcas.com/universities/192/faculties/05/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะบริหารธุรกิจและการบัญชี",
-          "field": "บริหารธุรกิจ",
-          "program": "บริหารธุรกิจบัณฑิต (การจัดการธุรกิจบริการและอีเว้นท์)",
-          "type": "สองภาษา/สามภาษา",
-          "url": "https://course.mytcas.com/programs/10030121610802C",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/21/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยเชียงใหม่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจบริการ",
-          "type": "สองภาษา/สามภาษา",
-          "url": "https://course.mytcas.com/programs/10040115610301C",
-          "fieldUrl": "https://course.mytcas.com/universities/004/faculties/15/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยสวนดุสิต",
-          "campus": "หลัก",
-          "faculty": "โรงเรียนการท่องเที่ยวและการบริการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการจัดการธุรกิจเวลเนส (หลักสูตรภาษาอังกฤษ)",
-          "type": "สองภาษา/สามภาษา",
-          "url": "https://course.mytcas.com/programs/11650111620105C",
-          "fieldUrl": "https://course.mytcas.com/universities/165/faculties/11/fields/01"
-        },
-        {
-          "university": "จุฬาลงกรณ์มหาวิทยาลัย",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะพาณิชยศาสตร์และการบัญชี",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจระหว่างประเทศ (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10010126610301E",
-          "fieldUrl": "https://course.mytcas.com/universities/001/faculties/26/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยธรรมศาสตร์",
-          "campus": "ศูนย์รังสิต",
-          "faculty": "คณะพาณิชยศาสตร์และการบัญชี",
-          "field": "บริหารธุรกิจ",
-          "program": "บธ.บ.สาขาวิชาการจัดการธุรกิจแบบบูรณาการ (หลักสูตรนานาชาติ) (BBM)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10050202610801E",
-          "fieldUrl": "https://course.mytcas.com/universities/005/faculties/02/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะบริหารธุรกิจเพื่อสังคม",
-          "field": "บริหารธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต  สาขาวิชาการจัดการธุรกิจโลก (หลักสูตรนานาชาติ) (โครงการพิเศษ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10090168610801E",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/68/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยสงขลานครินทร์",
-          "campus": "ภูเก็ต",
-          "faculty": "คณะการบริการและการท่องเที่ยว",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "บธ.บ. การจัดการธุรกิจการท่องเที่ยวและการบิน (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10100326620102E",
-          "fieldUrl": "https://course.mytcas.com/universities/010/faculties/26/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-          "campus": "กรุงเทพฯ",
-          "faculty": "วิทยาลัยนานาชาติ",
-          "field": "การบิน",
-          "program": "บธ.บ.การจัดการธุรกิจและบริการการบินในยุคดิจิทัล (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10150115620201E",
-          "fieldUrl": "https://course.mytcas.com/universities/015/faculties/15/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยนเรศวร",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยนานาชาติ",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจระหว่างประเทศ (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10200126610201E",
-          "fieldUrl": "https://course.mytcas.com/universities/020/faculties/26/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การบริการ พาณิชยการและธุรกิจ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจระหว่างประเทศ (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/21740103610301E",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/03/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยนานาชาติ",
-          "field": "การจัดการ",
-          "program": "บธ.บ. (การจัดการธุรกิจระหว่างประเทศ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/31920108610202E",
-          "fieldUrl": "https://course.mytcas.com/universities/192/faculties/08/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
-          "campus": "พณิชยการพระนคร",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "บริหารธุรกิจ",
-          "program": "บธ.บ.การจัดการธุรกิจระหว่างประเทศ",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/31940703610801E",
-          "fieldUrl": "https://course.mytcas.com/universities/194/faculties/03/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยหาดใหญ่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยนานาชาติดิษยศริน",
-          "field": "บริหารธุรกิจ",
-          "program": "บริหารธุรกิจบัณฑิต (บธ.บ.) (การจัดการธุรกิจระหว่างประเทศ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/41300100610808E",
-          "fieldUrl": "https://course.mytcas.com/universities/130/faculties/00/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษมบัณฑิต",
-          "campus": "วิทยาเขตร่มเกล้า",
-          "faculty": "โครงการหลักสูตรบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ)",
-          "field": "การจัดการ",
-          "program": "บธ.บ.(การจัดการธุรกิจสมัยใหม่)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/41800239610201E",
-          "fieldUrl": "https://course.mytcas.com/universities/180/faculties/39/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยอัสสัมชัญ",
-          "campus": "สุวรรณภูมิ",
-          "faculty": "คณะบริหารธุรกิจและเศรษฐศาสตร์",
-          "field": "การจัดการ",
-          "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการธุรกิจครอบครัวและนวัตกรรม",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/49210101610206E",
-          "fieldUrl": "https://course.mytcas.com/universities/921/faculties/01/fields/02"
-        },
-        {
-          "university": "วิทยาลัยเทคโนโลยีสยาม",
-          "campus": "วิทยาเขตหลัก(ท่าพระ)",
-          "faculty": "คณะบริหารธุรกิจ",
-          "field": "บริหารธุรกิจ",
-          "program": "สาขาวิชาการจัดการธุรกิจระหว่างประเทศ (IBM)/บธ.บ. (การจัดการธุรกิจระหว่างประเทศ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/49310103610803E",
-          "fieldUrl": "https://course.mytcas.com/universities/931/faculties/03/fields/08"
-        }
-      ]
-    },
     "การจัดการอาคารและทรัพย์สิน": {
       "pattern": [
         "อสังหาริมทรัพย์|การจัดการอาคาร|ทรัพย์สิน"
@@ -9959,349 +9057,6 @@
           "type": "สองภาษา/สามภาษา",
           "url": "https://course.mytcas.com/programs/41120114112701C",
           "fieldUrl": "https://course.mytcas.com/universities/112/faculties/14/fields/27"
-        }
-      ]
-    },
-    "การบริหารการศึกษา": {
-      "pattern": [
-        "การบริหารการศึกษา|การจัดการการศึกษา",
-        "^(หลักสูตร)?ครุศาสตรบัณฑิต$|การประถมศึกษา"
-      ],
-      "picked": [
-        "https://course.mytcas.com/programs/10010127703701A",
-        "https://course.mytcas.com/programs/10080206700201A",
-        "https://course.mytcas.com/programs/10190115700201A"
-      ],
-      "programs": [
-        {
-          "university": "จุฬาลงกรณ์มหาวิทยาลัย",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "หลักสูตรครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10010127703701A",
-          "fieldUrl": "https://course.mytcas.com/universities/001/faculties/27/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "สนามจันทร์",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10080206700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต (กศ.บ.) สาขาวิชาการประถมศึกษา จิตวิทยาและการแนะแนว (หลักสูตร 4 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190115700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/15/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยวลัยลักษณ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "ศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ศึกษาศาสตรบัณฑิต  สาขาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10230116700207A",
-          "fieldUrl": "https://course.mytcas.com/universities/023/faculties/16/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102700209A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การศึกษาปฐมวัย",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102700601A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/06"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "คณิตศาสตร์",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102700807A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "คอมพิวเตอร์",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102700904A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/09"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ภาษาไทยและภาษาต่างประเทศ",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102702003A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/20"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ภาษาไทยและภาษาต่างประเทศ",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102702006A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/20"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "วิทยาศาสตร์และเทคโนโลยี",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102702402A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/24"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102702508A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "สังคมศึกษา",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260102702705A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/02/fields/27"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาศาสตร์",
-          "field": "เคมี",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260105701007A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/05/fields/10"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาศาสตร์",
-          "field": "ชีววิทยา",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260105701306A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/05/fields/13"
-        },
-        {
-          "university": "มหาวิทยาลัยนครพนม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะวิทยาศาสตร์",
-          "field": "ฟิสิกส์",
-          "program": "ครุศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10260105701805A",
-          "fieldUrl": "https://course.mytcas.com/universities/026/faculties/05/fields/18"
-        },
-        {
-          "university": "มหาวิทยาลัยพะเยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการศึกษา",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10270120700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/027/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยรามคำแหง",
-          "campus": "วิทยาเขตหลักหัวหมาก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาศึกษาศาสตร์ วิชาเอกการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10340107700219A",
-          "fieldUrl": "https://course.mytcas.com/universities/034/faculties/07/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหามกุฏราชวิทยาลัย",
-          "campus": "วิทยาเขตร้อยเอ็ด",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา (4ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10360704700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/036/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยสวนดุสิต",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/11650102700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/165/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยสวนดุสิต",
-          "campus": "สุพรรณบุรี",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/11650202700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/165/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยสวนดุสิต",
-          "campus": "นครนายก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/11650302700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/165/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยสวนดุสิต",
-          "campus": "ลำปาง",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/11650502700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/165/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต (การประถมศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480101700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพระนคร",
-          "campus": "หลัก",
-          "faculty": "วิทยาลัยการฝึกหัดครู",
-          "field": "การประถมศึกษา",
-          "program": "ค.บ. 4 ปี การประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21500102700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/150/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุตรดิตถ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21700101700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/170/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ค.บ.การประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710102700215A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต วิชาเอกการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720101700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740101700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยหาดใหญ่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์และศิลปศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ศึกษาศาสตรบัณฑิต (ศษ.บ.)(การประถมศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41300100700204A",
-          "fieldUrl": "https://course.mytcas.com/universities/130/faculties/00/fields/02"
-        },
-        {
-          "university": "วิทยาลัยนอร์ทเทิร์น",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ศึกษาศาสตรบัณฑิต (การประถมศึกษา) 4 ปี (ภาคปกติ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49170103700210A",
-          "fieldUrl": "https://course.mytcas.com/universities/917/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยวงษ์ชวลิตกุล",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ศึกษาศาสตรบัณฑิต (การประถมศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49220102700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/922/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยนานาชาติเอเชีย-แปซิฟิก",
-          "campus": "สระบุรี",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "ศึกษาศาสตรบัณฑิต สาขาวิชาการประถมศึกษา",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/41290104700201E",
-          "fieldUrl": "https://course.mytcas.com/universities/129/faculties/04/fields/02"
         }
       ]
     },
@@ -15285,6 +14040,37 @@
         }
       ]
     },
+    "ครุศาสตร์และศึกษาศาสตร์": {
+      "pattern": [
+        "^หลักสูตร(ครุศาสตรบัณฑิต|การศึกษาบัณฑิต)( สาขาวิชาการศึกษา)?$"
+      ],
+      "picked": [
+        "https://course.mytcas.com/programs/10010127703701A",
+        "https://course.mytcas.com/programs/10090105703502A"
+      ],
+      "programs": [
+        {
+          "university": "จุฬาลงกรณ์มหาวิทยาลัย",
+          "campus": "วิทยาเขตหลัก",
+          "faculty": "คณะครุศาสตร์",
+          "field": "ครุศาสตร์",
+          "program": "หลักสูตรครุศาสตรบัณฑิต",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/10010127703701A",
+          "fieldUrl": "https://course.mytcas.com/universities/001/faculties/27/fields/37"
+        },
+        {
+          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
+          "campus": "ประสานมิตร",
+          "faculty": "คณะศึกษาศาสตร์",
+          "field": "การศึกษาบัณฑิต",
+          "program": "หลักสูตรการศึกษาบัณฑิต",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/10090105703502A",
+          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/05/fields/35"
+        }
+      ]
+    },
     "เคมี": {
       "pattern": [
         "^(หลักสูตร)?(วิทยาศาสตรบัณฑิต|วท\\.บ\\.) ?(สาขาวิชา)?เคมี$"
@@ -15854,25 +14640,15 @@
     },
     "จิตวิทยาการปรึกษา": {
       "pattern": [
-        "จิตวิทยาการปรึกษา|จิตวิทยาการให้คำปรึกษา|จิตวิทยาการแนะแนว|จิตวิทยาและการแนะแนว",
-        "จิตวิทยา"
+        "^(?!.*ประถมศึกษา).*(จิตวิทยาการปรึกษา|จิตวิทยาการให้คำปรึกษา|จิตวิทยาการแนะแนว|จิตวิทยาและการแนะแนว)",
+        "^(?!.*ประถมศึกษา).*จิตวิทยา"
       ],
       "picked": [
-        "https://course.mytcas.com/programs/10190115700201A",
         "https://course.mytcas.com/programs/21480101701201A",
-        "https://course.mytcas.com/programs/21500102701201A"
+        "https://course.mytcas.com/programs/21500102701201A",
+        "https://course.mytcas.com/programs/21640101701201A"
       ],
       "programs": [
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "การประถมศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต (กศ.บ.) สาขาวิชาการประถมศึกษา จิตวิทยาและการแนะแนว (หลักสูตร 4 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190115700201A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/15/fields/02"
-        },
         {
           "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
           "campus": "หลัก",
@@ -16698,489 +15474,6 @@
           "type": "ภาษาไทย พิเศษ",
           "url": "https://course.mytcas.com/programs/10090101900701B",
           "fieldUrl": "https://course.mytcas.com/universities/009/faculties/01/fields/07"
-        }
-      ]
-    },
-    "ดนตรีบำบัด": {
-      "pattern": [
-        "ดนตรีบำบัด",
-        "ดนตรีศึกษา|ดุริยางค|ดนตรี"
-      ],
-      "picked": [
-        "https://course.mytcas.com/programs/10020111800201A",
-        "https://course.mytcas.com/programs/10030105703708A",
-        "https://course.mytcas.com/programs/10040102703702A"
-      ],
-      "programs": [
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "บางเขน",
-          "faculty": "คณะมนุษยศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศศ.บ. สาขาวิชาดนตรีไทย",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020111800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/11/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "บางเขน",
-          "faculty": "คณะมนุษยศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศศ.บ. สาขาวิชาดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020111800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/11/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "ศึกษาศาสตรบัณฑิต (ดนตรีศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030105703708A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/05/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "การออกแบบ",
-          "program": "ดุริยางคศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030122800104A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/22/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเชียงใหม่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10040102703702A",
-          "fieldUrl": "https://course.mytcas.com/universities/004/faculties/02/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต สาขาวิชาดนตรีศึกษา (กศ.บ.)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดุริยางคศาสตร์สากล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/02"
-        },
-        {
-          "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
-          "campus": "ลาดกระบัง",
-          "faculty": "วิทยาลัยวิศวกรรมสังคีต",
-          "field": "วิศวกรรมไฟฟ้าสื่อสาร วิศวกรรมโทรคมนาคม",
-          "program": "วศ.บ. วิศวกรรมดนตรีและสื่อประสม",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10160116301801A",
-          "fieldUrl": "https://course.mytcas.com/universities/016/faculties/16/fields/18"
-        },
-        {
-          "university": "มหาวิทยาลัยอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ศษ.บ.วิชาเอกดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10180126702505A",
-          "fieldUrl": "https://course.mytcas.com/universities/018/faculties/26/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะดนตรีและการแสดง",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต (ศป.บ.) สาขาวิชาดนตรีไทยและนาฏศิลป์สร้างสรรค์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190114800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/14/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะดนตรีและการแสดง",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต (ศป.บ.) สาขาวิชาดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190114800203A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/14/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยนเรศวร",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10200117800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/020/faculties/17/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "กศ.บ. ดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศาสตรบัณฑิต และ ดศ.ม. ดุริยางคศาสตรมหาบัณฑิต (หลักสูตร 2 ปริญญา 5 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศาสตรบัณฑิต และ บธ.ม. บริหารธุรกิจและนวัตกรรมดิจิทัล (หลักสูตร 2 ปริญญา 5 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120800203A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดุริยางคศาสตรบัณฑิต สาขาวิชาดุริยางคศาสตร์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220104800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยพะเยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรีและนาฏศิลป์  (แขนงวิชาดนตรีสากล)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10270112800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/027/faculties/12/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยพะเยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และศิลปกรรมศาสตร์",
-          "field": "ศิลปะการแสดง",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรีและนาฏศิลป์  (แขนงวิชานาฏศิลป์)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10270112800401A",
-          "fieldUrl": "https://course.mytcas.com/universities/027/faculties/12/fields/04"
-        },
-        {
-          "university": "มหาวิทยาลัยรามคำแหง",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรีสากล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10340106800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/034/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต (ดนตรีศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480101702503A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต (ดนตรีศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480101702504A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพระนคร",
-          "campus": "หลัก",
-          "faculty": "วิทยาลัยการฝึกหัดครู",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ค.บ. 4 ปี ดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21500102702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/150/faculties/02/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพระนคร",
-          "campus": "หลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. 4 ปี ดุริยางคศิลป์ตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21500103800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/150/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพิบูลสงคราม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21520105800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/152/faculties/05/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศป.บ. ดนตรีไทยและดนตรีพื้นบ้าน",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640106800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศิลป์ตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640106800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "หลัก",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศป.บ.ดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21660106800206A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุตรดิตถ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21700102800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/170/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ค.บ.ดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710103702574A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/03/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศป.บ.ดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710103800230A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720102702509A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/02/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ศิลปศาสตร์",
-          "program": "หลักสูตรศิลปบัณฑิต สาขาวิชานวัตกรรมดนตรีและนาฏศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720102904411A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/02/fields/44"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาดนตรีตะวันตกศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาดนตรีไทยศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106702502A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต วิชาเอกดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีและนวัตกรรมการผลิตดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106800203A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต สาขาวิชาดนตรีแจ๊สร่วมสมัยและการผลิตดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106800204A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต วิชาเอกการแสดงดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106800205A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏจันทรเกษม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "มนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดนตรีสากล (ดศ.บ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21770103800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/177/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาดนตรีไทย",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910107702502A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/07/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาดนตรีสากลศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910107702503A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/07/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยหาดใหญ่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์และศิลปศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดุริยางคศาสตรบัณฑิต (ดศ.บ.) (ดนตรีสากล)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41300100800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/130/faculties/00/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "วังท่าพระ",
-          "faculty": "คณะดุริยางคศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต วิชาเอกผู้ประกอบการดนตรีศึกษา",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080110800201B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/10/fields/02"
-        },
-        {
-          "university": "สถาบันดนตรีกัลยาณิวัฒนา",
-          "campus": "สถาบันดนตรีกัลยาณิวัฒนา",
-          "faculty": "สำนักวิขาดุริยางคศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ ดุริยางคศาสตรบัณฑิต",
-          "type": "สองภาษา/สามภาษา",
-          "url": "https://course.mytcas.com/programs/12650101800201C",
-          "fieldUrl": "https://course.mytcas.com/universities/265/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "สถาบันวิทยาศาสตร์ นวัตกรรม และวัฒนธรรม",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. (ดุริยางคศาสตร์)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/31920124800201E",
-          "fieldUrl": "https://course.mytcas.com/universities/192/faculties/24/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยอัสสัมชัญ",
-          "campus": "สุวรรณภูมิ",
-          "faculty": "คณะดนตรี",
-          "field": "ศิลปศาสตร์",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการเป็นผู้ประกอบการทางดนตรี",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/49210105904401E",
-          "fieldUrl": "https://course.mytcas.com/universities/921/faculties/05/fields/44"
         }
       ]
     },
@@ -32320,15 +30613,23 @@
     },
     "วิศวกรรมเสียงและดนตรี": {
       "pattern": [
-        "เทคโนโลยีดนตรี|เทคโนโลยีการดนตรี|วิศวกรรมเสียง|ดนตรีและเทคโนโลยี|การผลิตดนตรี|ดนตรีดิจิทัล|ธุรกิจดนตรี",
-        "ดุริยางค|ดนตรี"
+        "วิศวกรรมดนตรี|เทคโนโลยีดนตรี|เทคโนโลยีการดนตรี|วิศวกรรมเสียง|ดนตรีและเทคโนโลยี|การผลิตดนตรี|ดนตรีดิจิทัล|ดนตรีและสื่อสร้างสรรค์|ธุรกิจดนตรี"
       ],
       "picked": [
-        "https://course.mytcas.com/programs/21740106800203A",
-        "https://course.mytcas.com/programs/10020111800201A",
-        "https://course.mytcas.com/programs/10030105703708A"
+        "https://course.mytcas.com/programs/10160116301801A",
+        "https://course.mytcas.com/programs/21740106800203A"
       ],
       "programs": [
+        {
+          "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+          "campus": "ลาดกระบัง",
+          "faculty": "วิทยาลัยวิศวกรรมสังคีต",
+          "field": "วิศวกรรมไฟฟ้าสื่อสาร วิศวกรรมโทรคมนาคม",
+          "program": "วศ.บ. วิศวกรรมดนตรีและสื่อประสม",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/10160116301801A",
+          "fieldUrl": "https://course.mytcas.com/universities/016/faculties/16/fields/18"
+        },
         {
           "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
           "campus": "วิทยาเขตหลัก",
@@ -32348,456 +30649,6 @@
           "type": "ภาษาไทย ปกติ",
           "url": "https://course.mytcas.com/programs/21740106800204A",
           "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "บางเขน",
-          "faculty": "คณะมนุษยศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศศ.บ. สาขาวิชาดนตรีไทย",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020111800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/11/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษตรศาสตร์",
-          "campus": "บางเขน",
-          "faculty": "คณะมนุษยศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศศ.บ. สาขาวิชาดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10020111800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/002/faculties/11/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "ศึกษาศาสตรบัณฑิต (ดนตรีศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030105703708A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/05/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "การออกแบบ",
-          "program": "ดุริยางคศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030122800104A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/22/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเชียงใหม่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10040102703702A",
-          "fieldUrl": "https://course.mytcas.com/universities/004/faculties/02/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต สาขาวิชาดนตรีศึกษา (กศ.บ.)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดุริยางคศาสตร์สากล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/02"
-        },
-        {
-          "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
-          "campus": "ลาดกระบัง",
-          "faculty": "วิทยาลัยวิศวกรรมสังคีต",
-          "field": "วิศวกรรมไฟฟ้าสื่อสาร วิศวกรรมโทรคมนาคม",
-          "program": "วศ.บ. วิศวกรรมดนตรีและสื่อประสม",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10160116301801A",
-          "fieldUrl": "https://course.mytcas.com/universities/016/faculties/16/fields/18"
-        },
-        {
-          "university": "มหาวิทยาลัยอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ศษ.บ.วิชาเอกดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10180126702505A",
-          "fieldUrl": "https://course.mytcas.com/universities/018/faculties/26/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะดนตรีและการแสดง",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต (ศป.บ.) สาขาวิชาดนตรีไทยและนาฏศิลป์สร้างสรรค์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190114800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/14/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะดนตรีและการแสดง",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต (ศป.บ.) สาขาวิชาดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190114800203A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/14/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยนเรศวร",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10200117800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/020/faculties/17/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "กศ.บ. ดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศาสตรบัณฑิต",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศาสตรบัณฑิต และ ดศ.ม. ดุริยางคศาสตรมหาบัณฑิต (หลักสูตร 2 ปริญญา 5 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "วิทยาลัยดุริยางคศิลป์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศาสตรบัณฑิต และ บธ.ม. บริหารธุรกิจและนวัตกรรมดิจิทัล (หลักสูตร 2 ปริญญา 5 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210120800203A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/20/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดุริยางคศาสตรบัณฑิต สาขาวิชาดุริยางคศาสตร์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220104800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/04/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยพะเยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรีและนาฏศิลป์  (แขนงวิชาดนตรีสากล)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10270112800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/027/faculties/12/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยพะเยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และศิลปกรรมศาสตร์",
-          "field": "ศิลปะการแสดง",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรีและนาฏศิลป์  (แขนงวิชานาฏศิลป์)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10270112800401A",
-          "fieldUrl": "https://course.mytcas.com/universities/027/faculties/12/fields/04"
-        },
-        {
-          "university": "มหาวิทยาลัยรามคำแหง",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรีสากล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10340106800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/034/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต (ดนตรีศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480101702503A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต (ดนตรีศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480101702504A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพระนคร",
-          "campus": "หลัก",
-          "faculty": "วิทยาลัยการฝึกหัดครู",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ค.บ. 4 ปี ดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21500102702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/150/faculties/02/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพระนคร",
-          "campus": "หลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. 4 ปี ดุริยางคศิลป์ตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21500103800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/150/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏพิบูลสงคราม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21520105800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/152/faculties/05/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศป.บ. ดนตรีไทยและดนตรีพื้นบ้าน",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640106800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. ดุริยางคศิลป์ตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640106800202A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "หลัก",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศป.บ.ดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21660106800206A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุตรดิตถ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21700102800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/170/faculties/02/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "ค.บ.ดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710103702574A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/03/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ศป.บ.ดนตรี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710103800230A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาดนตรีศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720102702509A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/02/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ศิลปศาสตร์",
-          "program": "หลักสูตรศิลปบัณฑิต สาขาวิชานวัตกรรมดนตรีและนาฏศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720102904411A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/02/fields/44"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาดนตรีตะวันตกศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาดนตรีไทยศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106702502A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต วิชาเอกดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "วิทยาลัยการดนตรี",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต วิชาเอกการแสดงดนตรีตะวันตก",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740106800205A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/06/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏจันทรเกษม",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "มนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดนตรีสากล (ดศ.บ)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21770103800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/177/faculties/03/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาดนตรีไทย",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910107702502A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/07/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาดนตรีสากลศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910107702503A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/07/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยหาดใหญ่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์และศิลปศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดุริยางคศาสตรบัณฑิต (ดศ.บ.) (ดนตรีสากล)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41300100800201A",
-          "fieldUrl": "https://course.mytcas.com/universities/130/faculties/00/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "วังท่าพระ",
-          "faculty": "คณะดุริยางคศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "หลักสูตรดุริยางคศาสตรบัณฑิต วิชาเอกผู้ประกอบการดนตรีศึกษา",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080110800201B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/10/fields/02"
-        },
-        {
-          "university": "สถาบันดนตรีกัลยาณิวัฒนา",
-          "campus": "สถาบันดนตรีกัลยาณิวัฒนา",
-          "faculty": "สำนักวิขาดุริยางคศาสตร์",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ ดุริยางคศาสตรบัณฑิต",
-          "type": "สองภาษา/สามภาษา",
-          "url": "https://course.mytcas.com/programs/12650101800201C",
-          "fieldUrl": "https://course.mytcas.com/universities/265/faculties/01/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "สถาบันวิทยาศาสตร์ นวัตกรรม และวัฒนธรรม",
-          "field": "ดุริยางคศิลป์",
-          "program": "ดศ.บ. (ดุริยางคศาสตร์)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/31920124800201E",
-          "fieldUrl": "https://course.mytcas.com/universities/192/faculties/24/fields/02"
-        },
-        {
-          "university": "มหาวิทยาลัยอัสสัมชัญ",
-          "campus": "สุวรรณภูมิ",
-          "faculty": "คณะดนตรี",
-          "field": "ศิลปศาสตร์",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการเป็นผู้ประกอบการทางดนตรี",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/49210105904401E",
-          "fieldUrl": "https://course.mytcas.com/universities/921/faculties/05/fields/44"
         }
       ]
     },
@@ -33414,6 +31265,58 @@
           "type": "ภาษาไทย ปกติ",
           "url": "https://course.mytcas.com/programs/49110106111666A",
           "fieldUrl": "https://course.mytcas.com/universities/911/faculties/06/fields/16"
+        }
+      ]
+    },
+    "ศิลปประยุกต์และหัตถศิลป์": {
+      "pattern": [
+        "หัตถศิลป์|หัตถกรรมสร้างสรรค์|หัตถอุตสาหกรรม|ศิลปประยุกต์และออกแบบผลิตภัณฑ์"
+      ],
+      "picked": [
+        "https://course.mytcas.com/programs/10050415800101A",
+        "https://course.mytcas.com/programs/10150111800102A",
+        "https://course.mytcas.com/programs/31950407800110A"
+      ],
+      "programs": [
+        {
+          "university": "มหาวิทยาลัยธรรมศาสตร์",
+          "campus": "ศูนย์ลำปาง",
+          "faculty": "คณะศิลปกรรมศาสตร์",
+          "field": "การออกแบบ",
+          "program": "ศป.บ. สาขาวิชาออกแบบหัตถอุตสาหกรรมสร้างสรรค์",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/10050415800101A",
+          "fieldUrl": "https://course.mytcas.com/universities/005/faculties/15/fields/01"
+        },
+        {
+          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
+          "campus": "กรุงเทพฯ",
+          "faculty": "คณะสถาปัตยกรรมและการออกแบบ",
+          "field": "การออกแบบ",
+          "program": "ศ.บ.ศิลปประยุกต์และออกแบบผลิตภัณฑ์",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/10150111800102A",
+          "fieldUrl": "https://course.mytcas.com/universities/015/faculties/11/fields/01"
+        },
+        {
+          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
+          "campus": "เพาะช่าง",
+          "faculty": "วิทยาลัยเพาะช่าง",
+          "field": "การออกแบบ",
+          "program": "ศล.บ. หัตถกรรมสร้างสรรค์ 4 ปี",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/31950407800110A",
+          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/07/fields/01"
+        },
+        {
+          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
+          "campus": "เพาะช่าง",
+          "faculty": "วิทยาลัยเพาะช่าง",
+          "field": "ทัศนศิลป์",
+          "program": "ศล.บ. หัตถศิลป์ 4 ปี",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/31950407800303A",
+          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/07/fields/03"
         }
       ]
     },
@@ -34232,279 +32135,6 @@
           "type": "ภาษาไทย ปกติ",
           "url": "https://course.mytcas.com/programs/21710103800429A",
           "fieldUrl": "https://course.mytcas.com/universities/171/faculties/03/fields/04"
-        }
-      ]
-    },
-    "ศิลปะบำบัด": {
-      "pattern": [
-        "ศิลปะบำบัด|ศิลปบำบัด",
-        "ศิลปศึกษา|ทัศนศิลป์"
-      ],
-      "picked": [
-        "https://course.mytcas.com/programs/10030105703701A",
-        "https://course.mytcas.com/programs/10040102703701A",
-        "https://course.mytcas.com/programs/10080101800301A"
-      ],
-      "programs": [
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "ศึกษาศาสตรบัณฑิต (ศิลปศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030105703701A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/05/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "การออกแบบ",
-          "program": "ศิลปกรรมศาสตรบัณฑิต (ทัศนศิลป์)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10030122800102A",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/22/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเชียงใหม่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10040102703701A",
-          "fieldUrl": "https://course.mytcas.com/universities/004/faculties/02/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "วังท่าพระ",
-          "faculty": "คณะจิตรกรรมประติมากรรมและภาพพิมพ์",
-          "field": "ทัศนศิลป์",
-          "program": "หลักสูตรศิลปบัณฑิต สาขาวิชาทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10080101800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/01/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "วังท่าพระ",
-          "faculty": "คณะมัณฑนศิลป์",
-          "field": "การออกแบบ",
-          "program": "หลักสูตรศิลปบัณฑิต สาขาวิชาประยุกตศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10080104800107A",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/04/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "สนามจันทร์",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10080206703702A",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/06/fields/37"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต  สาขาวิชาศิลปศึกษา (กศ.บ.)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110702502A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "การออกแบบ",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต  สาขาวิชาการออกแบบทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110800102A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10090110800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/10/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรการศึกษาบัณฑิต (กศ.บ.) สาขาวิชาศิลปศึกษา (หลักสูตร 4 ปี)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10190115702502A",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/15/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยนเรศวร",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10200122800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/020/faculties/22/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "คณะศิลปกรรมศาสตร์และวัฒนธรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "ศป.บ. ทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210124800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/24/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "ศิลปกรรมศาสตรบัณฑิต สาขาวิชาทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220104800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/04/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยรามคำแหง",
-          "campus": "วิทยาเขตหลักหัวหมาก",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10340107702518A",
-          "fieldUrl": "https://course.mytcas.com/universities/034/faculties/07/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต (ศิลปศึกษา)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480101702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครราชสีมา",
-          "campus": "หลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต (ทัศนศิลป์)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21480102800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/148/faculties/02/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสงขลา",
-          "campus": "สงขลา",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "ศป.บ. ทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21640106800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/164/faculties/06/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุตรดิตถ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "หลักสูตรศิลปบัณฑิต สาขาวิชาทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21700102800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/170/faculties/02/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏอุบลราชธานี",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "ศป.บ.ทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21710103800328A",
-          "fieldUrl": "https://course.mytcas.com/universities/171/faculties/03/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏนครสวรรค์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต วิชาเอกศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21720101702508A",
-          "fieldUrl": "https://course.mytcas.com/universities/172/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะครุศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรครุศาสตรบัณฑิต สาขาวิชาศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21740101702501A",
-          "fieldUrl": "https://course.mytcas.com/universities/174/faculties/01/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ศิลปศึกษา ดนตรีศึกษาและนาฏศิลป์ศึกษา",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาศิลปศึกษา",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910107702504A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/07/fields/25"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-          "campus": "วิทยาเขตหลัก (คลองหก)",
-          "faculty": "คณะศิลปกรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "หลักสูตรศิลปบัณฑิต สาขาวิชาทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31910107800302A",
-          "fieldUrl": "https://course.mytcas.com/universities/191/faculties/07/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลศรีวิชัย",
-          "campus": "สงขลา",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์",
-          "field": "ทัศนศิลป์",
-          "program": "ศ.บ. ทัศนศิลป์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31970110800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/197/faculties/10/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน",
-          "campus": "นครราชสีมา",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และศิลปกรรมสร้างสรรค์",
-          "field": "ทัศนศิลป์",
-          "program": "ศป.บ.ทัศนศิลป์ (จิตรกรรม, ประติมากรรม, ศิลปะภาพพิมพ์)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31990104800301A",
-          "fieldUrl": "https://course.mytcas.com/universities/199/faculties/04/fields/03"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "สนามจันทร์",
-          "faculty": "คณะศึกษาศาสตร์",
-          "field": "ครุศาสตร์",
-          "program": "หลักสูตรศึกษาศาสตรบัณฑิต สาขาวิชาศิลปศึกษา",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080206703702B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/06/fields/37"
         }
       ]
     },
@@ -39347,243 +36977,83 @@
     },
     "ออกแบบปฏิสัมพันธ์และสื่อดิจิทัล": {
       "pattern": [
-        "ออกแบบปฏิสัมพันธ์|สื่อปฏิสัมพันธ์|สื่อดิจิทัล|ออกแบบดิจิทัล"
+        "ออกแบบปฏิสัมพันธ์|สื่อปฏิสัมพันธ์|ออกแบบประสบการณ์สำหรับสื่อ|อินเทอร์แอคทีฟ|ดิจิทัลอาร์ต"
       ],
       "picked": [
-        "https://course.mytcas.com/programs/10210101903801A",
-        "https://course.mytcas.com/programs/10220103901101A",
-        "https://course.mytcas.com/programs/10280105901101A"
+        "https://course.mytcas.com/programs/10160102800101A",
+        "https://course.mytcas.com/programs/10180120800101A",
+        "https://course.mytcas.com/programs/10230122220503A"
       ],
       "programs": [
         {
-          "university": "มหาวิทยาลัยมหาสารคาม",
-          "campus": "มหาสารคาม",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "สื่อสารมวลชนและเอกสาร",
-          "program": "ศศ.บ. การสร้างสรรค์คอนเทนต์และนวัตกรรมสื่อดิจิทัล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10210101903801A",
-          "fieldUrl": "https://course.mytcas.com/universities/021/faculties/01/fields/38"
-        },
-        {
-          "university": "มหาวิทยาลัยทักษิณ",
-          "campus": "สงขลา",
-          "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
-          "field": "นิเทศศาสตร์",
-          "program": "นิเทศศาสตรบัณฑิต สาขาวิชาการสื่อสารการตลาดและสื่อดิจิทัล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10220103901101A",
-          "fieldUrl": "https://course.mytcas.com/universities/022/faculties/03/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยกาฬสินธุ์",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะศิลปศาสตร์",
-          "field": "นิเทศศาสตร์",
-          "program": "นศ.บ. สื่อดิจิทัลคอนเทนต์",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10280105901101A",
-          "fieldUrl": "https://course.mytcas.com/universities/028/faculties/05/fields/11"
-        },
-        {
-          "university": "สถาบันเทคโนโลยีจิตรลดา",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะเทคโนโลยีดิจิทัล",
-          "field": "ดิจิทัล",
-          "program": "ศิลปศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัลและเทคโนโลยี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/10350103900801A",
-          "fieldUrl": "https://course.mytcas.com/universities/035/faculties/03/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "หลัก",
-          "faculty": "คณะศิลปกรรมศาสตร์",
+          "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+          "campus": "ลาดกระบัง",
+          "faculty": "คณะสถาปัตยกรรม ศิลปะและการออกแบบ",
           "field": "การออกแบบ",
-          "program": "ศป.บ.การออกแบบดิจิทัลกราฟิก (ระบบการศึกษาทางไกล)",
+          "program": "ศป.บ. การออกแบบประสบการณ์สำหรับสื่อบูรณาการ",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21660106800110A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01"
+          "url": "https://course.mytcas.com/programs/10160102800101A",
+          "fieldUrl": "https://course.mytcas.com/universities/016/faculties/02/fields/01"
         },
         {
-          "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-          "campus": "วิทยาเขตนครปฐม จังหวัดนครปฐม",
-          "faculty": "วิทยาลัยนิเทศศาสตร์",
-          "field": "ภาพยนตร์และภาพนิ่ง",
-          "program": "นศ.บ.นิเทศศาสตร์(ภาพยนตร์และสื่อดิจิทัล) (วิทยาเขตนครปฐม)",
+          "university": "มหาวิทยาลัยอุบลราชธานี",
+          "campus": "วิทยาเขตหลัก",
+          "faculty": "คณะศิลปประยุกต์และสถาปัตยกรรมศาสตร์",
+          "field": "การออกแบบ",
+          "program": "ศป.บ.สาขาวิชาดิจิทัลอาร์ตและการออกแบบ",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/21662513901604A",
-          "fieldUrl": "https://course.mytcas.com/universities/166/faculties/13/fields/16"
+          "url": "https://course.mytcas.com/programs/10180120800101A",
+          "fieldUrl": "https://course.mytcas.com/universities/018/faculties/20/fields/01"
         },
         {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลตะวันออก",
-          "campus": "วิทยาเขตจักรพงษภูวนารถ",
-          "faculty": "บริหารธุรกิจและเทคโนโลยีสารสนเทศ",
-          "field": "ดิจิทัล",
-          "program": "เทคโนโลยีบัณฑิต (ทล.บ.) สาขาวิชาเทคโนโลยีสื่อดิจิทัล",
+          "university": "มหาวิทยาลัยวลัยลักษณ์",
+          "campus": "วิทยาเขตหลัก",
+          "faculty": "สารสนเทศศาสตร์",
+          "field": "แอนิเมชัน",
+          "program": "วิทยาศาสตรบัณฑิต สาขาอินเทอร์แอคทีฟมัลติมีเดียแอนิเมชัน และเกม",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31930204900801A",
-          "fieldUrl": "https://course.mytcas.com/universities/193/faculties/04/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
-          "campus": "ศาลายา",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และการออกแบบ",
-          "field": "การออกแบบนิเทศศิลป์",
-          "program": "ทล.บ. การออกแบบสื่อดิจิทัล-นิเทศศิลป์ 4 ปี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31950102400104A",
-          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/02/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
-          "campus": "ศาลายา",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และการออกแบบ",
-          "field": "ดิจิทัล",
-          "program": "ทล.บ. การออกแบบสื่อดิจิทัล-เกมและแอนิเมชั่น 4 ปี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31950102900803A",
-          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/02/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
-          "campus": "ศาลายา",
-          "faculty": "คณะสถาปัตยกรรมศาสตร์และการออกแบบ",
-          "field": "นิเทศศาสตร์",
-          "program": "ทล.บ. การออกแบบสื่อดิจิทัล-ภาพยนตร์และภาพเคลื่อนไหว 4 ปี",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31950102901105A",
-          "fieldUrl": "https://course.mytcas.com/universities/195/faculties/02/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน",
-          "campus": "นครราชสีมา",
-          "faculty": "คณะวิทยาศาสตร์และศิลปศาสตร์",
-          "field": "สื่อสารมวลชนและเอกสาร",
-          "program": "ทล.บ.เทคโนโลยีการสื่อสารมวลชนและสื่อดิจิทัล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/31990102903801A",
-          "fieldUrl": "https://course.mytcas.com/universities/199/faculties/02/fields/38"
+          "url": "https://course.mytcas.com/programs/10230122220503A",
+          "fieldUrl": "https://course.mytcas.com/universities/023/faculties/22/fields/05"
         },
         {
           "university": "มหาวิทยาลัยศรีปทุม",
           "campus": "บางเขน",
-          "faculty": "คณะนิเทศศาสตร์ (กทม.)",
-          "field": "ภาพยนตร์และภาพนิ่ง",
-          "program": "นศ.บ. สาขาวิชาภาพยนตร์และสื่อดิจิทัล",
+          "faculty": "คณะดิจิทัลมีเดีย (กทม.)",
+          "field": "การออกแบบ",
+          "program": "ศป.บ. สาขาวิชาการออกแบบอินเทอร์แอคทีฟและเกม",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/40540106901601A",
-          "fieldUrl": "https://course.mytcas.com/universities/054/faculties/06/fields/16"
+          "url": "https://course.mytcas.com/programs/40540109800101A",
+          "fieldUrl": "https://course.mytcas.com/universities/054/faculties/09/fields/01"
         },
         {
           "university": "มหาวิทยาลัยศรีปทุม",
-          "campus": "วิทยาเขตชลบุรี",
-          "faculty": "คณะนิเทศศาสตร์(วิทยาเขตชลบุรี)",
-          "field": "การจัดการการสื่อสาร",
-          "program": "นศ.บ. สาขาวิชาการออกแบบสื่อดิจิทัล",
+          "campus": "บางเขน",
+          "faculty": "คณะดิจิทัลมีเดีย (กทม.)",
+          "field": "การออกแบบ",
+          "program": "ศป.บ. สาขาวิชาดิจิทัลอาร์ตส์",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/40540206900101A",
-          "fieldUrl": "https://course.mytcas.com/universities/054/faculties/06/fields/01"
+          "url": "https://course.mytcas.com/programs/40540109800103A",
+          "fieldUrl": "https://course.mytcas.com/universities/054/faculties/09/fields/01"
+        },
+        {
+          "university": "มหาวิทยาลัยหอการค้าไทย",
+          "campus": "วิทยาเขตหลัก",
+          "faculty": "คณะดิจิทัลอาร์ตและดีไซน์",
+          "field": "การออกแบบ",
+          "program": "หลักสูตรศิลปกรรมศาสตรบัณฑิต (ดิจิทัลอาร์ต)",
+          "type": "ภาษาไทย ปกติ",
+          "url": "https://course.mytcas.com/programs/40560113800101A",
+          "fieldUrl": "https://course.mytcas.com/universities/056/faculties/13/fields/01"
         },
         {
           "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
           "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะนิเทศศาสตร์",
-          "field": "ภาพยนตร์และภาพนิ่ง",
-          "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาภาพยนตร์และสื่อดิจิทัล",
+          "faculty": "วิทยาลัยครีเอทีฟดีไซน์ แอนด์ เอ็นเตอร์เทนเมนต์เทคโนโลยี",
+          "field": "เทคโนโลยีมัลติมีเดีย",
+          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาอินเทอร์แอคทีฟดิจิทัลอาร์ต",
           "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41030114901601A",
-          "fieldUrl": "https://course.mytcas.com/universities/103/faculties/14/fields/16"
-        },
-        {
-          "university": "มหาวิทยาลัยหาดใหญ่",
-          "campus": "วิทยาเขตหลัก",
-          "faculty": "คณะนิเทศศาสตร์",
-          "field": "นิเทศศาสตร์",
-          "program": "นิเทศศาสตรบัณฑิต (นศ.บ.) (การสื่อสารและสื่อดิจิทัล)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41300100901101A",
-          "fieldUrl": "https://course.mytcas.com/universities/130/faculties/00/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยเกษมบัณฑิต",
-          "campus": "วิทยาเขตร่มเกล้า",
-          "faculty": "คณะนิเทศศาสตร์",
-          "field": "นิเทศศาสตร์",
-          "program": "นศ.บ.(การภาพยนตร์และสื่อดิจิทัล)",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/41800203901101A",
-          "fieldUrl": "https://course.mytcas.com/universities/180/faculties/03/fields/11"
-        },
-        {
-          "university": "สถาบันการจัดการปัญญาภิวัฒน์",
-          "campus": "แจ้งวัฒนะ นนทบุรี",
-          "faculty": "คณะนิเทศศาสตร์",
-          "field": "นิเทศศาสตร์",
-          "program": "หลักสูตรนิเทศศาสตรบัณฑิต วิชาเอกวารสารศาสตร์คอนเวอร์เจนท์และสื่อดิจิทัล",
-          "type": "ภาษาไทย ปกติ",
-          "url": "https://course.mytcas.com/programs/49180104901102A",
-          "fieldUrl": "https://course.mytcas.com/universities/918/faculties/04/fields/11"
-        },
-        {
-          "university": "มหาวิทยาลัยศิลปากร",
-          "campus": "เพชรบุรี",
-          "faculty": "คณะวิทยาการจัดการ",
-          "field": "การท่องเที่ยวและการโรงแรม",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการจัดการการท่องเที่ยวและการสร้างสรรค์สื่อดิจิทัล",
-          "type": "ภาษาไทย พิเศษ",
-          "url": "https://course.mytcas.com/programs/10080312620101B",
-          "fieldUrl": "https://course.mytcas.com/universities/008/faculties/12/fields/01"
-        },
-        {
-          "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-          "campus": "ประสานมิตร",
-          "faculty": "วิทยาลัยนวัตกรรมสื่อสารสังคม",
-          "field": "ภาพยนตร์และภาพนิ่ง",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาภาพยนตร์และสื่อดิจิทัล (หลักสูตร 2 ภาษา)",
-          "type": "สองภาษา/สามภาษา",
-          "url": "https://course.mytcas.com/programs/10090130901601C",
-          "fieldUrl": "https://course.mytcas.com/universities/009/faculties/30/fields/16"
-        },
-        {
-          "university": "มหาวิทยาลัยขอนแก่น",
-          "campus": "ขอนแก่น",
-          "faculty": "คณะวิศวกรรมศาสตร์",
-          "field": "วิศวกรรมซอฟต์แวร์",
-          "program": "วิศวกรรมศาสตรบัณฑิต (วิศวกรรมสื่อดิจิทัล) หลักสูตรนานาชาติ",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10030104301001E",
-          "fieldUrl": "https://course.mytcas.com/universities/003/faculties/04/fields/10"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-          "campus": "บางมด",
-          "faculty": "วิทยาลัยสหวิทยาการ",
-          "field": "ดิจิทัล",
-          "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัล (หลักสูตรนานาชาติ) ปริญญาตรี 4 ปี (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10140136210801E",
-          "fieldUrl": "https://course.mytcas.com/universities/014/faculties/36/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-          "campus": "บางมด",
-          "faculty": "วิทยาลัยสหวิทยาการ",
-          "field": "ดิจิทัล",
-          "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัล (หลักสูตรนานาชาติ) ปริญญาตรี 4 ปี (หลักสูตรนานาชาติ)",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10140136210802E",
-          "fieldUrl": "https://course.mytcas.com/universities/014/faculties/36/fields/08"
-        },
-        {
-          "university": "มหาวิทยาลัยบูรพา",
-          "campus": "หลัก",
-          "faculty": "วิทยาลัยนานาชาติ",
-          "field": "การจัดการการสื่อสาร",
-          "program": "หลักสูตรศิลปศาสตรบัณฑิต (ศศ.บ.) สาขาวิชาการสื่อสารธุรกิจสากลและสื่อสื่อดิจิทัล ภาคปกติ",
-          "type": "นานาชาติ",
-          "url": "https://course.mytcas.com/programs/10190118900102E",
-          "fieldUrl": "https://course.mytcas.com/universities/019/faculties/18/fields/01"
+          "url": "https://course.mytcas.com/programs/41030103211601A",
+          "fieldUrl": "https://course.mytcas.com/universities/103/faculties/03/fields/16"
         },
         {
           "university": "มหาวิทยาลัยหอการค้าไทย",
