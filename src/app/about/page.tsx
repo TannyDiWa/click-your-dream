@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { DriftingCloud } from "@/components/clouds";
 import { ScrollToTopButton } from "@/components/scroll-to-top-button";
 import { SiteHeader } from "@/components/site-header";
+import { PRIVACY } from "@/lib/privacy";
 import { CHARACTERS, type RiasecType } from "@/lib/riasec/types";
 
 export const metadata: Metadata = {
   title: "เกี่ยวกับเรา — Click your dream",
-  description: "ที่มาของโครงงาน กรอบ Holland–RIASEC และแนวทางการดำเนินงานของ Click your dream",
+  description: "ที่มาของโครงงาน กรอบ Holland–RIASEC และที่มาของผลลัพธ์บน Click your dream",
 };
 
 const ONET_URL = "https://www.onetcenter.org/IP.html";
+const MYTCAS_URL = "https://course.mytcas.com";
 
 const GOALS = [
   { title: "รู้จักตัวเอง", body: "สำรวจสิ่งที่ชอบและกิจกรรม\nที่อยากลองทำ" },
@@ -27,12 +30,13 @@ const INTERESTS: { type: RiasecType; title: string; body: string; tint: string }
   { type: "conventional", title: "จัดการเป็นระบบ", body: "สนใจข้อมูล รายละเอียด\nและงานที่มีขั้นตอนชัดเจน", tint: "bg-[#e6f4ff]" },
 ];
 
+// How a result is made, from the questions to the recommended programs.
 const STEPS = [
-  { title: "ศึกษาและ\nกำหนดกรอบ", body: "ทบทวน RIASEC\nกำหนดกลุ่มผู้ใช้และเป้าหมาย\nก่อนออกแบบคำถาม" },
-  { title: "ออกแบบ\nแบบทดสอบ", body: "เขียนคำถามตาม 6 ด้าน\nตรวจความชัดเจนของภาษา\nและกติกาการให้คะแนน" },
-  { title: "พัฒนา\nต้นแบบ", body: "เชื่อมคำถามและผลลัพธ์\nกราฟ การ์ด และตัวละคร\nพร้อมข้อมูลสาขาที่เกี่ยวข้อง" },
-  { title: "ทดลองใช้\nและปรับปรุง", body: "เก็บข้อเสนอแนะจากผู้ใช้\nตรวจความเข้าใจและการใช้งาน\nปรับเนื้อหาและหน้าจอ" },
-  { title: "ประเมินและ\nตรวจสอบ", body: "ให้ผู้เชี่ยวชาญตรวจเนื้อหา\nตรวจคุณภาพของแบบวัด\nก่อนนำคะแนนไปใช้จริง" },
+  { title: "คำถาม\n42 ข้อ", body: "จาก RIASEC Checklist\nของ John L. Holland\nด้านละ 7 ข้อ ตอบ 1–4" },
+  { title: "คะแนน\n6 ด้าน", body: "แต่ละด้านได้ 0–100\n3 ด้านสูงสุดคือ\nHolland code ของคุณ" },
+  { title: "คำอธิบาย\nตามกลุ่มผู้ใช้", body: "เตรียมไว้ 360 ชุด\nร่างด้วย AI\nทีมตรวจทานก่อนแสดง" },
+  { title: "สาขาและ\nหลักสูตร", body: "ม.ปลาย ได้ 5 สาขา\nพร้อมหลักสูตรจริง\nจาก myTCAS ปี 2570" },
+  { title: "ข้อมูล\nของคุณ", body: "ไม่ต้องสมัครสมาชิก\nเก็บแค่ผลครั้งล่าสุด\nลบเองได้ทุกเมื่อ" },
 ];
 
 // Sparkle positions from the Figma frame, as % of the 1536px-wide design
@@ -127,7 +131,7 @@ export default function AboutPage() {
 
             <div className="min-w-0 lg:pt-0.5">
               <p className="inline-block rounded-[20px] bg-chip px-[13px] py-1.5 text-[13px] font-bold text-violet">
-                01&nbsp;&nbsp;ที่มาของงาน • ร่างแนวคิดโครงงาน
+                01&nbsp;&nbsp;ที่มาของโครงงาน
               </p>
               <h2 id="story" className="mt-2 text-[22px] font-bold leading-normal sm:text-[27px]">
                 จากคำถามว่า “เราเหมาะกับอะไร?”
@@ -165,7 +169,7 @@ export default function AboutPage() {
             <div id="theory">
               <SectionHeading
                 number="02"
-                title="ทฤษฎีที่ใช้เป็นกรอบร่าง"
+                title="ทฤษฎีเบื้องหลังแบบทดสอบ"
                 subtitle="Holland–RIASEC: สำรวจความสนใจในกิจกรรมและโลกการทำงาน 6 ด้าน"
               />
             </div>
@@ -195,16 +199,8 @@ export default function AboutPage() {
               </ul>
 
               <p className="mt-6 text-sm leading-normal text-muted">
-                ตัวละครและชื่อการ์ดเป็นการตีความเพื่อสื่อสารแนวคิดของโครงงาน โดยใช้ RIASEC เป็นกรอบเสนอในร่างนี้
+                ตัวละครและชื่อการ์ดเป็นการตีความของทีม เพื่อให้จำแต่ละด้านได้ง่ายขึ้น
               </p>
-              <a
-                href={ONET_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-3 inline-block text-sm font-bold leading-normal text-violet underline underline-offset-2 hover:text-navy"
-              >
-                อ้างอิง: O*NET Interest Profiler — กรอบ Holland R–I–A–S–E–C&nbsp;&nbsp;↗
-              </a>
             </div>
           </section>
 
@@ -213,11 +209,11 @@ export default function AboutPage() {
             <div id="process">
               <SectionHeading
                 number="03"
-                title="แนวทางการดำเนินงาน"
-                subtitle="ลำดับงานที่เสนอสำหรับพัฒนาโครงงาน จากกรอบแนวคิดสู่การทดลองใช้"
+                title="เบื้องหลังผลลัพธ์"
+                subtitle="ผลลัพธ์ที่คุณเห็นมาจากไหน ตั้งแต่คำถามจนถึงหลักสูตรที่แนะนำ"
               />
             </div>
-            <ol className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <ol className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {STEPS.map((s, i) => (
                 <li key={s.title} className="flex flex-col lg:min-h-[248px] gap-2 rounded-[26px] bg-paper p-5">
                   <span className="grid size-[34px] place-items-center rounded-xl bg-badge text-lg font-bold text-violet">{i + 1}</span>
@@ -226,30 +222,48 @@ export default function AboutPage() {
                 </li>
               ))}
             </ol>
+            <p className="mt-4 text-sm leading-normal text-muted">
+              คำตอบของคุณไม่ถูกส่งไปยังบริการ AI ใด ๆ • ดูรายละเอียดการเก็บข้อมูลใน{" "}
+              <Link href="/privacy" className="font-bold text-violet underline underline-offset-2 hover:text-navy">
+                ประกาศความเป็นส่วนตัว
+              </Link>
+            </p>
           </section>
 
-          {/* Status */}
+          {/* How to read the result */}
           <div className="mt-7 rounded-[32px] border-2 border-white bg-[#f9f6ff] px-6 py-4 shadow-[0_10px_15px_rgba(123,135,184,0.1)]">
-            <h2 className="text-[19px] font-bold leading-normal">สถานะปัจจุบัน: ต้นแบบเพื่อสื่อสารแนวคิด</h2>
+            <h2 className="text-[19px] font-bold leading-normal">ใช้ผลลัพธ์อย่างไรดี</h2>
             <p className="mt-1.5 text-[15px] leading-normal text-muted">
-              คำถามและคะแนนยังเป็นข้อมูลตัวอย่าง ควรตรวจสอบความตรงและความเชื่อมั่นของแบบวัดก่อนนำไปใช้ประเมินจริง
+              ผลลัพธ์บอกความสนใจ ไม่ได้วัดความสามารถหรือตัดสินว่าคุณควรเรียนหรือทำงานอะไร
+              แบบทดสอบฉบับภาษาไทยนี้ยังไม่ได้ตรวจความตรงและความเชื่อมั่นทางสถิติ
+              จึงควรใช้คู่กับการพูดคุยกับครูแนะแนวหรือคนที่ทำงานในสายนั้น และตรวจเกณฑ์รับสมัครล่าสุดบน myTCAS ก่อนสมัครทุกครั้ง
             </p>
           </div>
 
           {/* References */}
           <div className={`${card} mt-7 px-6 py-4`}>
             <h2 className="text-[21px] font-bold leading-normal">แหล่งอ้างอิงและอ่านเพิ่มเติม</h2>
-            <p className="mt-2 text-sm leading-normal text-muted">
-              National Center for O*NET Development. O*NET Interest Profiler — กรอบความสนใจ 6 ด้านตาม Holland–RIASEC
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-normal text-muted">
+              <li>John L. Holland. RIASEC Checklist — ที่มาของข้อคำถาม (Counseling Center on East Campus)</li>
+              <li>
+                <a href={MYTCAS_URL} target="_blank" rel="noreferrer" className="font-bold text-violet underline underline-offset-2 hover:text-navy">
+                  myTCAS&nbsp;↗
+                </a>{" "}
+                — ข้อมูลหลักสูตรและรอบรับสมัคร ปีการศึกษา 2570
+              </li>
+              <li>
+                <a href={ONET_URL} target="_blank" rel="noreferrer" className="font-bold text-violet underline underline-offset-2 hover:text-navy">
+                  O*NET Interest Profiler&nbsp;↗
+                </a>{" "}
+                — อ่านเพิ่มเติมเรื่องกรอบความสนใจ 6 ด้านตาม Holland–RIASEC
+              </li>
+            </ul>
+            <p className="mt-4 text-sm leading-normal">
+              มีคำถามหรือข้อเสนอแนะ ติดต่อ{PRIVACY.controller} ที่{" "}
+              <a href={`mailto:${PRIVACY.contactEmail}`} className="font-bold text-violet underline underline-offset-2 hover:text-navy">
+                {PRIVACY.contactEmail}
+              </a>
             </p>
-            <a
-              href={ONET_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-3 inline-block text-sm font-bold leading-normal text-violet underline underline-offset-2 hover:text-navy"
-            >
-              อ่านแหล่งอ้างอิงต้นฉบับ&nbsp;&nbsp;↗
-            </a>
           </div>
 
           {/* Back to top */}
