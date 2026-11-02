@@ -42,3 +42,7 @@ next-env.d.ts
 
 # keep the template
 !.env.example
+
+# explanation generator: last batch id and --sample output
+supabase/.explanations-batch
+supabase/explanations.sample.*
