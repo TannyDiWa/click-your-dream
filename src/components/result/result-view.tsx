@@ -4,15 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Sparkle } from "@/components/decor";
-import type { QuizResult, ResultProfile } from "@/lib/riasec/api-types";
+import type { QuizResult, ResultExplanation, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
-import { CHARACTERS, USER_GROUPS } from "@/lib/riasec/types";
+import { CHARACTERS, USER_GROUPS, type UserGroup } from "@/lib/riasec/types";
 
 // Bar colors by rank, from the Figma analysis chart (sixth added for the extra dimension).
 const BAR_COLORS = ["#8e8bdd", "#97afe9", "#9ed2d2", "#e9aed4", "#e8c67d", "#c9b8ec"];
 
 const chip = "inline-block rounded-[20px] bg-[#e9eeff] px-[13px] py-1.5 text-sm font-bold text-violet";
 const panel = "rounded-[30px] border-2 border-white bg-paper shadow-[0_10px_15px_rgba(121,130,184,0.1)]";
+
+// Heading for the group-specific part of a pre-generated explanation.
+const GUIDANCE_TITLES: Record<UserGroup, string> = {
+  high_school: "คณะและสาขาที่น่าลองดู",
+  university: "ทักษะและการฝึกงานที่ควรสะสม",
+  working: "เส้นทางใกล้เคียงและคอร์สที่น่าลอง",
+};
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("th-TH", { day: "numeric", month: "long", year: "numeric" });
@@ -55,7 +62,15 @@ function EmptyState() {
   );
 }
 
-function ResultDetails({ result, profile }: { result: QuizResult; profile: ResultProfile }) {
+function ResultDetails({
+  result,
+  profile,
+  explanation,
+}: {
+  result: QuizResult;
+  profile: ResultProfile;
+  explanation: ResultExplanation | null;
+}) {
   const type = result.topType;
   const character = CHARACTERS[type];
   const group = USER_GROUPS.find((g) => g.value === result.userGroup);
@@ -108,12 +123,21 @@ function ResultDetails({ result, profile }: { result: QuizResult; profile: Resul
             ))}
           </ul>
           <p className="mt-2 text-sm text-muted">{profile.motto}</p>
+          {explanation && (
+            <p className="mt-4 rounded-[20px] bg-white/70 px-4 py-3 text-[15px] leading-relaxed">
+              <b className="text-violet">
+                {result.hollandCode} • {explanation.title}
+              </b>
+              <br />
+              {explanation.summary}
+            </p>
+          )}
         </div>
 
         <div>
           <h3 className="text-[22px] font-bold leading-normal">จุดเด่นที่ค้นพบ</h3>
           <ol className="mt-3 space-y-3.5">
-            {profile.strengths.map((s, i) => (
+            {(explanation?.strengths ?? profile.strengths).map((s, i) => (
               <li key={s.title} className="flex items-center gap-3">
                 <span className="grid size-[34px] shrink-0 place-items-center rounded-xl bg-[#e5eafe] text-sm font-bold text-violet">
                   {String(i + 1).padStart(2, "0")}
@@ -169,20 +193,47 @@ function ResultDetails({ result, profile }: { result: QuizResult; profile: Resul
             <p className="mt-4 text-xs text-muted">คำนวณจากคำตอบ 42 ข้อ (ด้านละ 7 ข้อ ถ่วงน้ำหนักตามข้อ) • ใช้เป็นแนวทางสำรวจตัวเอง ไม่ใช่การตัดสิน</p>
           </section>
 
-          {/* Next steps */}
-          <section aria-labelledby="next-title" className={`${panel} p-5 sm:p-6`}>
-            <h2 id="next-title" className="text-xl font-bold leading-normal sm:text-[23px]">
-              จุดเด่นของคุณ ต่อยอดเป็นอะไรได้บ้าง?
-            </h2>
-            <p className="mt-2 text-base leading-normal xl:whitespace-pre-line">{profile.nextSteps}</p>
-            <ul className="mt-3 flex flex-wrap gap-2.5">
-              {profile.activities.map((a) => (
-                <li key={a} className={chip}>
-                  {a}
-                </li>
-              ))}
-            </ul>
-          </section>
+          {explanation ? (
+            <section aria-labelledby="guidance-title" className={`${panel} p-5 sm:p-6`}>
+              <h2 id="guidance-title" className="text-xl font-bold leading-normal sm:text-[23px]">
+                {GUIDANCE_TITLES[result.userGroup]}
+              </h2>
+              <ul className="mt-4 space-y-3.5">
+                {explanation.guidance.map((g) => (
+                  <li key={g.title} className="flex gap-3">
+                    <span aria-hidden className="mt-1.5 size-2.5 shrink-0 rounded-full bg-[#f6a0ce]" />
+                    <span>
+                      <span className="block text-base font-bold leading-normal">{g.title}</span>
+                      <span className="block text-sm leading-normal text-muted">{g.detail}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <h3 className="mt-6 text-lg font-bold leading-normal">ลองทำในสัปดาห์นี้</h3>
+              <ul className="mt-3 flex flex-col gap-2.5">
+                {explanation.tryThisWeek.map((t) => (
+                  <li key={t} className={`${chip} font-normal leading-normal`}>
+                    ☐&nbsp;&nbsp;{t}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : (
+            // Next steps for the top type (no reviewed explanation yet)
+            <section aria-labelledby="next-title" className={`${panel} p-5 sm:p-6`}>
+              <h2 id="next-title" className="text-xl font-bold leading-normal sm:text-[23px]">
+                จุดเด่นของคุณ ต่อยอดเป็นอะไรได้บ้าง?
+              </h2>
+              <p className="mt-2 text-base leading-normal xl:whitespace-pre-line">{profile.nextSteps}</p>
+              <ul className="mt-3 flex flex-wrap gap-2.5">
+                {profile.activities.map((a) => (
+                  <li key={a} className={chip}>
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </div>
 
         {/* Dream card */}
@@ -247,6 +298,28 @@ function ResultDetails({ result, profile }: { result: QuizResult; profile: Resul
         </div>
       </div>
 
+      {explanation && (
+        <section aria-labelledby="careers-title" className="mt-12">
+          <h2 id="careers-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
+            อาชีพที่เข้ากับ {result.hollandCode} ของคุณ
+          </h2>
+          <p className="mt-1 text-[15px] text-muted">
+            จากการผสมของ {result.ranking.slice(0, 3).map((t) => DIMENSION_LABELS[t].short).join(" • ")} • ใช้เป็นไอเดียเริ่มสำรวจ ไม่ใช่คำตัดสิน
+          </p>
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {explanation.careers.map((c, i) => (
+              <li key={c.title} className={`${panel} flex flex-col gap-2 px-5 py-[18px]`}>
+                <span className="grid size-[34px] place-items-center rounded-xl bg-[#e5eafe] text-sm font-bold text-violet">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[17px] font-bold leading-normal">{c.title}</span>
+                <span className="text-sm leading-normal text-muted">{c.reason}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Universities */}
       <section aria-labelledby="uni-title" className="mt-12">
         <h2 id="uni-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
@@ -295,30 +368,51 @@ function ResultDetails({ result, profile }: { result: QuizResult; profile: Resul
   );
 }
 
-/** Fetches the result content for the top type from the API, then shows the result. */
+/**
+ * Fetches the result content for the top type and the pre-generated explanation
+ * for the Holland code and group, then shows the result. Without a reviewed
+ * explanation (or if it fails to load) the page falls back to the top type only.
+ */
 function ProfileLoader({ result }: { result: QuizResult }) {
-  const [state, setState] = useState<{ type: string; profile?: ResultProfile; error?: string } | null>(null);
+  const key = `${result.topType}|${result.hollandCode}|${result.userGroup}`;
+  const [state, setState] = useState<{
+    key: string;
+    profile?: ResultProfile;
+    explanation?: ResultExplanation | null;
+    error?: string;
+  } | null>(null);
   const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
+    const loadExplanation = async () => {
+      try {
+        const res = await fetch(`/api/explanations/${result.hollandCode}?group=${result.userGroup}`);
+        if (!res.ok) return null;
+        return ((await res.json()).explanation ?? null) as ResultExplanation | null;
+      } catch {
+        return null;
+      }
+    };
     (async () => {
       try {
-        const res = await fetch(`/api/profiles/${result.topType}`);
+        const [res, explanation] = await Promise.all([fetch(`/api/profiles/${result.topType}`), loadExplanation()]);
         const body = await res.json();
         if (!res.ok) throw new Error(body.error ?? res.statusText);
-        if (!cancelled) setState({ type: result.topType, profile: body });
+        if (!cancelled) setState({ key, profile: body, explanation });
       } catch (e) {
-        if (!cancelled) setState({ type: result.topType, error: e instanceof Error ? e.message : String(e) });
+        if (!cancelled) setState({ key, error: e instanceof Error ? e.message : String(e) });
       }
     })();
     return () => {
       cancelled = true;
     };
-  }, [result.topType, attempt]);
+  }, [key, result.topType, result.hollandCode, result.userGroup, attempt]);
 
-  if (state?.type === result.topType && state.profile) return <ResultDetails result={result} profile={state.profile} />;
-  if (state?.type === result.topType && state.error) {
+  if (state?.key === key && state.profile) {
+    return <ResultDetails result={result} profile={state.profile} explanation={state.explanation ?? null} />;
+  }
+  if (state?.key === key && state.error) {
     return (
       <div role="alert" className="mx-auto mt-8 max-w-[880px] rounded-[32px] border-2 border-white bg-paper p-8 text-center">
         <p className="text-xl font-bold">โหลดผลลัพธ์ไม่สำเร็จ</p>
