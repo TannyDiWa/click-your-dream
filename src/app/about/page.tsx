@@ -83,7 +83,7 @@ export default function AboutPage() {
         <Image
           unoptimized
           loading="eager"
-          src="/about/dream-trail.svg"
+          src="/decor/dream-trail.svg"
           alt=""
           aria-hidden
           width={1780}
@@ -95,7 +95,7 @@ export default function AboutPage() {
           <Image
             unoptimized
             key={s.top}
-            src="/about/sparkle.svg"
+            src="/decor/sparkle.svg"
             alt=""
             aria-hidden
             width={s.size}

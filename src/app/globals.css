@@ -64,6 +64,22 @@ body {
   .sway { animation: none; }
 }
 
+/* Pearl sparkles twinkle on a 6s loop (Figma "Glitter / twinkle" motion) */
+@keyframes twinkle {
+  0%, 77.5%, 100% { opacity: 0.6; }
+  8.3% { opacity: 1; }
+  21.7% { opacity: 0.35; }
+  36.7% { opacity: 0.85; }
+  51.7% { opacity: 0.4; }
+  66.7% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .twinkle {
+    animation: twinkle 6s ease-in-out infinite;
+  }
+}
+
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
