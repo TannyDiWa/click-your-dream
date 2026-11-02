@@ -7,6 +7,7 @@
  *   npm run explanations -- --submit     # submits the 360-request Message Batch (Batch pricing)
  *   npm run explanations -- --submit --only ESA-university,RIA-working   # resubmit some combos
  *   npm run explanations -- --collect    # waits for the last batch, merges results, writes the seed
+ *   npm run explanations -- --write-sql  # rebuilds the seed from explanations.json (rows written by hand)
  *
  * Needs ANTHROPIC_API_KEY (read from the environment or .env.local; never NEXT_PUBLIC_).
  * Outputs: supabase/explanations.json (all results so far, keyed by custom_id)
@@ -40,34 +41,51 @@ const LETTER_INFO: Record<Letter, string> = {
   C: "Conventional (นักจัดระบบ) — ชอบความเป็นระเบียบ ข้อมูล ตัวเลข ขั้นตอนที่ชัดเจนและแม่นยำ",
 };
 
-const GROUP_INFO: Record<UserGroup, { who: string; guidance: string }> = {
+// Short labels shown as tags on careers (same as DIMENSION_LABELS.short in the app).
+const LETTER_TAG: Record<Letter, string> = {
+  R: "ลงมือทำ",
+  I: "ค้นคว้า",
+  A: "สร้างสรรค์",
+  S: "ช่วยเหลือ",
+  E: "นำทีม",
+  C: "จัดระบบ",
+};
+
+// What `guidance` holds for each group; the result page shows it under `heading`.
+//   high_school: careers + faculties/fields   university: careers + skills
+//   working: skills + careers (shown as "positions")
+const GROUP_INFO: Record<UserGroup, { who: string; heading: string; guidance: string }> = {
   high_school: {
     who: "นักเรียน ม.ปลาย ที่กำลังเลือกคณะและสาขาเพื่อเข้ามหาวิทยาลัย",
+    heading: "คณะและสาขาที่น่าสนใจ",
     guidance:
-      "คณะหรือสาขาวิชาที่น่าลองดู (เป็นประเภทสาขา เช่น “วิศวกรรมคอมพิวเตอร์” หรือ “นิเทศศาสตร์ สาขาภาพยนตร์” ห้ามระบุชื่อมหาวิทยาลัย) พร้อมเหตุผลว่าทำไมเข้ากับรหัสนี้",
+      "3 สาขาวิชาที่น่าลองดู: title = ชื่อประเภทสาขา (เช่น “วิศวกรรมคอมพิวเตอร์” หรือ “นิเทศศาสตร์ สาขาภาพยนตร์”), tag = ชื่อคณะที่สาขานั้นมักอยู่ (เช่น “วิศวกรรมศาสตร์”), detail = หนึ่งถึงสองประโยคว่าทำไมเข้ากับรหัสนี้และเรียนอะไรบ้าง",
   },
   university: {
     who: "นักศึกษามหาวิทยาลัยที่อยากรู้ว่าเส้นทางอาชีพไหนเหมาะกับตัวเอง",
+    heading: "สกิลที่น่าฝึกเพิ่ม",
     guidance:
-      "ทักษะที่ควรสะสม และประเภทงานฝึกงานหรือกิจกรรมที่ควรลอง (ระบุเป็นประเภท เช่น “ฝึกงานฝ่าย UX research” ห้ามระบุชื่อบริษัทหรือมหาวิทยาลัย)",
+      "3 ทักษะที่น่าฝึกระหว่างเรียน เรียงจากเริ่มง่ายไปต่อยอด: title = ชื่อทักษะ, tag = ประเภทสั้น ๆ (เช่น “ทักษะเชิงเทคนิค” “ทักษะออกแบบ” “ฝึกงาน • กิจกรรม”), detail = วิธีเริ่มฝึกที่ทำได้จริง (เช่น ประเภทงานฝึกงาน ค่าย หรือโปรเจกต์)",
   },
   working: {
-    who: "คนวัยทำงานที่อยากสำรวจงานใหม่ เปลี่ยนสายงาน หรือเรียนต่อ",
+    who: "คนวัยทำงานที่อยากสำรวจงานใหม่ เปลี่ยนสายงาน หรือเรียนต่อ (ไม่รู้ว่าตอนนี้ทำงานอะไรอยู่)",
+    heading: "สกิลที่น่าฝึกเพิ่ม",
     guidance:
-      "เส้นทางอาชีพใกล้เคียงที่ขยับไปได้โดยใช้ประสบการณ์เดิม และประเภทคอร์สหรือการเรียนต่อที่ช่วยได้ (ระบุเป็นประเภท ห้ามระบุชื่อสถาบันหรือแพลตฟอร์ม)",
+      "3 ทักษะที่ฝึกควบคู่กับงานได้ เรียงจากเริ่มง่ายไปต่อยอด: title = ชื่อทักษะ, tag = รูปแบบการฝึก (เช่น “คอร์สระยะสั้น” “เวิร์กช็อป” “ฝึกในที่ทำงาน” “เรียนต่อ”), detail = วิธีเริ่มฝึกที่ทำได้จริง",
   },
 };
 
 const SYSTEM_PROMPT = `คุณเป็นนักแนะแนวอาชีพที่เข้าใจทฤษฎี Holland (RIASEC) และบริบทการศึกษาและตลาดงานในประเทศไทย
-คุณกำลังเขียนคำอธิบายผลลัพธ์สำหรับเว็บแบบทดสอบ "Click your dream" ซึ่งผู้ใช้จะเห็นหลังทำแบบทดสอบ 42 ข้อ
+คุณกำลังเขียนคำอธิบายผลลัพธ์สำหรับเว็บแบบทดสอบ "Click your dream" ซึ่งผู้ใช้จะเห็นหลังทำแบบทดสอบ 42 ข้อ ส่วนใหญ่อ่านบนมือถือ
 
 หลักการเขียน:
 - เขียนภาษาไทยทั้งหมด น้ำเสียงอบอุ่น ให้กำลังใจ เป็นกันเอง แต่ไม่เว่อร์ ใช้ "คุณ" เรียกผู้อ่าน ไม่ใช้อีโมจิ
 - อธิบายรหัส 3 ตัวอักษรเป็น "การผสมกัน" ไม่ใช่สามบุคลิกแยกกัน ตัวอักษรแรกเด่นที่สุด ตัวที่สองและสามช่วยขยายและแต่งสีสัน
 - อาชีพต้องสมจริงในประเทศไทย ผสมทั้งอาชีพที่คุ้นเคยและอาชีพใหม่ที่กำลังเติบโต และต้องสะท้อนทั้งสามตัวอักษร ไม่ใช่แค่ตัวแรก
 - ห้ามระบุชื่อมหาวิทยาลัย สถาบัน บริษัท หรือแพลตฟอร์มใด ๆ ให้ระบุเป็นประเภทเท่านั้น
+- เรารู้แค่รหัส Holland และกลุ่มของผู้อ่าน ไม่รู้ประวัติ งานเดิม หรือวิชาที่เรียนอยู่ ห้ามเขียนราวกับรู้ เช่น "ต่อยอดจากงานเดิม" "ขยับบทบาท" "เปลี่ยนสายงาน" หรือ "ใช้ประสบการณ์เดิม"
 - ผลนี้เป็นแนวทางสำรวจตัวเอง ไม่ใช่คำตัดสิน หลีกเลี่ยงคำว่า "ต้อง" หรือ "ไม่เหมาะ"
-- ข้อความแต่ละรายการกระชับ อ่านบนมือถือได้สบาย: title ไม่เกินราว 6 คำ, detail/reason หนึ่งประโยค`;
+- ข้อความแต่ละรายการกระชับ: title ไม่เกินราว 6 คำ, detail/reason หนึ่งประโยค (สาขาวิชาไม่เกินสองประโยค)`;
 
 /** JSON schema for output_config.format; counts are asked for in the prompt and checked in validate(). */
 const ITEM = {
@@ -84,15 +102,28 @@ const SCHEMA = {
     strengths: { type: "array", items: ITEM, description: "3–4 จุดเด่นที่เกิดจากการผสมนี้" },
     careers: {
       type: "array",
-      description: "6–8 อาชีพที่เหมาะ",
+      description: "6 อาชีพหรือตำแหน่งงานที่เหมาะ",
       items: {
         type: "object",
-        properties: { title: { type: "string" }, reason: { type: "string" } },
-        required: ["title", "reason"],
+        properties: {
+          title: { type: "string" },
+          reason: { type: "string" },
+          tag: { type: "string", description: "ด้าน RIASEC ที่อาชีพนี้ใช้ 1–2 ด้านจากรหัส คั่นด้วย “ • ”" },
+        },
+        required: ["title", "reason", "tag"],
         additionalProperties: false,
       },
     },
-    guidance: { type: "array", items: ITEM, description: "3–5 คำแนะนำเฉพาะกลุ่มผู้ใช้" },
+    guidance: {
+      type: "array",
+      description: "3 รายการเฉพาะกลุ่มผู้อ่าน",
+      items: {
+        type: "object",
+        properties: { title: { type: "string" }, tag: { type: "string" }, detail: { type: "string" } },
+        required: ["title", "tag", "detail"],
+        additionalProperties: false,
+      },
+    },
     try_this_week: { type: "array", items: { type: "string" }, description: "3 สิ่งเล็ก ๆ ที่ลองทำได้ในสัปดาห์นี้" },
   },
   required: ["title", "summary", "strengths", "careers", "guidance", "try_this_week"],
@@ -104,8 +135,8 @@ type Explanation = {
   title: string;
   summary: string;
   strengths: Item[];
-  careers: { title: string; reason: string }[];
-  guidance: Item[];
+  careers: { title: string; reason: string; tag: string }[];
+  guidance: (Item & { tag: string })[];
   try_this_week: string[];
 };
 type Stored = { code: string; group: UserGroup; model: string; content: Explanation };
@@ -139,8 +170,8 @@ ${letters.map((l, i) => `${i + 1}. ${LETTER_INFO[l]}`).join("\n")}
 - title: ชื่อสั้น ๆ ของการผสมนี้
 - summary: 2–3 ประโยค ว่าคนที่มีรหัสนี้มักเป็นอย่างไร และสามด้านเสริมกันอย่างไร
 - strengths: 3–4 จุดเด่นที่เกิดจากการผสมนี้
-- careers: 6–8 อาชีพที่เหมาะ แต่ละอาชีพมีเหตุผลหนึ่งประโยคที่โยงกับรหัส
-- guidance: 3–5 รายการ — ${g.guidance}
+- careers: 6 อาชีพหรือตำแหน่งงานที่เหมาะ แต่ละรายการมี reason หนึ่งประโยคที่โยงกับรหัส และ tag = ด้านที่อาชีพนี้ใช้ 1–2 ด้าน เลือกจาก ${letters.map((l) => `“${LETTER_TAG[l]}”`).join(" ")} เท่านั้น คั่นด้วย “ • ”
+- guidance (หัวข้อบนหน้าเว็บ: “${g.heading}”): ${g.guidance}
 - try_this_week: 3 สิ่งเล็ก ๆ ที่ลงมือได้จริงภายในสัปดาห์นี้ เหมาะกับผู้อ่านกลุ่มนี้`;
 }
 
@@ -156,18 +187,26 @@ function requestParams(code: string, group: UserGroup): Anthropic.MessageCreateP
 }
 
 /** Problems with a result, to fix by hand or resubmit with --only. */
-function validate(e: Explanation) {
+function validate(e: Explanation, code: string) {
   const problems: string[] = [];
   const count = (name: string, n: number, min: number, max: number) => {
     if (n < min || n > max) problems.push(`${name}: ${n} (want ${min}–${max})`);
   };
   count("strengths", e.strengths.length, 3, 4);
-  count("careers", e.careers.length, 6, 8);
-  count("guidance", e.guidance.length, 3, 5);
+  count("careers", e.careers.length, 6, 6);
+  count("guidance", e.guidance.length, 3, 3);
   count("try_this_week", e.try_this_week.length, 3, 3);
-  if (/จุฬา|ธรรมศาสตร์|มหิดล|เกษตรศาสตร์|ศิลปากร|ลาดกระบัง|มหาวิทยาลัยเชียงใหม่|มหาวิทยาลัยขอนแก่น/.test(JSON.stringify(e))) {
-    problems.push("guidance may name a university");
+  const allowed = new Set([...code].map((l) => LETTER_TAG[l as Letter]));
+  for (const c of e.careers) {
+    const parts = (c.tag ?? "").split(" • ");
+    if (!c.tag || parts.length > 2 || parts.some((p) => !allowed.has(p))) problems.push(`career tag “${c.tag}” for ${c.title}`);
   }
+  if (e.guidance.some((g) => !g.tag)) problems.push("guidance item without tag");
+  const text = JSON.stringify(e);
+  if (/จุฬา|ธรรมศาสตร์|มหิดล|เกษตรศาสตร์|ศิลปากร|ลาดกระบัง|มหาวิทยาลัยเชียงใหม่|มหาวิทยาลัยขอนแก่น/.test(text)) {
+    problems.push("may name a university");
+  }
+  if (/งานเดิม|ประสบการณ์เดิม|ขยับบทบาท|เปลี่ยนสายงาน/.test(text)) problems.push("assumes the reader's current job");
   return problems;
 }
 
@@ -236,7 +275,7 @@ async function sample(client: Anthropic, n: number) {
       output += message.usage.output_tokens;
       console.log(`${id}: ${message.usage.input_tokens} in / ${message.usage.output_tokens} out (${message.stop_reason})`);
       const content = parseMessage(message);
-      const problems = validate(content);
+      const problems = validate(content, code);
       if (problems.length) console.warn(`  ${id}: ${problems.join("; ")}`);
       rows[id] = { code, group, model: message.model, content };
     }),
@@ -298,13 +337,13 @@ async function collect(client: Anthropic, batchId: string) {
     input += message.usage.input_tokens;
     output += message.usage.output_tokens;
     try {
+      const { code, group } = parseCustomId(id);
       const content = parseMessage(message);
-      const problems = validate(content);
+      const problems = validate(content, code);
       if (problems.length) {
         console.warn(`${id}: ${problems.join("; ")}`);
         flagged.push(id);
       }
-      const { code, group } = parseCustomId(id);
       rows[id] = { code, group, model: message.model, content };
     } catch (e) {
       console.error(`${id}: ${e instanceof Error ? e.message : e}`);
@@ -325,6 +364,19 @@ async function main() {
     return i >= 0 ? args[i + 1] : undefined;
   };
 
+  // Rebuilds the seed from supabase/explanations.json, e.g. after writing rows by hand. No API key needed.
+  if (args.includes("--write-sql")) {
+    const rows = readRows("explanations");
+    for (const [id, r] of Object.entries(rows)) {
+      const problems = validate(r.content, r.code);
+      if (problems.length) console.warn(`${id}: ${problems.join("; ")}`);
+    }
+    writeOutputs("explanations", rows);
+    const missing = allCodes().flatMap((code) => GROUPS.map((g) => customId(code, g))).filter((id) => !rows[id]);
+    console.log(`${360 - missing.length}/360 done`);
+    return;
+  }
+
   if (!process.env.ANTHROPIC_API_KEY) {
     console.error("Set ANTHROPIC_API_KEY (in your shell or .env.local) first.");
     process.exit(1);
@@ -344,7 +396,7 @@ async function main() {
     if (!id) throw new Error("No batch id: pass --collect <id> or run --submit first");
     await collect(client, id);
   } else {
-    console.log("Usage: npm run explanations -- --sample 3 | --submit [--only ESA-university,...] | --collect [batch id]");
+    console.log("Usage: npm run explanations -- --sample 3 | --submit [--only ESA-university,...] | --collect [batch id] | --write-sql");
   }
 }
 

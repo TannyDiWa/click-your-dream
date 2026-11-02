@@ -51,8 +51,9 @@ export type ResultExplanation = {
   title: string;
   summary: string;
   strengths: { title: string; detail: string }[];
-  careers: { title: string; reason: string }[];
-  /** high_school: faculties/fields, university: skills/internships, working: adjacent paths/courses */
-  guidance: { title: string; detail: string }[];
+  /** 6 careers; `tag` is the 1–2 RIASEC dimensions it uses, e.g. "ค้นคว้า • ลงมือทำ" (shown as positions for working) */
+  careers: { title: string; reason: string; tag: string }[];
+  /** 3 items. high_school: fields (tag = faculty), university and working: skills (tag = how to practise) */
+  guidance: { title: string; tag: string; detail: string }[];
   tryThisWeek: string[];
 };
