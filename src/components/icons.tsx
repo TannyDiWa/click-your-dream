@@ -18,11 +18,13 @@ export function StarIcon(props: IconProps) {
   );
 }
 
-export function UserIcon(props: IconProps) {
+export function ShareIcon(props: IconProps) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden {...stroke} {...props}>
-      <circle cx="12" cy="8" r="4" />
-      <path d="M4.5 20.5c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5" />
+      <circle cx="18" cy="5.5" r="2.5" />
+      <circle cx="6" cy="12" r="2.5" />
+      <circle cx="18" cy="18.5" r="2.5" />
+      <path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1" />
     </svg>
   );
 }
