@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useSyncExternalStore, type RefObject } from "react";
+import { ShareIcon } from "@/components/icons";
 
 const button =
   "cursor-pointer whitespace-nowrap rounded-[35px] px-5 py-3 text-base font-bold sm:px-6 sm:py-3.5 sm:text-lg transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-70";
@@ -77,9 +78,16 @@ export function CardActions({ cardRef, fileName }: { cardRef: RefObject<HTMLElem
             type="button"
             onClick={() => run("share")}
             disabled={busy !== null}
-            className={`${button} border-2 border-[#f6a0ce] bg-white text-[#c75d97] hover:bg-[#fff6fb]`}
+            className={`${button} inline-flex items-center gap-2 border-2 border-[#f6a0ce] bg-white text-[#c75d97] hover:bg-[#fff6fb]`}
           >
-            {busy === "share" ? "กำลังสร้างรูป…" : "↗  แชร์การ์ด"}
+            {busy === "share" ? (
+              "กำลังสร้างรูป…"
+            ) : (
+              <>
+                <ShareIcon className="size-5" strokeWidth={2.2} />
+                แชร์การ์ด
+              </>
+            )}
           </button>
         )}
       </div>

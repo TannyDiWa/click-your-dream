@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MenuIcon, StarIcon, UserIcon } from "@/components/icons";
+import { MenuIcon, StarIcon } from "@/components/icons";
 
 const NAV = [
   { href: "/", label: "หน้าแรก" },
@@ -44,16 +44,8 @@ export function SiteHeader({ current = "/" }: { current?: string }) {
           </ul>
         </nav>
 
-        <Link
-          href="/result"
-          aria-label="โปรไฟล์ของฉัน"
-          className="ml-auto hidden size-10 shrink-0 place-items-center rounded-full bg-bubble transition-colors hover:bg-sky sm:grid lg:ml-6"
-        >
-          <UserIcon className="size-5" />
-        </Link>
-
         {/* Phone and tablet: dropdown menu (no JS needed) */}
-        <details className="group ml-auto sm:ml-0 lg:hidden">
+        <details className="group ml-auto lg:hidden">
           <summary
             aria-label="เปิดเมนู"
             className="grid size-10 cursor-pointer list-none place-items-center rounded-full transition-colors hover:bg-bubble [&::-webkit-details-marker]:hidden"
