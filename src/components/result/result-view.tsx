@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Sparkle } from "@/components/decor";
-import { GroupRecommendations, ScoreDots, TryThisWeek } from "@/components/result/recommendations";
+import { FieldUniversities, GroupRecommendations, ScoreDots, TryThisWeek } from "@/components/result/recommendations";
 import type { QuizResult, ResultExplanation, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
 import { CHARACTERS, USER_GROUPS } from "@/lib/riasec/types";
@@ -270,8 +270,11 @@ export function ResultDetails({
         <GroupRecommendations className="mt-10" group={result.userGroup} top3={top3} explanation={explanation} />
       )}
 
-      {/* Universities: for high school students choosing where to apply */}
-      {result.userGroup === "high_school" && (
+      {/* Universities: for high school students choosing where to apply. With an explanation:
+          one card per recommended field; otherwise the top type's sample universities. */}
+      {result.userGroup === "high_school" && explanation?.guidance.some((g) => g.programs?.length) ? (
+        <FieldUniversities fields={explanation.guidance} />
+      ) : result.userGroup === "high_school" && (
         <section aria-labelledby="uni-title" className="mt-12">
           <h2 id="uni-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
             มหาวิทยาลัยที่เปิดสาขาที่คุณสนใจ
