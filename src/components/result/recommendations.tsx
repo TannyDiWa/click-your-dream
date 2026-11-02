@@ -135,14 +135,17 @@ export function ScoreDots({ label, score }: { label: string; score: number }) {
 }
 
 /**
- * Column span of card i of n so every row is full: 2 columns on tablets, 3 a row on desktops
- * (a 6-column grid), and the cards of a short last row widen to fill it (5 cards → 3 + 2).
+ * Placement of card i of n: 2 a row on tablets (4-column grid), 3 a row on desktops (6-column
+ * grid). Every card keeps the same width; a short last row is centered (5 cards → 3 + 2).
  */
 function cardSpan(i: number, n: number) {
-  const md = n % 2 === 1 && i === n - 1 ? "md:col-span-2" : "";
+  const classes = ["md:col-span-2", "lg:col-span-2"];
+  const centerOnTablet = n % 2 === 1 && i === n - 1;
+  if (centerOnTablet) classes.push("md:col-start-2");
   const lastRow = n % 3;
-  const lg = i < n - lastRow ? "lg:col-span-2" : lastRow === 2 ? "lg:col-span-3" : "lg:col-span-6";
-  return `${md} ${lg}`;
+  if (lastRow && i === n - lastRow) classes.push(lastRow === 2 ? "lg:col-start-2" : "lg:col-start-3");
+  else if (centerOnTablet) classes.push("lg:col-start-auto");
+  return classes.join(" ");
 }
 
 /** High school: one card per recommended field, listing universities that run it in TCAS this year. */
@@ -153,7 +156,7 @@ export function FieldUniversities({ fields }: { fields: ResultExplanation["guida
         มหาวิทยาลัยที่เปิดคณะที่น่าสนใจ
       </h2>
       <p className="mt-1 text-[15px] text-muted">แยกตามสาขาที่แนะนำ • แตะชื่อหลักสูตรเพื่อดูรายละเอียดและจำนวนรับบน myTCAS</p>
-      <ul className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-6">
+      <ul className="mt-5 grid gap-6 md:grid-cols-4 lg:grid-cols-6">
         {fields.map((f, i) => (
           <li key={f.title} className={`${panel} px-5 py-5 sm:px-6 ${cardSpan(i, fields.length)}`}>
             {f.tag && <span className={tag}>{f.tag}</span>}
