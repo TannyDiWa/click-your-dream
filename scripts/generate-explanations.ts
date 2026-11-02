@@ -204,7 +204,8 @@ function validate(e: Explanation, code: string) {
     if (!c.tag || parts.length > 2 || parts.some((p) => !allowed.has(p))) problems.push(`career tag “${c.tag}” for ${c.title}`);
   }
   if (e.guidance.some((g) => !g.tag)) problems.push("guidance item without tag");
-  const text = JSON.stringify(e);
+  // Programs (scripts/attach-programs.ts) name universities on purpose; check the written text only.
+  const text = JSON.stringify(e, (key, value) => (key === "programs" ? undefined : value));
   if (/จุฬา|ธรรมศาสตร์|มหิดล|มหาวิทยาลัยเกษตรศาสตร์|ศิลปากร|ลาดกระบัง|มหาวิทยาลัยเชียงใหม่|มหาวิทยาลัยขอนแก่น/.test(text)) {
     problems.push("may name a university");
   }
