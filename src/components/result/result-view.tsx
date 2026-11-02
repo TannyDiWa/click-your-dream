@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Sparkle } from "@/components/decor";
+import { CareerList, FieldAccordion, Panel, ScoreDots, SkillSteps, TryThisWeek } from "@/components/result/recommendations";
 import type { QuizResult, ResultExplanation, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
-import { CHARACTERS, USER_GROUPS, type UserGroup } from "@/lib/riasec/types";
+import { CHARACTERS, USER_GROUPS, type RiasecType, type UserGroup } from "@/lib/riasec/types";
 
 // Bar colors by rank, from the Figma analysis chart (sixth added for the extra dimension).
 const BAR_COLORS = ["#8e8bdd", "#97afe9", "#9ed2d2", "#e9aed4", "#e8c67d", "#c9b8ec"];
@@ -14,11 +15,25 @@ const BAR_COLORS = ["#8e8bdd", "#97afe9", "#9ed2d2", "#e9aed4", "#e8c67d", "#c9b
 const chip = "inline-block rounded-[20px] bg-[#e9eeff] px-[13px] py-1.5 text-sm font-bold text-violet";
 const panel = "rounded-[30px] border-2 border-white bg-paper shadow-[0_10px_15px_rgba(121,130,184,0.1)]";
 
-// Heading for the group-specific part of a pre-generated explanation.
-const GUIDANCE_TITLES: Record<UserGroup, string> = {
-  high_school: "คณะและสาขาที่น่าลองดู",
-  university: "ทักษะและการฝึกงานที่ควรสะสม",
-  working: "เส้นทางใกล้เคียงและคอร์สที่น่าลอง",
+// What each group sees below the main cards (Figma: Results / แยกตามกลุ่มผู้ใช้).
+type GroupSection = { kind: "careers" | "fields" | "skills"; title: string; subtitle: (top3: RiasecType[]) => string };
+const usesAll = (top3: RiasecType[]) => {
+  const [a, b, c] = top3.map((t) => DIMENSION_LABELS[t].long);
+  return `ใช้ทั้ง${a} ${b} และ${c}`;
+};
+const GROUP_SECTIONS: Record<UserGroup, [GroupSection, GroupSection]> = {
+  high_school: [
+    { kind: "careers", title: "อาชีพที่เหมาะกับคุณ", subtitle: usesAll },
+    { kind: "fields", title: "คณะและสาขาที่น่าสนใจ", subtitle: () => "แตะเพื่อดูว่าทำไมสาขานี้เข้ากับคุณ" },
+  ],
+  university: [
+    { kind: "careers", title: "อาชีพแนะนำ", subtitle: usesAll },
+    { kind: "skills", title: "สกิลที่น่าฝึกเพิ่ม", subtitle: () => "เรียงจากเริ่มง่ายไปต่อยอด ฝึกได้ระหว่างเรียน" },
+  ],
+  working: [
+    { kind: "skills", title: "สกิลที่น่าฝึกเพิ่ม", subtitle: () => "ฝึกควบคู่กับงานได้ เรียงจากเริ่มง่ายไปต่อยอด" },
+    { kind: "careers", title: "ตำแหน่งงานที่น่าสนใจ", subtitle: () => "ตำแหน่งที่ใช้จุดเด่นของคุณ • บางตำแหน่งอาจต้องเรียนเพิ่ม" },
+  ],
 };
 
 function formatDate(iso: string) {
@@ -74,7 +89,7 @@ function ResultDetails({
   const type = result.topType;
   const character = CHARACTERS[type];
   const group = USER_GROUPS.find((g) => g.value === result.userGroup);
-  const [first, second] = result.ranking;
+  const top3 = result.ranking.slice(0, 3);
 
   return (
     <>
@@ -194,30 +209,7 @@ function ResultDetails({
           </section>
 
           {explanation ? (
-            <section aria-labelledby="guidance-title" className={`${panel} p-5 sm:p-6`}>
-              <h2 id="guidance-title" className="text-xl font-bold leading-normal sm:text-[23px]">
-                {GUIDANCE_TITLES[result.userGroup]}
-              </h2>
-              <ul className="mt-4 space-y-3.5">
-                {explanation.guidance.map((g) => (
-                  <li key={g.title} className="flex gap-3">
-                    <span aria-hidden className="mt-1.5 size-2.5 shrink-0 rounded-full bg-[#f6a0ce]" />
-                    <span>
-                      <span className="block text-base font-bold leading-normal">{g.title}</span>
-                      <span className="block text-sm leading-normal text-muted">{g.detail}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <h3 className="mt-6 text-lg font-bold leading-normal">ลองทำในสัปดาห์นี้</h3>
-              <ul className="mt-3 flex flex-col gap-2.5">
-                {explanation.tryThisWeek.map((t) => (
-                  <li key={t} className={`${chip} font-normal leading-normal`}>
-                    ☐&nbsp;&nbsp;{t}
-                  </li>
-                ))}
-              </ul>
-            </section>
+            <TryThisWeek tasks={explanation.tryThisWeek} />
           ) : (
             // Next steps for the top type (no reviewed explanation yet)
             <section aria-labelledby="next-title" className={`${panel} p-5 sm:p-6`}>
@@ -271,15 +263,11 @@ function ResultDetails({
                 />
               </div>
               <div className="mt-5 h-px bg-[#c7c2e8]" />
-              <p className="mt-5 text-[15px] text-violet">สาขาที่น่าลองสำรวจ</p>
-              <p className="mt-1 text-[22px] font-bold leading-normal sm:text-[25px]">{profile.field}</p>
-              <ul className="mt-3 flex flex-wrap gap-2.5">
-                {[first, second].map((t) => (
-                  <li key={t} className="rounded-[20px] bg-white px-[13px] py-[7px] text-sm font-bold text-violet">
-                    {DIMENSION_LABELS[t].short} {result.scores[t]}/100
-                  </li>
+              <div className="mt-5 flex max-w-[300px] flex-col gap-1.5 rounded-[18px] bg-white px-4 py-3">
+                {top3.map((t) => (
+                  <ScoreDots key={t} label={DIMENSION_LABELS[t].short} score={result.scores[t]} />
                 ))}
-              </ul>
+              </div>
               <p className="mt-4 text-sm">{profile.motto}</p>
               <p className="mt-6 text-[11px] text-muted">
                 {formatDate(result.completedAt)} • Click your dream
@@ -299,61 +287,57 @@ function ResultDetails({
       </div>
 
       {explanation && (
-        <section aria-labelledby="careers-title" className="mt-12">
-          <h2 id="careers-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
-            อาชีพที่เข้ากับ {result.hollandCode} ของคุณ
+        <div className="mt-10 grid items-start gap-6 lg:grid-cols-2">
+          {GROUP_SECTIONS[result.userGroup].map((sec) => (
+            <Panel key={sec.kind} id={`${sec.kind}-title`} title={sec.title} subtitle={sec.subtitle(top3)}>
+              {sec.kind === "careers" ? (
+                <CareerList items={explanation.careers} />
+              ) : sec.kind === "fields" ? (
+                <FieldAccordion items={explanation.guidance} />
+              ) : (
+                <SkillSteps items={explanation.guidance} />
+              )}
+            </Panel>
+          ))}
+        </div>
+      )}
+
+      {/* Universities: for high school students choosing where to apply */}
+      {result.userGroup === "high_school" && (
+        <section aria-labelledby="uni-title" className="mt-12">
+          <h2 id="uni-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
+            มหาวิทยาลัยที่เปิดสาขาที่คุณสนใจ
           </h2>
           <p className="mt-1 text-[15px] text-muted">
-            จากการผสมของ {result.ranking.slice(0, 3).map((t) => DIMENSION_LABELS[t].short).join(" • ")} • ใช้เป็นไอเดียเริ่มสำรวจ ไม่ใช่คำตัดสิน
+            สาขาตัวอย่าง: {profile.field}&nbsp;&nbsp;•&nbsp;&nbsp;เปิดดูรายละเอียดจากเว็บไซต์มหาวิทยาลัยโดยตรง
           </p>
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {explanation.careers.map((c, i) => (
-              <li key={c.title} className={`${panel} flex flex-col gap-2 px-5 py-[18px]`}>
-                <span className="grid size-[34px] place-items-center rounded-xl bg-[#e5eafe] text-sm font-bold text-violet">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-[17px] font-bold leading-normal">{c.title}</span>
-                <span className="text-sm leading-normal text-muted">{c.reason}</span>
+          <ul className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {profile.universities.map((u) => (
+              <li key={u.url}>
+                <a
+                  href={u.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex h-full flex-col gap-[9px] rounded-[26px] border-2 border-white bg-paper px-6 py-[23px] transition hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(121,130,184,0.15)]"
+                >
+                  <span className="flex items-center gap-3">
+                    <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#e7eafb] text-[13px] font-bold text-violet">
+                      {u.code}
+                    </span>
+                    <span className="text-[17px] font-bold leading-normal">{u.name}</span>
+                  </span>
+                  <span className="text-[13px] font-bold text-violet">{u.faculty}</span>
+                  <span className="text-sm">{u.program}</span>
+                  <span className="mt-auto pt-2 text-base font-bold underline underline-offset-2">ดูหลักสูตรและรายละเอียด&nbsp;&nbsp;↗</span>
+                </a>
               </li>
             ))}
           </ul>
+          <p className="mt-4 text-[13px] text-muted">
+            สำรวจหลักสูตรและเกณฑ์รับสมัครล่าสุดจากแต่ละมหาวิทยาลัย • รายการนี้เป็นตัวอย่างในสาขา{profile.field}
+          </p>
         </section>
       )}
-
-      {/* Universities */}
-      <section aria-labelledby="uni-title" className="mt-12">
-        <h2 id="uni-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
-          มหาวิทยาลัยที่เปิดสาขาที่คุณสนใจ
-        </h2>
-        <p className="mt-1 text-[15px] text-muted">
-          สาขาตัวอย่าง: {profile.field}&nbsp;&nbsp;•&nbsp;&nbsp;เปิดดูรายละเอียดจากเว็บไซต์มหาวิทยาลัยโดยตรง
-        </p>
-        <ul className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {profile.universities.map((u) => (
-            <li key={u.url}>
-              <a
-                href={u.url}
-                target="_blank"
-                rel="noreferrer"
-                className="flex h-full flex-col gap-[9px] rounded-[26px] border-2 border-white bg-paper px-6 py-[23px] transition hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(121,130,184,0.15)]"
-              >
-                <span className="flex items-center gap-3">
-                  <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#e7eafb] text-[13px] font-bold text-violet">
-                    {u.code}
-                  </span>
-                  <span className="text-[17px] font-bold leading-normal">{u.name}</span>
-                </span>
-                <span className="text-[13px] font-bold text-violet">{u.faculty}</span>
-                <span className="text-sm">{u.program}</span>
-                <span className="mt-auto pt-2 text-base font-bold underline underline-offset-2">ดูหลักสูตรและรายละเอียด&nbsp;&nbsp;↗</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-4 text-[13px] text-muted">
-          สำรวจหลักสูตรและเกณฑ์รับสมัครล่าสุดจากแต่ละมหาวิทยาลัย • รายการนี้เป็นตัวอย่างในสาขา{profile.field}
-        </p>
-      </section>
 
       <div className="mt-10 flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
         <p className="text-[15px]">ผลลัพธ์คือจุดเริ่มต้น เส้นทางของคุณยังเติบโตและเปลี่ยนแปลงได้เสมอ ♡</p>
