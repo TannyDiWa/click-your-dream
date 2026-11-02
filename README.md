@@ -1,4 +1,16 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+# Click your dream
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+Web app ที่ให้ผู้ใช้ทำแบบทดสอบความสนใจ RIASEC (Holland) แล้วแนะนำแนวทางอาชีพและการเรียนต่อ
+
+- Stack: Next.js (App Router) + TypeScript + Tailwind CSS
+- ดีไซน์: Figma "Click your dream — หน้าเริ่มต้น"
+- ตัวละคร RIASEC ทั้ง 6 ตัวอยู่ใน `public/characters/` (แปลงเป็น WebP จากไฟล์ต้นฉบับ)
+
+## เริ่มพัฒนา
+
+```bash
+npm install
+npm run dev
+```
+
+เปิด http://localhost:3000
