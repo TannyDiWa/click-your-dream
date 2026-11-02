@@ -33,3 +33,22 @@ export async function GET() {
     return apiError(error, "Could not load quiz progress");
   }
 }
+
+// Drops the unfinished quiz so the next visit starts from the group step.
+// The latest result is kept until a new quiz is submitted.
+export async function DELETE() {
+  try {
+    const supabase = await createUserSupabase();
+    const userId = await getUserId(supabase);
+    if (!userId) return new Response(null, { status: 204 });
+
+    const [progress, answers] = await Promise.all([
+      supabase.from("quiz_progress").delete().eq("user_id", userId),
+      supabase.from("quiz_answers").delete().eq("user_id", userId),
+    ]);
+    for (const r of [progress, answers]) if (r.error) throw r.error;
+    return new Response(null, { status: 204 });
+  } catch (error) {
+    return apiError(error, "Could not reset the quiz");
+  }
+}
