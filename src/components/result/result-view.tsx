@@ -56,7 +56,8 @@ function EmptyState() {
   );
 }
 
-function ResultDetails({
+/** The full result page body; also used by /review with sample scores. */
+export function ResultDetails({
   result,
   profile,
   explanation,

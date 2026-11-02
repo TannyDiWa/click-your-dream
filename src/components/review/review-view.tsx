@@ -1,17 +1,25 @@
 "use client";
 
-import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { GroupRecommendations, Panel, TryThisWeek } from "@/components/result/recommendations";
-import type { ResultExplanation } from "@/lib/riasec/api-types";
+import { ResultDetails } from "@/components/result/result-view";
+import type { QuizResult, ResultExplanation, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
-import { CHARACTERS, LETTER_TO_TYPE, USER_GROUPS, type RiasecLetter, type UserGroup } from "@/lib/riasec/types";
+import { LETTER_TO_TYPE, RIASEC_ORDER, USER_GROUPS, type RiasecLetter, type RiasecType, type UserGroup } from "@/lib/riasec/types";
 
 export type ReviewItem = { code: string; group: UserGroup; explanation: ResultExplanation };
 
 const LETTERS = [..."RIASEC"] as RiasecLetter[];
 const STORAGE_KEY = "click-your-dream:reviewed";
-const chip = "inline-block rounded-[20px] bg-[#e9eeff] px-[13px] py-1.5 text-sm font-bold text-violet";
+// Sample scores for review: the code's letters first, the rest in RIASEC order.
+const SAMPLE_SCORES = [86, 74, 62, 41, 33, 25];
+const SAMPLE_DATE = "2026-11-02T00:00:00.000Z";
+
+function sampleResult(code: string, group: UserGroup): QuizResult {
+  const top3 = [...code].map((l) => LETTER_TO_TYPE[l as RiasecLetter]);
+  const ranking: RiasecType[] = [...top3, ...RIASEC_ORDER.filter((t) => !top3.includes(t))];
+  const scores = Object.fromEntries(ranking.map((t, i) => [t, SAMPLE_SCORES[i]])) as Record<RiasecType, number>;
+  return { scores, ranking, hollandCode: code, topType: ranking[0], userGroup: group, completedAt: SAMPLE_DATE };
+}
 const panel = "rounded-[30px] border-2 border-white bg-paper shadow-[0_10px_15px_rgba(121,130,184,0.1)]";
 
 const idOf = (item: ReviewItem) => `${item.code}-${item.group}`;
@@ -30,6 +38,9 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
   const [index, setIndex] = useState(0);
   const [checked, setChecked] = useState<Set<string>>(() => new Set());
   const [copied, setCopied] = useState(false);
+  // result_profiles content by top type, loaded once per type from the real API.
+  const [profiles, setProfiles] = useState<Partial<Record<RiasecType, ResultProfile>>>({});
+  const [profileError, setProfileError] = useState<string | null>(null);
 
   // Restore the position from the URL hash (#ERA-university) and the checked list from this browser.
   useEffect(() => {
@@ -78,9 +89,27 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
   const letter = item.code[0] as RiasecLetter;
   const codesForLetter = useMemo(() => [...new Set(items.filter((it) => it.code[0] === letter).map((it) => it.code))], [items, letter]);
   const indexOf = (code: string, group: UserGroup) => items.findIndex((it) => it.code === code && it.group === group);
-  const top3 = [...item.code].map((l) => LETTER_TO_TYPE[l as RiasecLetter]);
-  const character = CHARACTERS[top3[0]];
+  const result = useMemo(() => sampleResult(item.code, item.group), [item.code, item.group]);
+  const profile = profiles[result.topType];
   const isChecked = checked.has(idOf(item));
+
+  useEffect(() => {
+    if (profiles[result.topType]) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`/api/profiles/${result.topType}`);
+        const body = await res.json();
+        if (!res.ok) throw new Error(body.error ?? res.statusText);
+        if (!cancelled) setProfiles((p) => ({ ...p, [result.topType]: body }));
+      } catch (e) {
+        if (!cancelled) setProfileError(e instanceof Error ? e.message : String(e));
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [profiles, result.topType]);
 
   const sql = useMemo(() => {
     const pairs = items.filter((it) => checked.has(idOf(it))).map((it) => `('${it.code}', '${it.group}')`);
@@ -94,7 +123,7 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
         <p className="text-sm font-bold text-violet">REVIEW • ตรวจคำอธิบายผลลัพธ์</p>
         <h1 className="mt-1 text-[28px] font-bold leading-normal sm:text-[36px]">ตรวจคำอธิบายทั้ง {items.length} แบบ</h1>
         <p className="mt-0.5 text-base leading-normal sm:text-lg">
-          หน้าตาเดียวกับหน้าผลลัพธ์จริง • ตรวจแล้ว <b className="text-violet">{checked.size}</b>/{items.length}
+          หน้าผลลัพธ์จริงพร้อมคะแนนตัวอย่าง • ตรวจแล้ว <b className="text-violet">{checked.size}</b>/{items.length}
         </p>
       </div>
 
@@ -172,61 +201,9 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
             </button>
           </span>
         </div>
-      </section>
 
-      {/* Summary, as on /result */}
-      <section
-        aria-labelledby="review-title"
-        className="relative mt-8 grid gap-6 rounded-[32px] border-2 border-white p-5 shadow-[0_12px_16px_rgba(121,130,184,0.11)] sm:p-7 lg:grid-cols-[180px_1fr_306px] lg:items-center lg:gap-10"
-        style={{ backgroundImage: "linear-gradient(127deg, #ffffff 0%, #fffcf7 38%, #f8f3ff 77%)" }}
-      >
-        <Image
-          src={character.src}
-          alt={`${character.nameTh} (${character.letter})`}
-          width={character.width}
-          height={character.height}
-          sizes="180px"
-          className="mx-auto h-auto w-[140px] object-contain sm:w-[180px]"
-        />
-        <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <span className={chip}>Holland Code {item.code}</span>
-            <span className="text-[13px] text-muted">{groupTitle(item.group)}</span>
-          </div>
-          <h2 id="review-title" className="mt-2 text-[26px] font-bold leading-normal sm:text-[30px]">
-            คุณคือ... {item.explanation.title}
-          </h2>
-          <p className="mt-1 text-base leading-normal sm:text-lg">{item.explanation.summary}</p>
-          <ul className="mt-3 flex flex-wrap gap-2.5">
-            {top3.map((t) => (
-              <li key={t} className={chip}>
-                {DIMENSION_LABELS[t].long}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-[22px] font-bold leading-normal">จุดเด่นที่ค้นพบ</h3>
-          <ol className="mt-3 space-y-3.5">
-            {item.explanation.strengths.map((s, i) => (
-              <li key={s.title} className="flex items-center gap-3">
-                <span className="grid size-[34px] shrink-0 place-items-center rounded-xl bg-[#e5eafe] text-sm font-bold text-violet">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span>
-                  <span className="block text-[15px] font-bold leading-normal">{s.title}</span>
-                  <span className="block text-[13px] leading-normal text-muted">{s.detail}</span>
-                </span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      <div className="mt-10 grid items-start gap-6 lg:grid-cols-[1fr_496px]">
-        <TryThisWeek key={idOf(item)} tasks={item.explanation.tryThisWeek} />
-        <Panel id="check-title" title="ผลการตรวจ" subtitle="บันทึกไว้ในเบราว์เซอร์นี้ แล้วนำ SQL ด้านล่างไปรันใน Supabase">
-          <label className="mt-4 flex cursor-pointer items-center gap-3 rounded-[18px] bg-[#e9eeff] px-4 py-3 text-base font-bold">
+        <div className="mt-3 flex flex-col gap-2 border-t border-[#e6e3f5] pt-3 sm:flex-row sm:items-center">
+          <label className="flex flex-1 cursor-pointer items-center gap-3 rounded-[18px] bg-[#e9eeff] px-4 py-2.5 text-[15px] font-bold">
             <input type="checkbox" checked={isChecked} onChange={() => toggle(idOf(item))} className="size-5 cursor-pointer accent-[#ec7cb5]" />
             {item.code} • {groupTitle(item.group)} อ่านแล้ว ใช้ได้
           </label>
@@ -236,15 +213,23 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
               if (!isChecked) toggle(idOf(item));
               go(index + 1);
             }}
-            className="mt-3 w-full cursor-pointer rounded-[30px] bg-[#f6a0ce] px-6 py-3 font-bold text-white hover:bg-blush-deep"
+            className="cursor-pointer rounded-[30px] bg-[#f6a0ce] px-6 py-2.5 font-bold text-white hover:bg-blush-deep"
           >
             ผ่าน แล้วไปแบบถัดไป →
           </button>
-          <p className="mt-2 text-center text-[13px] text-muted">ใช้ปุ่มลูกศร ← → บนคีย์บอร์ดเพื่อเปลี่ยนแบบได้</p>
-        </Panel>
-      </div>
+        </div>
+        <p className="mt-2 text-[13px] text-muted">
+          คะแนนในกราฟและการ์ดเป็นตัวอย่าง (เรียงตามรหัส) • ใช้ปุ่มลูกศร ← → บนคีย์บอร์ดเพื่อเปลี่ยนแบบได้
+        </p>
+      </section>
 
-      <GroupRecommendations key={`g-${idOf(item)}`} className="mt-10" group={item.group} top3={top3} explanation={item.explanation} />
+      {profile ? (
+        <ResultDetails key={idOf(item)} result={result} profile={profile} explanation={item.explanation} />
+      ) : (
+        <div className="grid h-[400px] place-items-center text-muted" aria-busy={!profileError}>
+          {profileError ? `โหลดข้อมูลโปรไฟล์ไม่สำเร็จ: ${profileError}` : "กำลังโหลด…"}
+        </div>
+      )}
 
       <section aria-labelledby="sql-title" className={`${panel} mt-10 p-5 sm:p-6`}>
         <h2 id="sql-title" className="text-xl font-bold leading-normal sm:text-[23px]">
