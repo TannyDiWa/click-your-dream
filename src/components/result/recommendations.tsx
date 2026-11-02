@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 import type { ResultExplanation } from "@/lib/riasec/api-types";
+import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
+import type { RiasecType, UserGroup } from "@/lib/riasec/types";
 
 // Building blocks for the group-specific part of the result page (Figma: Results / List row,
 // Accordion row, Skill step, Try-this-week item, Score dots). All of them fill their parent's
@@ -128,6 +130,56 @@ export function ScoreDots({ label, score }: { label: string; score: number }) {
           );
         })}
       </span>
+    </div>
+  );
+}
+
+// What each group sees below the main cards (Figma: Results / แยกตามกลุ่มผู้ใช้).
+type GroupSection = { kind: "careers" | "fields" | "skills"; title: string; subtitle: (top3: RiasecType[]) => string };
+const usesAll = (top3: RiasecType[]) => {
+  const [a, b, c] = top3.map((t) => DIMENSION_LABELS[t].long);
+  return `ใช้ทั้ง${a} ${b} และ${c}`;
+};
+const GROUP_SECTIONS: Record<UserGroup, [GroupSection, GroupSection]> = {
+  high_school: [
+    { kind: "careers", title: "อาชีพที่เหมาะกับคุณ", subtitle: usesAll },
+    { kind: "fields", title: "คณะและสาขาที่น่าสนใจ", subtitle: () => "แตะเพื่อดูว่าทำไมสาขานี้เข้ากับคุณ" },
+  ],
+  university: [
+    { kind: "careers", title: "อาชีพแนะนำ", subtitle: usesAll },
+    { kind: "skills", title: "สกิลที่น่าฝึกเพิ่ม", subtitle: () => "เรียงจากเริ่มง่ายไปต่อยอด ฝึกได้ระหว่างเรียน" },
+  ],
+  working: [
+    { kind: "skills", title: "สกิลที่น่าฝึกเพิ่ม", subtitle: () => "ฝึกควบคู่กับงานได้ เรียงจากเริ่มง่ายไปต่อยอด" },
+    { kind: "careers", title: "ตำแหน่งงานที่น่าสนใจ", subtitle: () => "ตำแหน่งที่ใช้จุดเด่นของคุณ • บางตำแหน่งอาจต้องเรียนเพิ่ม" },
+  ],
+};
+
+/** The two group-specific panels: careers + fields, careers + skills, or skills + positions. */
+export function GroupRecommendations({
+  group,
+  top3,
+  explanation,
+  className = "",
+}: {
+  group: UserGroup;
+  top3: RiasecType[];
+  explanation: ResultExplanation;
+  className?: string;
+}) {
+  return (
+    <div className={`grid items-start gap-6 lg:grid-cols-2 ${className}`}>
+      {GROUP_SECTIONS[group].map((sec) => (
+        <Panel key={sec.kind} id={`${sec.kind}-title`} title={sec.title} subtitle={sec.subtitle(top3)}>
+          {sec.kind === "careers" ? (
+            <CareerList items={explanation.careers} />
+          ) : sec.kind === "fields" ? (
+            <FieldAccordion items={explanation.guidance} />
+          ) : (
+            <SkillSteps items={explanation.guidance} />
+          )}
+        </Panel>
+      ))}
     </div>
   );
 }

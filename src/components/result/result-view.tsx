@@ -4,37 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Sparkle } from "@/components/decor";
-import { CareerList, FieldAccordion, Panel, ScoreDots, SkillSteps, TryThisWeek } from "@/components/result/recommendations";
+import { GroupRecommendations, ScoreDots, TryThisWeek } from "@/components/result/recommendations";
 import type { QuizResult, ResultExplanation, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
-import { CHARACTERS, USER_GROUPS, type RiasecType, type UserGroup } from "@/lib/riasec/types";
+import { CHARACTERS, USER_GROUPS } from "@/lib/riasec/types";
 
 // Bar colors by rank, from the Figma analysis chart (sixth added for the extra dimension).
 const BAR_COLORS = ["#8e8bdd", "#97afe9", "#9ed2d2", "#e9aed4", "#e8c67d", "#c9b8ec"];
 
 const chip = "inline-block rounded-[20px] bg-[#e9eeff] px-[13px] py-1.5 text-sm font-bold text-violet";
 const panel = "rounded-[30px] border-2 border-white bg-paper shadow-[0_10px_15px_rgba(121,130,184,0.1)]";
-
-// What each group sees below the main cards (Figma: Results / แยกตามกลุ่มผู้ใช้).
-type GroupSection = { kind: "careers" | "fields" | "skills"; title: string; subtitle: (top3: RiasecType[]) => string };
-const usesAll = (top3: RiasecType[]) => {
-  const [a, b, c] = top3.map((t) => DIMENSION_LABELS[t].long);
-  return `ใช้ทั้ง${a} ${b} และ${c}`;
-};
-const GROUP_SECTIONS: Record<UserGroup, [GroupSection, GroupSection]> = {
-  high_school: [
-    { kind: "careers", title: "อาชีพที่เหมาะกับคุณ", subtitle: usesAll },
-    { kind: "fields", title: "คณะและสาขาที่น่าสนใจ", subtitle: () => "แตะเพื่อดูว่าทำไมสาขานี้เข้ากับคุณ" },
-  ],
-  university: [
-    { kind: "careers", title: "อาชีพแนะนำ", subtitle: usesAll },
-    { kind: "skills", title: "สกิลที่น่าฝึกเพิ่ม", subtitle: () => "เรียงจากเริ่มง่ายไปต่อยอด ฝึกได้ระหว่างเรียน" },
-  ],
-  working: [
-    { kind: "skills", title: "สกิลที่น่าฝึกเพิ่ม", subtitle: () => "ฝึกควบคู่กับงานได้ เรียงจากเริ่มง่ายไปต่อยอด" },
-    { kind: "careers", title: "ตำแหน่งงานที่น่าสนใจ", subtitle: () => "ตำแหน่งที่ใช้จุดเด่นของคุณ • บางตำแหน่งอาจต้องเรียนเพิ่ม" },
-  ],
-};
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("th-TH", { day: "numeric", month: "long", year: "numeric" });
@@ -287,19 +266,7 @@ function ResultDetails({
       </div>
 
       {explanation && (
-        <div className="mt-10 grid items-start gap-6 lg:grid-cols-2">
-          {GROUP_SECTIONS[result.userGroup].map((sec) => (
-            <Panel key={sec.kind} id={`${sec.kind}-title`} title={sec.title} subtitle={sec.subtitle(top3)}>
-              {sec.kind === "careers" ? (
-                <CareerList items={explanation.careers} />
-              ) : sec.kind === "fields" ? (
-                <FieldAccordion items={explanation.guidance} />
-              ) : (
-                <SkillSteps items={explanation.guidance} />
-              )}
-            </Panel>
-          ))}
-        </div>
+        <GroupRecommendations className="mt-10" group={result.userGroup} top3={top3} explanation={explanation} />
       )}
 
       {/* Universities: for high school students choosing where to apply */}
