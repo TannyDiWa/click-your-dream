@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Sparkle } from "@/components/decor";
+import { CardActions } from "@/components/result/card-actions";
 import { FieldUniversities, GroupRecommendations, ScoreDots, TryThisWeek } from "@/components/result/recommendations";
 import type { QuizResult, ResultExplanation, ResultProfile } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
@@ -70,6 +71,7 @@ export function ResultDetails({
   const character = CHARACTERS[type];
   const group = USER_GROUPS.find((g) => g.value === result.userGroup);
   const top3 = result.ranking.slice(0, 3);
+  const cardRef = useRef<HTMLElement>(null);
 
   return (
     <>
@@ -211,6 +213,7 @@ export function ResultDetails({
         {/* Dream card */}
         <div className="flex flex-col items-center">
           <article
+            ref={cardRef}
             aria-label={`การ์ดความฝัน: ${profile.title}`}
             className="relative w-full max-w-[496px] overflow-hidden rounded-[32px] border-[3px] border-white px-[27px] pb-5 pt-[19px]"
             style={{ backgroundImage: profile.cardGradient }}
@@ -231,6 +234,12 @@ export function ResultDetails({
                     {profile.cardTitle[1]}
                   </p>
                   <p className="mt-3 whitespace-pre-line text-[15px] leading-normal sm:text-base">{profile.cardTraits}</p>
+                  <p
+                    aria-label={`Holland code ${result.hollandCode}`}
+                    className="mt-4 inline-block rounded-[16px] bg-white/80 py-2 pl-4 pr-[calc(1rem-0.16em)] text-[28px] font-bold leading-none tracking-[0.16em] sm:text-[32px]"
+                  >
+                    {result.hollandCode}
+                  </p>
                 </div>
                 <Image
                   src={character.src}
@@ -254,15 +263,7 @@ export function ResultDetails({
               </p>
             </div>
           </article>
-          <button
-            type="button"
-            disabled
-            title="กำลังพัฒนา"
-            className="mt-5 cursor-not-allowed rounded-[35px] bg-[#f6a0ce] px-[26px] py-4 text-lg font-bold text-white opacity-60"
-          >
-            ↓&nbsp;&nbsp;ดาวน์โหลดการ์ดเป็นรูปภาพ
-          </button>
-          <p className="mt-2 text-center text-[13px] text-muted">ฟีเจอร์ดาวน์โหลดกำลังพัฒนา • เก็บการ์ดไว้เป็นแรงบันดาลใจในแบบของคุณ</p>
+          <CardActions cardRef={cardRef} fileName={`click-your-dream-${result.hollandCode}.png`} />
         </div>
       </div>
 
