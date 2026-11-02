@@ -8,7 +8,8 @@ const checkbox = "mt-1 size-[18px] shrink-0 cursor-pointer accent-[#f6a0ce]";
 
 /**
  * PDPA consent, shown before the quiz stores anything (POST /api/quiz/start).
- * High school students (mostly under 20) also confirm their age or a guardian's consent.
+ * Students (high school, and first-year university students who may be 18–19)
+ * also confirm they are 20 or older or that a guardian agreed.
  */
 export function ConsentDialog({
   ref,
@@ -24,7 +25,7 @@ export function ConsentDialog({
   const titleId = useId();
   const [agreed, setAgreed] = useState(false);
   const [guardian, setGuardian] = useState(false);
-  const minor = userGroup === "high_school";
+  const minor = userGroup === "high_school" || userGroup === "university";
   const canAccept = agreed && (!minor || guardian);
 
   return (
