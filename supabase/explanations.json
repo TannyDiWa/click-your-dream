@@ -58,28 +58,17 @@
       ],
       "guidance": [
         {
-          "title": "วิศวกรรมอุตสาหการ",
-          "tag": "วิศวกรรมศาสตร์",
-          "detail": "เรียนการวางระบบการผลิตและการบริหารทีมงาน เหมาะกับคนที่ชอบนำทีมและเห็นงานเกิดขึ้นจริง",
+          "title": "การจัดการอีเวนต์และอุตสาหกรรมบันเทิง",
+          "tag": "นิเทศศาสตร์",
+          "detail": "ฝึกนำทีมผลิตงานจริงภายใต้เวลาที่จำกัด ตั้งแต่ไอเดียถึงวันงาน",
           "programs": [
             {
-              "university": "จุฬาลงกรณ์มหาวิทยาลัย",
+              "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะวิศวกรรมศาสตร์",
-              "program": "หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมอุตสาหการ",
-              "url": "https://course.mytcas.com/programs/10010121303501A",
-              "fieldUrl": "https://course.mytcas.com/universities/001/faculties/21/fields/35",
-              "rounds": [
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะวิศวกรรมศาสตร์",
-              "program": "วศ.บ. สาขาวิชาวิศวกรรมอุตสาหการ",
-              "url": "https://course.mytcas.com/programs/10020105303501A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/05/fields/35",
+              "faculty": "คณะวิทยาการจัดการ",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการจัดการอีเวนต์และธุรกิจบันเทิง",
+              "url": "https://course.mytcas.com/programs/21740103901102A",
+              "fieldUrl": "https://course.mytcas.com/universities/174/faculties/03/fields/11",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -87,12 +76,25 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยเชียงใหม่",
+              "university": "มหาวิทยาลัยศรีปทุม",
+              "campus": "บางเขน",
+              "faculty": "คณะนิเทศศาสตร์ (กทม.)",
+              "program": "นศ.บ. การสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/40540106900102A",
+              "fieldUrl": "https://course.mytcas.com/universities/054/faculties/06/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะวิศวกรรมศาสตร์",
-              "program": "หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมอุตสาหการ",
-              "url": "https://course.mytcas.com/programs/10040106303501A",
-              "fieldUrl": "https://course.mytcas.com/universities/004/faculties/06/fields/35",
+              "faculty": "คณะนิเทศศาสตร์",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/41030114900301A",
+              "fieldUrl": "https://course.mytcas.com/universities/103/faculties/14/fields/03",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -150,19 +152,6 @@
           "detail": "ปูพื้นการทำธุรกิจของตัวเองตั้งแต่ไอเดีย การผลิต ไปจนถึงการขาย",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "นครสวรรค์",
-              "faculty": "วิทยาเขตนครสวรรค์",
-              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการประกอบการเชิงนิเวศวัฒนธรรม",
-              "url": "https://course.mytcas.com/programs/10060320900301A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/20/fields/03",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยทักษิณ",
               "campus": "สงขลา",
               "faculty": "คณะเศรษฐศาสตร์และบริหารธุรกิจ",
@@ -184,6 +173,17 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "พณิชยการพระนคร",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ. การเป็นผู้ประกอบการ",
+              "url": "https://course.mytcas.com/programs/31940703610301A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/03/fields/03",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -1230,17 +1230,6 @@
           "detail": "ผสมความรู้เทคโนโลยีกับการบริหาร เหมาะกับคนอยากนำทีมเทคนิค",
           "programs": [
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
               "campus": "กรุงเทพฯ",
               "faculty": "วิทยาลัยเทคโนโลยีอุตสาหกรรม",
@@ -1263,6 +1252,17 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีสุรนารี",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "สำนักวิชาเทคโนโลยีสังคม",
+              "program": "เทคโนโลยีการจัดการ",
+              "url": "https://course.mytcas.com/programs/10170102610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/017/faculties/02/fields/02",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -2583,12 +2583,12 @@
           "detail": "ได้ออกแบบและตัดเย็บจริง พร้อมเรียนรู้การทำคอลเลกชันให้ขายได้",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. สาขาวิชาเทคโนโลยีสิ่งทอและแฟชั่น",
-              "url": "https://course.mytcas.com/programs/10020110501103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/10/fields/11",
+              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
+              "campus": "หลัก",
+              "faculty": "คณะศิลปกรรมศาสตร์",
+              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
+              "url": "https://course.mytcas.com/programs/21660106800107A",
+              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -2596,24 +2596,25 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยธรรมศาสตร์",
-              "campus": "ศูนย์รังสิต",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยี",
-              "program": "วท.บ.สาขาวิชาวิทยาศาสตร์และเทคโนโลยีสิ่งทอ",
-              "url": "https://course.mytcas.com/programs/10050209211801A",
-              "fieldUrl": "https://course.mytcas.com/universities/005/faculties/09/fields/18",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
+              "campus": "วิทยาเขตหลัก (คลองหก)",
+              "faculty": "คณะเทคโนโลยีคหกรรมศาสตร์",
+              "program": "หลักสูตรคหกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบแฟชั่นและนวัตกรรมเครื่องแต่งกาย",
+              "url": "https://course.mytcas.com/programs/31910106500301A",
+              "fieldUrl": "https://course.mytcas.com/universities/191/faculties/06/fields/03",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
-              "url": "https://course.mytcas.com/programs/21660106800107A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะอุตสาหกรรมสิ่งทอ",
+              "program": "ทล.บ. (ออกแบบสิ่งทอและแฟชั่น)",
+              "url": "https://course.mytcas.com/programs/31920107800103A",
+              "fieldUrl": "https://course.mytcas.com/universities/192/faculties/07/fields/01",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -5106,35 +5107,38 @@
           "detail": "ฝึกนำทีมผลิตงานจริงภายใต้เวลาที่จำกัด ตั้งแต่ไอเดียถึงวันงาน",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "กำแพงแสน",
-              "faculty": "คณะอุตสาหกรรมบริการ",
-              "program": "บธ.บ. สาขาวิชาการจัดการท่องเที่ยว โรงแรม และอีเวนต์",
-              "url": "https://course.mytcas.com/programs/10020233620103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/01",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยขอนแก่น",
-              "campus": "ขอนแก่น",
-              "faculty": "คณะบริหารธุรกิจและการบัญชี",
-              "program": "บริหารธุรกิจบัณฑิต (การจัดการธุรกิจบริการและอีเว้นท์)",
-              "url": "https://course.mytcas.com/programs/10030121610802A",
-              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/21/fields/08",
+              "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะวิทยาการจัดการ",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการจัดการอีเวนต์และธุรกิจบันเทิง",
+              "url": "https://course.mytcas.com/programs/21740103901102A",
+              "fieldUrl": "https://course.mytcas.com/universities/174/faculties/03/fields/11",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยแม่ฟ้าหลวง",
+              "university": "มหาวิทยาลัยศรีปทุม",
+              "campus": "บางเขน",
+              "faculty": "คณะนิเทศศาสตร์ (กทม.)",
+              "program": "นศ.บ. การสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/40540106900102A",
+              "fieldUrl": "https://course.mytcas.com/universities/054/faculties/06/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "การจัดการ",
-              "program": "บธ.บ. ธุรกิจการท่องเที่ยวและอีเวนต์ (จัดการเรียนการสอนเป็นภาษาอังกฤษ)",
-              "url": "https://course.mytcas.com/programs/10240112620101A",
-              "fieldUrl": "https://course.mytcas.com/universities/024/faculties/12/fields/01",
+              "faculty": "คณะนิเทศศาสตร์",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/41030114900301A",
+              "fieldUrl": "https://course.mytcas.com/universities/103/faculties/14/fields/03",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -5195,19 +5199,6 @@
           "detail": "ปูพื้นการทำธุรกิจของตัวเองตั้งแต่ไอเดีย การผลิต ไปจนถึงการขาย",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "นครสวรรค์",
-              "faculty": "วิทยาเขตนครสวรรค์",
-              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการประกอบการเชิงนิเวศวัฒนธรรม",
-              "url": "https://course.mytcas.com/programs/10060320900301A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/20/fields/03",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยทักษิณ",
               "campus": "สงขลา",
               "faculty": "คณะเศรษฐศาสตร์และบริหารธุรกิจ",
@@ -5229,6 +5220,17 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "พณิชยการพระนคร",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ. การเป็นผู้ประกอบการ",
+              "url": "https://course.mytcas.com/programs/31940703610301A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/03/fields/03",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -6873,8 +6875,8 @@
       ],
       "careers": [
         {
-          "title": "เภสัชกร",
-          "reason": "จัดยาและให้คำแนะนำการใช้ยาอย่างถูกต้อง",
+          "title": "ผู้ช่วยเภสัชกร",
+          "reason": "จัดเตรียมยาอย่างถูกต้องและให้บริการผู้ป่วย",
           "tag": "จัดระบบ • ช่วยเหลือ"
         },
         {
@@ -6905,44 +6907,47 @@
       ],
       "guidance": [
         {
-          "title": "เภสัชศาสตร์",
-          "tag": "เภสัชศาสตร์",
-          "detail": "เรียนเรื่องยาและการดูแลผู้ป่วย งานที่ต้องทั้งแม่นยำและใส่ใจคน",
+          "title": "โภชนาการและการกำหนดอาหาร",
+          "tag": "สาธารณสุขศาสตร์",
+          "detail": "วางแผนอาหารเพื่อสุขภาพ งานที่ผสมการดูแลคนกับความเป็นระบบ",
           "programs": [
             {
               "university": "จุฬาลงกรณ์มหาวิทยาลัย",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะเภสัชศาสตร์",
-              "program": "หลักสูตรเภสัชศาสตรบัณฑิต สาขาวิชาเภสัชกรรมอุตสาหการ",
-              "url": "https://course.mytcas.com/programs/10010133130201A",
-              "fieldUrl": "https://course.mytcas.com/universities/001/faculties/33/fields/02",
+              "faculty": "คณะสหเวชศาสตร์",
+              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาโภชนาการและการกำหนดอาหาร",
+              "url": "https://course.mytcas.com/programs/10010137111801A",
+              "fieldUrl": "https://course.mytcas.com/universities/001/faculties/37/fields/18",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
               "university": "มหาวิทยาลัยเกษตรศาสตร์",
               "campus": "บางเขน",
-              "faculty": "คณะเภสัชศาสตร์",
-              "program": "เภสัชศาสตรบัณฑิต",
-              "url": "https://course.mytcas.com/programs/10020137130101A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/37/fields/01",
+              "faculty": "คณะเกษตร",
+              "program": "วท.บ. สาขาวิชาอาหาร โภชนาการ และการกำหนดอาหาร",
+              "url": "https://course.mytcas.com/programs/10020101111802A",
+              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/01/fields/18",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยขอนแก่น",
-              "campus": "ขอนแก่น",
-              "faculty": "คณะเภสัชศาสตร์",
-              "program": "เภสัชศาสตรบัณฑิต",
-              "url": "https://course.mytcas.com/programs/10030115130101A",
-              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/15/fields/01",
+              "university": "มหาวิทยาลัยมหิดล",
+              "campus": "ศาลายา",
+              "faculty": "คณะสาธารณสุขศาสตร์",
+              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาโภชนวิทยาและการกำหนดอาหาร",
+              "url": "https://course.mytcas.com/programs/10060107111803A",
+              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/07/fields/18",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             }
           ]
@@ -8390,19 +8395,6 @@
           "detail": "ผสมเครื่องกล ไฟฟ้า และโปรแกรม เพื่อสร้างระบบอัตโนมัติ",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "กำแพงแสน",
-              "faculty": "คณะเกษตร กำแพงแสน",
-              "program": "วท.บ. สาขาวิชาเครื่องจักรกลและเมคคาทรอนิกส์เกษตร",
-              "url": "https://course.mytcas.com/programs/10020219500102A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/19/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยสงขลานครินทร์",
               "campus": "หาดใหญ่",
               "faculty": "คณะวิศวกรรมศาสตร์",
@@ -8423,6 +8415,18 @@
               "rounds": [
                 "รอบ 1"
               ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
+              "campus": "กรุงเทพฯ",
+              "faculty": "คณะครุศาสตร์อุตสาหกรรม",
+              "program": "วศ.บ.วิศวกรรมแมคคาทรอนิกส์ หุ่นยนต์และการศึกษา (หลักสูตร 5 ปี)",
+              "url": "https://course.mytcas.com/programs/10150102301901A",
+              "fieldUrl": "https://course.mytcas.com/universities/015/faculties/02/fields/19",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2"
+              ]
             }
           ]
         },
@@ -8431,17 +8435,6 @@
           "tag": "วิทยาศาสตร์",
           "detail": "เรียนการนำเทคโนโลยีใหม่ไปใช้จริงในธุรกิจ เหมาะกับคนอยากนำทีม",
           "programs": [
-            {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
             {
               "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
               "campus": "กรุงเทพฯ",
@@ -8465,6 +8458,17 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีสุรนารี",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "สำนักวิชาเทคโนโลยีสังคม",
+              "program": "เทคโนโลยีการจัดการ",
+              "url": "https://course.mytcas.com/programs/10170102610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/017/faculties/02/fields/02",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -9824,39 +9828,40 @@
           "detail": "เรียนการเปลี่ยนไอเดียใหม่เป็นสินค้าและธุรกิจ",
           "programs": [
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-              "campus": "กรุงเทพฯ",
-              "faculty": "วิทยาลัยเทคโนโลยีอุตสาหกรรม",
-              "program": "วท.บ.การจัดการเทคโนโลยีการผลิตและสารสนเทศ",
-              "url": "https://course.mytcas.com/programs/10150103213501A",
-              "fieldUrl": "https://course.mytcas.com/universities/015/faculties/03/fields/35",
+              "university": "มหาวิทยาลัยแม่โจ้",
+              "campus": "วิทยาเขตเชียงใหม่",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชานวัตกรรมธุรกิจดิจิทัล",
+              "url": "https://course.mytcas.com/programs/10130106610901A",
+              "fieldUrl": "https://course.mytcas.com/universities/013/faculties/06/fields/09",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
               "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
               "campus": "ลาดกระบัง",
               "faculty": "คณะบริหารธุรกิจ",
-              "program": "บธ.บ. การเปลี่ยนแปลงทางดิจิทัลและการจัดการเทคโนโลยี",
-              "url": "https://course.mytcas.com/programs/10160110610901A",
-              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/10/fields/09",
+              "program": "บธ.บ. บริหารธุรกิจ แขนงการจัดการและการเป็นผู้ประกอบการนวัตกรรม",
+              "url": "https://course.mytcas.com/programs/10160110610805A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/10/fields/08",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน",
+              "campus": "นครราชสีมา",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ.ระบบสารสนเทศและนวัตกรรมธุรกิจดิจิทัล",
+              "url": "https://course.mytcas.com/programs/31990101610901A",
+              "fieldUrl": "https://course.mytcas.com/universities/199/faculties/01/fields/09",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -10930,17 +10935,17 @@
           ]
         },
         {
-          "title": "ปรัชญาและศาสนา",
-          "tag": "อักษรศาสตร์",
-          "detail": "เรียนการตั้งคำถามเรื่องชีวิตและความหมาย ฝึกคิดอย่างลึกซึ้ง",
+          "title": "สังคมวิทยาและมานุษยวิทยา",
+          "tag": "สังคมศาสตร์",
+          "detail": "เรียนการศึกษาผู้คนและสังคม ได้ลงพื้นที่พูดคุยกับคนจริง ต่อยอดสู่งานวิจัยและพัฒนาชุมชน",
           "programs": [
             {
               "university": "มหาวิทยาลัยเกษตรศาสตร์",
               "campus": "บางเขน",
-              "faculty": "คณะมนุษยศาสตร์",
-              "program": "ศศ.บ. สาขาวิชาปรัชญาและศาสนา",
-              "url": "https://course.mytcas.com/programs/10020111901501A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/11/fields/15",
+              "faculty": "คณะสังคมศาสตร์",
+              "program": "ศศ.บ. สาขาวิชาสังคมวิทยาและมานุษยวิทยา",
+              "url": "https://course.mytcas.com/programs/10020108903501A",
+              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/08/fields/35",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -10948,27 +10953,27 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยศิลปากร",
-              "campus": "สนามจันทร์",
-              "faculty": "คณะอักษรศาสตร์",
-              "program": "หลักสูตรอักษรศาสตรบัณฑิต สาขาวิชาปรัชญา",
-              "url": "https://course.mytcas.com/programs/10080205901501A",
-              "fieldUrl": "https://course.mytcas.com/universities/008/faculties/05/fields/15",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
-              "campus": "ประสานมิตร",
-              "faculty": "คณะมนุษยศาสตร์",
-              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาปรัชญาและศาสนา",
-              "url": "https://course.mytcas.com/programs/10090101901501A",
-              "fieldUrl": "https://course.mytcas.com/universities/009/faculties/01/fields/15",
+              "university": "มหาวิทยาลัยขอนแก่น",
+              "campus": "ขอนแก่น",
+              "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+              "program": "ศิลปศาสตรบัณฑิต (สังคมวิทยาและมานุษยวิทยา)",
+              "url": "https://course.mytcas.com/programs/10030108903502A",
+              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/08/fields/35",
               "rounds": [
                 "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเชียงใหม่",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะสังคมศาสตร์",
+              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาสังคมวิทยาและมานุษยวิทยา",
+              "url": "https://course.mytcas.com/programs/10040104903501A",
+              "fieldUrl": "https://course.mytcas.com/universities/004/faculties/04/fields/35",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
               ]
             }
           ]
@@ -12004,17 +12009,6 @@
           "detail": "ผสมความรู้เทคโนโลยีกับการบริหาร เหมาะกับคนอยากนำทีมเทคนิค",
           "programs": [
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
               "campus": "กรุงเทพฯ",
               "faculty": "วิทยาลัยเทคโนโลยีอุตสาหกรรม",
@@ -12037,6 +12031,17 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีสุรนารี",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "สำนักวิชาเทคโนโลยีสังคม",
+              "program": "เทคโนโลยีการจัดการ",
+              "url": "https://course.mytcas.com/programs/10170102610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/017/faculties/02/fields/02",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -12275,39 +12280,40 @@
           "detail": "เรียนการเปลี่ยนไอเดียใหม่เป็นสินค้าและธุรกิจ",
           "programs": [
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-              "campus": "กรุงเทพฯ",
-              "faculty": "วิทยาลัยเทคโนโลยีอุตสาหกรรม",
-              "program": "วท.บ.การจัดการเทคโนโลยีการผลิตและสารสนเทศ",
-              "url": "https://course.mytcas.com/programs/10150103213501A",
-              "fieldUrl": "https://course.mytcas.com/universities/015/faculties/03/fields/35",
+              "university": "มหาวิทยาลัยแม่โจ้",
+              "campus": "วิทยาเขตเชียงใหม่",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชานวัตกรรมธุรกิจดิจิทัล",
+              "url": "https://course.mytcas.com/programs/10130106610901A",
+              "fieldUrl": "https://course.mytcas.com/universities/013/faculties/06/fields/09",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
               "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
               "campus": "ลาดกระบัง",
               "faculty": "คณะบริหารธุรกิจ",
-              "program": "บธ.บ. การเปลี่ยนแปลงทางดิจิทัลและการจัดการเทคโนโลยี",
-              "url": "https://course.mytcas.com/programs/10160110610901A",
-              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/10/fields/09",
+              "program": "บธ.บ. บริหารธุรกิจ แขนงการจัดการและการเป็นผู้ประกอบการนวัตกรรม",
+              "url": "https://course.mytcas.com/programs/10160110610805A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/10/fields/08",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน",
+              "campus": "นครราชสีมา",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ.ระบบสารสนเทศและนวัตกรรมธุรกิจดิจิทัล",
+              "url": "https://course.mytcas.com/programs/31990101610901A",
+              "fieldUrl": "https://course.mytcas.com/universities/199/faculties/01/fields/09",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -13104,17 +13110,6 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "ตรัง",
-              "faculty": "คณะพาณิชยศาสตร์และการจัดการ",
-              "program": "บธ.บ. การบริหารธุรกิจประกันภัยและการจัดการความเสี่ยง",
-              "url": "https://course.mytcas.com/programs/10100534610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/34/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
               "campus": "กรุงเทพฯ",
               "faculty": "คณะวิทยาศาสตร์ประยุกต์",
@@ -13124,6 +13119,19 @@
               "rounds": [
                 "รอบ 1",
                 "รอบ 2"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยราชภัฏจันทรเกษม",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "วิทยาศาสตร์",
+              "program": "การจัดการประกันภัย (วท.บ)",
+              "url": "https://course.mytcas.com/programs/21770105610301A",
+              "fieldUrl": "https://course.mytcas.com/universities/177/faculties/05/fields/03",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
               ]
             }
           ]
@@ -15264,15 +15272,16 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-              "campus": "กรุงเทพฯ",
-              "faculty": "คณะสถาปัตยกรรมและการออกแบบ",
-              "program": "ศ.บ.ศิลปประยุกต์และออกแบบผลิตภัณฑ์",
-              "url": "https://course.mytcas.com/programs/10150111800102A",
-              "fieldUrl": "https://course.mytcas.com/universities/015/faculties/11/fields/01",
+              "university": "มหาวิทยาลัยอุบลราชธานี",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะวิทยาศาสตร์",
+              "program": "วท.บ.สาขาวิชาเทคโนโลยีและการออกแบบผลิตภัณฑ์ยางและพอลิเมอร์",
+              "url": "https://course.mytcas.com/programs/10180111213605A",
+              "fieldUrl": "https://course.mytcas.com/universities/018/faculties/11/fields/36",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             }
           ]
@@ -15511,12 +15520,12 @@
           "detail": "ได้ออกแบบและตัดเย็บจริง พร้อมเรียนรู้การทำคอลเลกชันให้ขายได้",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. สาขาวิชาเทคโนโลยีสิ่งทอและแฟชั่น",
-              "url": "https://course.mytcas.com/programs/10020110501103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/10/fields/11",
+              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
+              "campus": "หลัก",
+              "faculty": "คณะศิลปกรรมศาสตร์",
+              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
+              "url": "https://course.mytcas.com/programs/21660106800107A",
+              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -15524,24 +15533,25 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยธรรมศาสตร์",
-              "campus": "ศูนย์รังสิต",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยี",
-              "program": "วท.บ.สาขาวิชาวิทยาศาสตร์และเทคโนโลยีสิ่งทอ",
-              "url": "https://course.mytcas.com/programs/10050209211801A",
-              "fieldUrl": "https://course.mytcas.com/universities/005/faculties/09/fields/18",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
+              "campus": "วิทยาเขตหลัก (คลองหก)",
+              "faculty": "คณะเทคโนโลยีคหกรรมศาสตร์",
+              "program": "หลักสูตรคหกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบแฟชั่นและนวัตกรรมเครื่องแต่งกาย",
+              "url": "https://course.mytcas.com/programs/31910106500301A",
+              "fieldUrl": "https://course.mytcas.com/universities/191/faculties/06/fields/03",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
-              "url": "https://course.mytcas.com/programs/21660106800107A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะอุตสาหกรรมสิ่งทอ",
+              "program": "ทล.บ. (ออกแบบสิ่งทอและแฟชั่น)",
+              "url": "https://course.mytcas.com/programs/31920107800103A",
+              "fieldUrl": "https://course.mytcas.com/universities/192/faculties/07/fields/01",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -15918,6 +15928,30 @@
           "detail": "ออกแบบกล่องและฉลากที่สวย ปกป้องสินค้า และผลิตได้จริง",
           "programs": [
             {
+              "university": "มหาวิทยาลัยนเรศวร",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะสถาปัตยกรรมศาสตร์",
+              "program": "หลักสูตรศิลปกรรมศาตรบัณฑิต สาขาวิชาออกแบบผลิตภัณฑ์และบรรจุภัณฑ์",
+              "url": "https://course.mytcas.com/programs/10200122800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/020/faculties/22/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "โชติเวช",
+              "faculty": "คณะสถาปัตยกรรมศาสตร์และการออกแบบ",
+              "program": "ทล.บ. การออกแบบบรรจุภัณฑ์และเทคโนโลยีการพิมพ์",
+              "url": "https://course.mytcas.com/programs/31941209400202A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/09/fields/02",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
               "university": "มหาวิทยาลัยเชียงใหม่",
               "campus": "วิทยาเขตหลัก",
               "faculty": "คณะอุตสาหกรรมเกษตร",
@@ -15928,28 +15962,6 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "หาดใหญ่",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. เทคโนโลยีบรรจุภัณฑ์และวัสดุ",
-              "url": "https://course.mytcas.com/programs/10100109212801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/09/fields/28",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-              "campus": "บางมด",
-              "faculty": "คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีบรรจุภัณฑ์และการพิมพ์ ปริญญาตรี 4 ปี",
-              "url": "https://course.mytcas.com/programs/10140108210913A",
-              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/08/fields/09",
-              "rounds": [
-                "รอบ 1"
               ]
             }
           ]
@@ -16989,6 +17001,31 @@
           "detail": "เรียนการออกแบบแอปและบริการจากความเข้าใจคนที่ใช้งาน",
           "programs": [
             {
+              "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+              "campus": "ลาดกระบัง",
+              "faculty": "คณะสถาปัตยกรรม ศิลปะและการออกแบบ",
+              "program": "ศป.บ. การออกแบบประสบการณ์สำหรับสื่อบูรณาการ",
+              "url": "https://course.mytcas.com/programs/10160102800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/02/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยหอการค้าไทย",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต หลักสูตรนานาชาติ (กลุ่มวิชาการออกแบบปฏิสัมพันธ์)",
+              "url": "https://course.mytcas.com/programs/40560101800101E",
+              "fieldUrl": "https://course.mytcas.com/universities/056/faculties/01/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 3"
+              ]
+            },
+            {
               "university": "สถาบันเทคโนโลยีจิตรลดา",
               "campus": "วิทยาเขตหลัก",
               "faculty": "คณะเทคโนโลยีดิจิทัล",
@@ -16999,30 +17036,6 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบดิจิทัลกราฟิก (ระบบการศึกษาทางไกล)",
-              "url": "https://course.mytcas.com/programs/21660106800110A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-              "campus": "บางมด",
-              "faculty": "วิทยาลัยสหวิทยาการ",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัล (หลักสูตรนานาชาติ) ปริญญาตรี 4 ปี (หลักสูตรนานาชาติ)",
-              "url": "https://course.mytcas.com/programs/10140136210801E",
-              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/36/fields/08",
-              "rounds": [
-                "รอบ 1"
               ]
             }
           ]
@@ -17306,6 +17319,31 @@
           "detail": "เรียนการออกแบบแอปและบริการจากความเข้าใจคนที่ใช้งาน",
           "programs": [
             {
+              "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+              "campus": "ลาดกระบัง",
+              "faculty": "คณะสถาปัตยกรรม ศิลปะและการออกแบบ",
+              "program": "ศป.บ. การออกแบบประสบการณ์สำหรับสื่อบูรณาการ",
+              "url": "https://course.mytcas.com/programs/10160102800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/02/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยหอการค้าไทย",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต หลักสูตรนานาชาติ (กลุ่มวิชาการออกแบบปฏิสัมพันธ์)",
+              "url": "https://course.mytcas.com/programs/40560101800101E",
+              "fieldUrl": "https://course.mytcas.com/universities/056/faculties/01/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 3"
+              ]
+            },
+            {
               "university": "สถาบันเทคโนโลยีจิตรลดา",
               "campus": "วิทยาเขตหลัก",
               "faculty": "คณะเทคโนโลยีดิจิทัล",
@@ -17316,30 +17354,6 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบดิจิทัลกราฟิก (ระบบการศึกษาทางไกล)",
-              "url": "https://course.mytcas.com/programs/21660106800110A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-              "campus": "บางมด",
-              "faculty": "วิทยาลัยสหวิทยาการ",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัล (หลักสูตรนานาชาติ) ปริญญาตรี 4 ปี (หลักสูตรนานาชาติ)",
-              "url": "https://course.mytcas.com/programs/10140136210801E",
-              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/36/fields/08",
-              "rounds": [
-                "รอบ 1"
               ]
             }
           ]
@@ -18773,19 +18787,6 @@
           "detail": "เรียนการออกแบบสื่อการสอนที่สวย เข้าใจง่าย และใช้ได้จริง",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "ศาลายา",
-              "faculty": "คณะแพทยศาสตร์ศิริราชพยาบาล",
-              "program": "หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีการศึกษาแพทยศาสตร์",
-              "url": "https://course.mytcas.com/programs/10060101111401A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/01/fields/14",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยศิลปากร",
               "campus": "สนามจันทร์",
               "faculty": "คณะศึกษาศาสตร์",
@@ -18804,6 +18805,17 @@
               "program": "ศษ.บ. สาขาวิชาเทคโนโลยีดิจิทัลและสื่อสารการศึกษา",
               "url": "https://course.mytcas.com/programs/10100218701501A",
               "fieldUrl": "https://course.mytcas.com/universities/010/faculties/18/fields/15",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยมหาสารคาม",
+              "campus": "มหาสารคาม",
+              "faculty": "คณะศึกษาศาสตร์",
+              "program": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+              "url": "https://course.mytcas.com/programs/10210105701501A",
+              "fieldUrl": "https://course.mytcas.com/universities/021/faculties/05/fields/15",
               "rounds": [
                 "รอบ 1"
               ]
@@ -19175,35 +19187,38 @@
           "detail": "ฝึกนำทีมผลิตงานจริงภายใต้เวลาที่จำกัด ตั้งแต่ไอเดียถึงวันงาน",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "กำแพงแสน",
-              "faculty": "คณะอุตสาหกรรมบริการ",
-              "program": "บธ.บ. สาขาวิชาการจัดการท่องเที่ยว โรงแรม และอีเวนต์",
-              "url": "https://course.mytcas.com/programs/10020233620103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/01",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยขอนแก่น",
-              "campus": "ขอนแก่น",
-              "faculty": "คณะบริหารธุรกิจและการบัญชี",
-              "program": "บริหารธุรกิจบัณฑิต (การจัดการธุรกิจบริการและอีเว้นท์)",
-              "url": "https://course.mytcas.com/programs/10030121610802A",
-              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/21/fields/08",
+              "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะวิทยาการจัดการ",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการจัดการอีเวนต์และธุรกิจบันเทิง",
+              "url": "https://course.mytcas.com/programs/21740103901102A",
+              "fieldUrl": "https://course.mytcas.com/universities/174/faculties/03/fields/11",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยแม่ฟ้าหลวง",
+              "university": "มหาวิทยาลัยศรีปทุม",
+              "campus": "บางเขน",
+              "faculty": "คณะนิเทศศาสตร์ (กทม.)",
+              "program": "นศ.บ. การสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/40540106900102A",
+              "fieldUrl": "https://course.mytcas.com/universities/054/faculties/06/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "การจัดการ",
-              "program": "บธ.บ. ธุรกิจการท่องเที่ยวและอีเวนต์ (จัดการเรียนการสอนเป็นภาษาอังกฤษ)",
-              "url": "https://course.mytcas.com/programs/10240112620101A",
-              "fieldUrl": "https://course.mytcas.com/universities/024/faculties/12/fields/01",
+              "faculty": "คณะนิเทศศาสตร์",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/41030114900301A",
+              "fieldUrl": "https://course.mytcas.com/universities/103/faculties/14/fields/03",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -20528,6 +20543,30 @@
           "detail": "ออกแบบกล่องและฉลากที่สวย ปกป้องสินค้า และผลิตได้จริง",
           "programs": [
             {
+              "university": "มหาวิทยาลัยนเรศวร",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะสถาปัตยกรรมศาสตร์",
+              "program": "หลักสูตรศิลปกรรมศาตรบัณฑิต สาขาวิชาออกแบบผลิตภัณฑ์และบรรจุภัณฑ์",
+              "url": "https://course.mytcas.com/programs/10200122800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/020/faculties/22/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "โชติเวช",
+              "faculty": "คณะสถาปัตยกรรมศาสตร์และการออกแบบ",
+              "program": "ทล.บ. การออกแบบบรรจุภัณฑ์และเทคโนโลยีการพิมพ์",
+              "url": "https://course.mytcas.com/programs/31941209400202A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/09/fields/02",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
               "university": "มหาวิทยาลัยเชียงใหม่",
               "campus": "วิทยาเขตหลัก",
               "faculty": "คณะอุตสาหกรรมเกษตร",
@@ -20538,28 +20577,6 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "หาดใหญ่",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. เทคโนโลยีบรรจุภัณฑ์และวัสดุ",
-              "url": "https://course.mytcas.com/programs/10100109212801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/09/fields/28",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-              "campus": "บางมด",
-              "faculty": "คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีบรรจุภัณฑ์และการพิมพ์ ปริญญาตรี 4 ปี",
-              "url": "https://course.mytcas.com/programs/10140108210913A",
-              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/08/fields/09",
-              "rounds": [
-                "รอบ 1"
               ]
             }
           ]
@@ -20627,25 +20644,23 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยเชียงใหม่",
-              "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชานวัตกรรมบรรจุภัณฑ์",
-              "url": "https://course.mytcas.com/programs/10040113212202A",
-              "fieldUrl": "https://course.mytcas.com/universities/004/faculties/13/fields/22",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยสงขลานครินทร์",
               "campus": "หาดใหญ่",
               "faculty": "คณะอุตสาหกรรมเกษตร",
               "program": "วท.บ. เทคโนโลยีบรรจุภัณฑ์และวัสดุ",
               "url": "https://course.mytcas.com/programs/10100109212801A",
               "fieldUrl": "https://course.mytcas.com/universities/010/faculties/09/fields/28",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
+              "campus": "บางมด",
+              "faculty": "คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี",
+              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีบรรจุภัณฑ์และการพิมพ์ ปริญญาตรี 4 ปี",
+              "url": "https://course.mytcas.com/programs/10140108210913A",
+              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/08/fields/09",
               "rounds": [
                 "รอบ 1"
               ]
@@ -21244,6 +21259,31 @@
           "detail": "เรียนการออกแบบแอปและบริการจากความเข้าใจคนที่ใช้งาน",
           "programs": [
             {
+              "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+              "campus": "ลาดกระบัง",
+              "faculty": "คณะสถาปัตยกรรม ศิลปะและการออกแบบ",
+              "program": "ศป.บ. การออกแบบประสบการณ์สำหรับสื่อบูรณาการ",
+              "url": "https://course.mytcas.com/programs/10160102800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/02/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยหอการค้าไทย",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต หลักสูตรนานาชาติ (กลุ่มวิชาการออกแบบปฏิสัมพันธ์)",
+              "url": "https://course.mytcas.com/programs/40560101800101E",
+              "fieldUrl": "https://course.mytcas.com/universities/056/faculties/01/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 3"
+              ]
+            },
+            {
               "university": "สถาบันเทคโนโลยีจิตรลดา",
               "campus": "วิทยาเขตหลัก",
               "faculty": "คณะเทคโนโลยีดิจิทัล",
@@ -21255,30 +21295,6 @@
                 "รอบ 2",
                 "รอบ 3"
               ]
-            },
-            {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบดิจิทัลกราฟิก (ระบบการศึกษาทางไกล)",
-              "url": "https://course.mytcas.com/programs/21660106800110A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-              "campus": "บางมด",
-              "faculty": "วิทยาลัยสหวิทยาการ",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัล (หลักสูตรนานาชาติ) ปริญญาตรี 4 ปี (หลักสูตรนานาชาติ)",
-              "url": "https://course.mytcas.com/programs/10140136210801E",
-              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/36/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
             }
           ]
         },
@@ -21287,19 +21303,6 @@
           "tag": "ศึกษาศาสตร์",
           "detail": "เรียนการออกแบบสื่อการสอนที่สวย เข้าใจง่าย และใช้ได้จริง",
           "programs": [
-            {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "ศาลายา",
-              "faculty": "คณะแพทยศาสตร์ศิริราชพยาบาล",
-              "program": "หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีการศึกษาแพทยศาสตร์",
-              "url": "https://course.mytcas.com/programs/10060101111401A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/01/fields/14",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
             {
               "university": "มหาวิทยาลัยศิลปากร",
               "campus": "สนามจันทร์",
@@ -21322,21 +21325,32 @@
               "rounds": [
                 "รอบ 1"
               ]
+            },
+            {
+              "university": "มหาวิทยาลัยมหาสารคาม",
+              "campus": "มหาสารคาม",
+              "faculty": "คณะศึกษาศาสตร์",
+              "program": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+              "url": "https://course.mytcas.com/programs/10210105701501A",
+              "fieldUrl": "https://course.mytcas.com/universities/021/faculties/05/fields/15",
+              "rounds": [
+                "รอบ 1"
+              ]
             }
           ]
         },
         {
-          "title": "สถาปัตยกรรมภายใน",
-          "tag": "สถาปัตยกรรมศาสตร์",
-          "detail": "ฝึกออกแบบพื้นที่ให้สวย ใช้งานสะดวก และเป็นระเบียบ",
+          "title": "สารสนเทศศาสตร์และบรรณารักษศาสตร์",
+          "tag": "อักษรศาสตร์",
+          "detail": "เรียนการจัดระบบความรู้และการดูแลห้องสมุดให้คนอยากมาใช้",
           "programs": [
             {
-              "university": "จุฬาลงกรณ์มหาวิทยาลัย",
+              "university": "มหาวิทยาลัยเชียงใหม่",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะสถาปัตยกรรมศาสตร์",
-              "program": "หลักสูตรสถาปัตยกรรมศาสตรบัณฑิต สาขาวิชาสถาปัตยกรรมภายใน",
-              "url": "https://course.mytcas.com/programs/10010125400701A",
-              "fieldUrl": "https://course.mytcas.com/universities/001/faculties/25/fields/07",
+              "faculty": "คณะมนุษยศาสตร์",
+              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาสารสนเทศศึกษา",
+              "url": "https://course.mytcas.com/programs/10040101900101A",
+              "fieldUrl": "https://course.mytcas.com/universities/004/faculties/01/fields/01",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -21344,24 +21358,24 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยขอนแก่น",
-              "campus": "ขอนแก่น",
-              "faculty": "คณะสถาปัตยกรรมศาสตร์",
-              "program": "การออกแบบบัณฑิต (การออกแบบภายใน)",
-              "url": "https://course.mytcas.com/programs/10030120400701A",
-              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/20/fields/07",
+              "university": "มหาวิทยาลัยศิลปากร",
+              "campus": "สนามจันทร์",
+              "faculty": "คณะอักษรศาสตร์",
+              "program": "หลักสูตรอักษรศาสตรบัณฑิต สาขาวิชาสารสนเทศศาสตร์และบรรณารักษศาสตร์",
+              "url": "https://course.mytcas.com/programs/10080205901201A",
+              "fieldUrl": "https://course.mytcas.com/universities/008/faculties/05/fields/12",
               "rounds": [
-                "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยศิลปากร",
-              "campus": "วังท่าพระ",
-              "faculty": "คณะมัณฑนศิลป์",
-              "program": "หลักสูตรศิลปบัณฑิต สาขาวิชาการออกแบบภายใน",
-              "url": "https://course.mytcas.com/programs/10080104800105A",
-              "fieldUrl": "https://course.mytcas.com/universities/008/faculties/04/fields/01",
+              "university": "มหาวิทยาลัยสงขลานครินทร์",
+              "campus": "ปัตตานี",
+              "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+              "program": "สท.บ. สารสนเทศศาสตร์",
+              "url": "https://course.mytcas.com/programs/10100220901201A",
+              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/20/fields/12",
               "rounds": [
                 "รอบ 1"
               ]
@@ -21693,12 +21707,12 @@
           "detail": "เรียนการเลือกสินค้า วางแผนคอลเลกชัน และบริหารแบรนด์แฟชั่น",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. สาขาวิชาเทคโนโลยีสิ่งทอและแฟชั่น",
-              "url": "https://course.mytcas.com/programs/10020110501103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/10/fields/11",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะอุตสาหกรรมสิ่งทอ",
+              "program": "บธ.บ. (ผู้ประกอบการธุรกิจแฟชั่น)",
+              "url": "https://course.mytcas.com/programs/31920107610802A",
+              "fieldUrl": "https://course.mytcas.com/universities/192/faculties/07/fields/08",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -21706,25 +21720,23 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
-              "url": "https://course.mytcas.com/programs/21660106800107A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-              "campus": "วิทยาเขตหลัก (คลองหก)",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "โชติเวช",
               "faculty": "คณะเทคโนโลยีคหกรรมศาสตร์",
-              "program": "หลักสูตรคหกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบแฟชั่นและนวัตกรรมเครื่องแต่งกาย",
-              "url": "https://course.mytcas.com/programs/31910106500301A",
-              "fieldUrl": "https://course.mytcas.com/universities/191/faculties/06/fields/03",
+              "program": "คศ.บ. ออกแบบแฟชั่นและการจัดการสินค้า",
+              "url": "https://course.mytcas.com/programs/31941207800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/07/fields/01",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
+              "campus": "ศาลายา",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ. การตลาดดิจิทัล - นวัตกรรมการค้าปลีกสมัยใหม่",
+              "url": "https://course.mytcas.com/programs/31950105610602A",
+              "fieldUrl": "https://course.mytcas.com/universities/195/faculties/05/fields/06",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -25288,19 +25300,6 @@
           "detail": "เรียนการออกแบบสื่อการสอนที่สร้างสรรค์และใช้ได้จริง",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "ศาลายา",
-              "faculty": "คณะแพทยศาสตร์ศิริราชพยาบาล",
-              "program": "หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีการศึกษาแพทยศาสตร์",
-              "url": "https://course.mytcas.com/programs/10060101111401A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/01/fields/14",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยศิลปากร",
               "campus": "สนามจันทร์",
               "faculty": "คณะศึกษาศาสตร์",
@@ -25319,6 +25318,17 @@
               "program": "ศษ.บ. สาขาวิชาเทคโนโลยีดิจิทัลและสื่อสารการศึกษา",
               "url": "https://course.mytcas.com/programs/10100218701501A",
               "fieldUrl": "https://course.mytcas.com/universities/010/faculties/18/fields/15",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยมหาสารคาม",
+              "campus": "มหาสารคาม",
+              "faculty": "คณะศึกษาศาสตร์",
+              "program": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+              "url": "https://course.mytcas.com/programs/10210105701501A",
+              "fieldUrl": "https://course.mytcas.com/universities/021/faculties/05/fields/15",
               "rounds": [
                 "รอบ 1"
               ]
@@ -26337,15 +26347,14 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยเชียงใหม่",
-              "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะมนุษยศาสตร์",
-              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการท่องเที่ยวและการโรงแรม",
-              "url": "https://course.mytcas.com/programs/10040101620101A",
-              "fieldUrl": "https://course.mytcas.com/universities/004/faculties/01/fields/01",
+              "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
+              "campus": "ประสานมิตร",
+              "faculty": "คณะวัฒนธรรมสิ่งแวดล้อมและการท่องเที่ยวเชิงนิเวศ",
+              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชานวัตกรรมการจัดการการท่องเที่ยวเพื่อการพัฒนา",
+              "url": "https://course.mytcas.com/programs/10090166620101A",
+              "fieldUrl": "https://course.mytcas.com/universities/009/faculties/66/fields/01",
               "rounds": [
-                "รอบ 2",
-                "รอบ 3"
+                "รอบ 1"
               ]
             }
           ]
@@ -30199,17 +30208,6 @@
           "detail": "ผสมความรู้เทคโนโลยีกับการบริหาร เหมาะกับคนอยากนำทีมเทคนิค",
           "programs": [
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
               "campus": "กรุงเทพฯ",
               "faculty": "วิทยาลัยเทคโนโลยีอุตสาหกรรม",
@@ -30233,6 +30231,17 @@
                 "รอบ 2",
                 "รอบ 3"
               ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีสุรนารี",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "สำนักวิชาเทคโนโลยีสังคม",
+              "program": "เทคโนโลยีการจัดการ",
+              "url": "https://course.mytcas.com/programs/10170102610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/017/faculties/02/fields/02",
+              "rounds": [
+                "รอบ 1"
+              ]
             }
           ]
         },
@@ -30241,19 +30250,6 @@
           "tag": "วิศวกรรมศาสตร์",
           "detail": "ผสมเครื่องกล ไฟฟ้า และโปรแกรม เพื่อสร้างระบบอัตโนมัติ",
           "programs": [
-            {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "กำแพงแสน",
-              "faculty": "คณะเกษตร กำแพงแสน",
-              "program": "วท.บ. สาขาวิชาเครื่องจักรกลและเมคคาทรอนิกส์เกษตร",
-              "url": "https://course.mytcas.com/programs/10020219500102A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/19/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
             {
               "university": "มหาวิทยาลัยสงขลานครินทร์",
               "campus": "หาดใหญ่",
@@ -30274,6 +30270,18 @@
               "fieldUrl": "https://course.mytcas.com/universities/014/faculties/07/fields/35",
               "rounds": [
                 "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
+              "campus": "กรุงเทพฯ",
+              "faculty": "คณะครุศาสตร์อุตสาหกรรม",
+              "program": "วศ.บ.วิศวกรรมแมคคาทรอนิกส์ หุ่นยนต์และการศึกษา (หลักสูตร 5 ปี)",
+              "url": "https://course.mytcas.com/programs/10150102301901A",
+              "fieldUrl": "https://course.mytcas.com/universities/015/faculties/02/fields/19",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2"
               ]
             }
           ]
@@ -30556,39 +30564,40 @@
           "detail": "เรียนการเปลี่ยนไอเดียใหม่เป็นสินค้าและธุรกิจ",
           "programs": [
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "สุราษฎร์ธานี",
-              "faculty": "คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม",
-              "program": "ทล.บ. การจัดการนวัตกรรมการค้าสมัยใหม่",
-              "url": "https://course.mytcas.com/programs/10100430610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/30/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
-              "campus": "กรุงเทพฯ",
-              "faculty": "วิทยาลัยเทคโนโลยีอุตสาหกรรม",
-              "program": "วท.บ.การจัดการเทคโนโลยีการผลิตและสารสนเทศ",
-              "url": "https://course.mytcas.com/programs/10150103213501A",
-              "fieldUrl": "https://course.mytcas.com/universities/015/faculties/03/fields/35",
+              "university": "มหาวิทยาลัยแม่โจ้",
+              "campus": "วิทยาเขตเชียงใหม่",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชานวัตกรรมธุรกิจดิจิทัล",
+              "url": "https://course.mytcas.com/programs/10130106610901A",
+              "fieldUrl": "https://course.mytcas.com/universities/013/faculties/06/fields/09",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
               "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
               "campus": "ลาดกระบัง",
               "faculty": "คณะบริหารธุรกิจ",
-              "program": "บธ.บ. การเปลี่ยนแปลงทางดิจิทัลและการจัดการเทคโนโลยี",
-              "url": "https://course.mytcas.com/programs/10160110610901A",
-              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/10/fields/09",
+              "program": "บธ.บ. บริหารธุรกิจ แขนงการจัดการและการเป็นผู้ประกอบการนวัตกรรม",
+              "url": "https://course.mytcas.com/programs/10160110610805A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/10/fields/08",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน",
+              "campus": "นครราชสีมา",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ.ระบบสารสนเทศและนวัตกรรมธุรกิจดิจิทัล",
+              "url": "https://course.mytcas.com/programs/31990101610901A",
+              "fieldUrl": "https://course.mytcas.com/universities/199/faculties/01/fields/09",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -31640,19 +31649,6 @@
           "detail": "ปูพื้นการทำธุรกิจของตัวเองตั้งแต่ไอเดีย การผลิต ไปจนถึงการขาย",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "นครสวรรค์",
-              "faculty": "วิทยาเขตนครสวรรค์",
-              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการประกอบการเชิงนิเวศวัฒนธรรม",
-              "url": "https://course.mytcas.com/programs/10060320900301A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/20/fields/03",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยทักษิณ",
               "campus": "สงขลา",
               "faculty": "คณะเศรษฐศาสตร์และบริหารธุรกิจ",
@@ -31675,6 +31671,17 @@
                 "รอบ 2",
                 "รอบ 3"
               ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "พณิชยการพระนคร",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ. การเป็นผู้ประกอบการ",
+              "url": "https://course.mytcas.com/programs/31940703610301A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/03/fields/03",
+              "rounds": [
+                "รอบ 1"
+              ]
             }
           ]
         },
@@ -31684,35 +31691,38 @@
           "detail": "ฝึกนำทีมผลิตงานจริงภายใต้เวลาที่จำกัด ตั้งแต่ไอเดียถึงวันงาน",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "กำแพงแสน",
-              "faculty": "คณะอุตสาหกรรมบริการ",
-              "program": "บธ.บ. สาขาวิชาการจัดการท่องเที่ยว โรงแรม และอีเวนต์",
-              "url": "https://course.mytcas.com/programs/10020233620103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/33/fields/01",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยขอนแก่น",
-              "campus": "ขอนแก่น",
-              "faculty": "คณะบริหารธุรกิจและการบัญชี",
-              "program": "บริหารธุรกิจบัณฑิต (การจัดการธุรกิจบริการและอีเว้นท์)",
-              "url": "https://course.mytcas.com/programs/10030121610802A",
-              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/21/fields/08",
+              "university": "มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะวิทยาการจัดการ",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการจัดการอีเวนต์และธุรกิจบันเทิง",
+              "url": "https://course.mytcas.com/programs/21740103901102A",
+              "fieldUrl": "https://course.mytcas.com/universities/174/faculties/03/fields/11",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
               ]
             },
             {
-              "university": "มหาวิทยาลัยแม่ฟ้าหลวง",
+              "university": "มหาวิทยาลัยศรีปทุม",
+              "campus": "บางเขน",
+              "faculty": "คณะนิเทศศาสตร์ (กทม.)",
+              "program": "นศ.บ. การสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/40540106900102A",
+              "fieldUrl": "https://course.mytcas.com/universities/054/faculties/06/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยธุรกิจบัณฑิตย์",
               "campus": "วิทยาเขตหลัก",
-              "faculty": "การจัดการ",
-              "program": "บธ.บ. ธุรกิจการท่องเที่ยวและอีเวนต์ (จัดการเรียนการสอนเป็นภาษาอังกฤษ)",
-              "url": "https://course.mytcas.com/programs/10240112620101A",
-              "fieldUrl": "https://course.mytcas.com/universities/024/faculties/12/fields/01",
+              "faculty": "คณะนิเทศศาสตร์",
+              "program": "หลักสูตรนิเทศศาสตรบัณฑิต สาขาวิชาการสร้างสรรค์อีเวนต์และการจัดการอุตสาหกรรมบันเทิง",
+              "url": "https://course.mytcas.com/programs/41030114900301A",
+              "fieldUrl": "https://course.mytcas.com/universities/103/faculties/14/fields/03",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -32760,12 +32770,12 @@
           "detail": "เรียนการเลือกสินค้า วางแผนคอลเลกชัน และบริหารแบรนด์แฟชั่น",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. สาขาวิชาเทคโนโลยีสิ่งทอและแฟชั่น",
-              "url": "https://course.mytcas.com/programs/10020110501103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/10/fields/11",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะอุตสาหกรรมสิ่งทอ",
+              "program": "บธ.บ. (ผู้ประกอบการธุรกิจแฟชั่น)",
+              "url": "https://course.mytcas.com/programs/31920107610802A",
+              "fieldUrl": "https://course.mytcas.com/universities/192/faculties/07/fields/08",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -32773,25 +32783,23 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
-              "url": "https://course.mytcas.com/programs/21660106800107A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-              "campus": "วิทยาเขตหลัก (คลองหก)",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "โชติเวช",
               "faculty": "คณะเทคโนโลยีคหกรรมศาสตร์",
-              "program": "หลักสูตรคหกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบแฟชั่นและนวัตกรรมเครื่องแต่งกาย",
-              "url": "https://course.mytcas.com/programs/31910106500301A",
-              "fieldUrl": "https://course.mytcas.com/universities/191/faculties/06/fields/03",
+              "program": "คศ.บ. ออกแบบแฟชั่นและการจัดการสินค้า",
+              "url": "https://course.mytcas.com/programs/31941207800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/07/fields/01",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
+              "campus": "ศาลายา",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ. การตลาดดิจิทัล - นวัตกรรมการค้าปลีกสมัยใหม่",
+              "url": "https://course.mytcas.com/programs/31950105610602A",
+              "fieldUrl": "https://course.mytcas.com/universities/195/faculties/05/fields/06",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -33147,15 +33155,14 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยเชียงใหม่",
-              "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะมนุษยศาสตร์",
-              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาการท่องเที่ยวและการโรงแรม",
-              "url": "https://course.mytcas.com/programs/10040101620101A",
-              "fieldUrl": "https://course.mytcas.com/universities/004/faculties/01/fields/01",
+              "university": "มหาวิทยาลัยศรีนครินทรวิโรฒ",
+              "campus": "ประสานมิตร",
+              "faculty": "คณะวัฒนธรรมสิ่งแวดล้อมและการท่องเที่ยวเชิงนิเวศ",
+              "program": "หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชานวัตกรรมการจัดการการท่องเที่ยวเพื่อการพัฒนา",
+              "url": "https://course.mytcas.com/programs/10090166620101A",
+              "fieldUrl": "https://course.mytcas.com/universities/009/faculties/66/fields/01",
               "rounds": [
-                "รอบ 2",
-                "รอบ 3"
+                "รอบ 1"
               ]
             }
           ]
@@ -34603,28 +34610,17 @@
           ]
         },
         {
-          "title": "วิศวกรรมการจัดการ",
-          "tag": "วิศวกรรมศาสตร์",
-          "detail": "ผสมความรู้วิศวกรรมกับการบริหาร เพื่อนำทีมในโรงงานหรือโครงการ",
+          "title": "บริหารธุรกิจ สาขาการจัดการ",
+          "tag": "บริหารธุรกิจ",
+          "detail": "เรียนการวางระบบงาน การจัดซื้อ และการนำทีม เพื่อคุมงานในโรงงานหรือธุรกิจของตัวเอง",
           "programs": [
             {
-              "university": "จุฬาลงกรณ์มหาวิทยาลัย",
-              "campus": "วิทยาเขตหลัก",
-              "faculty": "คณะวิศวกรรมศาสตร์",
-              "program": "หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมอุตสาหการ",
-              "url": "https://course.mytcas.com/programs/10010121303501A",
-              "fieldUrl": "https://course.mytcas.com/universities/001/faculties/21/fields/35",
-              "rounds": [
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะวิศวกรรมศาสตร์",
-              "program": "วศ.บ. สาขาวิชาวิศวกรรมอุตสาหการ",
-              "url": "https://course.mytcas.com/programs/10020105303501A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/05/fields/35",
+              "campus": "กำแพงแสน",
+              "faculty": "คณะศิลปศาสตร์และวิทยาศาสตร์",
+              "program": "บธ.บ. สาขาวิชาการจัดการ",
+              "url": "https://course.mytcas.com/programs/10020222610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/22/fields/02",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -34632,15 +34628,27 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยขอนแก่น",
-              "campus": "ขอนแก่น",
-              "faculty": "คณะวิศวกรรมศาสตร์",
-              "program": "วิศวกรรมศาสตรบัณฑิต (วิศวกรรมอุตสาหการ)",
-              "url": "https://course.mytcas.com/programs/10030104303501A",
-              "fieldUrl": "https://course.mytcas.com/universities/003/faculties/04/fields/35",
+              "university": "มหาวิทยาลัยกาฬสินธุ์",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะบริหารศาสตร์",
+              "program": "บธ.บ. การจัดการ",
+              "url": "https://course.mytcas.com/programs/10280102610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/028/faculties/02/fields/02",
               "rounds": [
                 "รอบ 1",
-                "รอบ 2"
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยราชภัฏพิบูลสงคราม",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะวิทยาการจัดการ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาการจัดการ",
+              "url": "https://course.mytcas.com/programs/21520106610201A",
+              "fieldUrl": "https://course.mytcas.com/universities/152/faculties/06/fields/02",
+              "rounds": [
+                "รอบ 1"
               ]
             }
           ]
@@ -38519,17 +38527,6 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยสงขลานครินทร์",
-              "campus": "ตรัง",
-              "faculty": "คณะพาณิชยศาสตร์และการจัดการ",
-              "program": "บธ.บ. การบริหารธุรกิจประกันภัยและการจัดการความเสี่ยง",
-              "url": "https://course.mytcas.com/programs/10100534610801A",
-              "fieldUrl": "https://course.mytcas.com/universities/010/faculties/34/fields/08",
-              "rounds": [
-                "รอบ 1"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ",
               "campus": "กรุงเทพฯ",
               "faculty": "คณะวิทยาศาสตร์ประยุกต์",
@@ -38539,6 +38536,19 @@
               "rounds": [
                 "รอบ 1",
                 "รอบ 2"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยราชภัฏจันทรเกษม",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "วิทยาศาสตร์",
+              "program": "การจัดการประกันภัย (วท.บ)",
+              "url": "https://course.mytcas.com/programs/21770105610301A",
+              "fieldUrl": "https://course.mytcas.com/universities/177/faculties/05/fields/03",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
               ]
             }
           ]
@@ -39166,6 +39176,31 @@
           "detail": "เรียนการออกแบบแอปและเว็บไซต์ให้ใช้ง่ายจากความเข้าใจผู้ใช้",
           "programs": [
             {
+              "university": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+              "campus": "ลาดกระบัง",
+              "faculty": "คณะสถาปัตยกรรม ศิลปะและการออกแบบ",
+              "program": "ศป.บ. การออกแบบประสบการณ์สำหรับสื่อบูรณาการ",
+              "url": "https://course.mytcas.com/programs/10160102800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/016/faculties/02/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 2",
+                "รอบ 3"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยหอการค้าไทย",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "หลักสูตรบริหารธุรกิจบัณฑิต หลักสูตรนานาชาติ (กลุ่มวิชาการออกแบบปฏิสัมพันธ์)",
+              "url": "https://course.mytcas.com/programs/40560101800101E",
+              "fieldUrl": "https://course.mytcas.com/universities/056/faculties/01/fields/01",
+              "rounds": [
+                "รอบ 1",
+                "รอบ 3"
+              ]
+            },
+            {
               "university": "สถาบันเทคโนโลยีจิตรลดา",
               "campus": "วิทยาเขตหลัก",
               "faculty": "คณะเทคโนโลยีดิจิทัล",
@@ -39176,30 +39211,6 @@
                 "รอบ 1",
                 "รอบ 2",
                 "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบดิจิทัลกราฟิก (ระบบการศึกษาทางไกล)",
-              "url": "https://course.mytcas.com/programs/21660106800110A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-              "campus": "บางมด",
-              "faculty": "วิทยาลัยสหวิทยาการ",
-              "program": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาการออกแบบดิจิทัล (หลักสูตรนานาชาติ) ปริญญาตรี 4 ปี (หลักสูตรนานาชาติ)",
-              "url": "https://course.mytcas.com/programs/10140136210801E",
-              "fieldUrl": "https://course.mytcas.com/universities/014/faculties/36/fields/08",
-              "rounds": [
-                "รอบ 1"
               ]
             }
           ]
@@ -39568,19 +39579,6 @@
           "detail": "เรียนการออกแบบสื่อการสอนที่สวย เข้าใจง่าย และใช้ได้จริง",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "ศาลายา",
-              "faculty": "คณะแพทยศาสตร์ศิริราชพยาบาล",
-              "program": "หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีการศึกษาแพทยศาสตร์",
-              "url": "https://course.mytcas.com/programs/10060101111401A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/01/fields/14",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยศิลปากร",
               "campus": "สนามจันทร์",
               "faculty": "คณะศึกษาศาสตร์",
@@ -39599,6 +39597,17 @@
               "program": "ศษ.บ. สาขาวิชาเทคโนโลยีดิจิทัลและสื่อสารการศึกษา",
               "url": "https://course.mytcas.com/programs/10100218701501A",
               "fieldUrl": "https://course.mytcas.com/universities/010/faculties/18/fields/15",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยมหาสารคาม",
+              "campus": "มหาสารคาม",
+              "faculty": "คณะศึกษาศาสตร์",
+              "program": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+              "url": "https://course.mytcas.com/programs/10210105701501A",
+              "fieldUrl": "https://course.mytcas.com/universities/021/faculties/05/fields/15",
               "rounds": [
                 "รอบ 1"
               ]
@@ -39926,12 +39935,12 @@
           "detail": "เรียนการเลือกสินค้า วางแผนคอลเลกชัน และบริหารแบรนด์แฟชั่น",
           "programs": [
             {
-              "university": "มหาวิทยาลัยเกษตรศาสตร์",
-              "campus": "บางเขน",
-              "faculty": "คณะอุตสาหกรรมเกษตร",
-              "program": "วท.บ. สาขาวิชาเทคโนโลยีสิ่งทอและแฟชั่น",
-              "url": "https://course.mytcas.com/programs/10020110501103A",
-              "fieldUrl": "https://course.mytcas.com/universities/002/faculties/10/fields/11",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ",
+              "campus": "วิทยาเขตหลัก",
+              "faculty": "คณะอุตสาหกรรมสิ่งทอ",
+              "program": "บธ.บ. (ผู้ประกอบการธุรกิจแฟชั่น)",
+              "url": "https://course.mytcas.com/programs/31920107610802A",
+              "fieldUrl": "https://course.mytcas.com/universities/192/faculties/07/fields/08",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -39939,25 +39948,23 @@
               ]
             },
             {
-              "university": "มหาวิทยาลัยราชภัฏสวนสุนันทา",
-              "campus": "หลัก",
-              "faculty": "คณะศิลปกรรมศาสตร์",
-              "program": "ศป.บ.การออกแบบแฟชั่นและสไตล์ลิ่ง",
-              "url": "https://course.mytcas.com/programs/21660106800107A",
-              "fieldUrl": "https://course.mytcas.com/universities/166/faculties/06/fields/01",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
-              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี",
-              "campus": "วิทยาเขตหลัก (คลองหก)",
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+              "campus": "โชติเวช",
               "faculty": "คณะเทคโนโลยีคหกรรมศาสตร์",
-              "program": "หลักสูตรคหกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบแฟชั่นและนวัตกรรมเครื่องแต่งกาย",
-              "url": "https://course.mytcas.com/programs/31910106500301A",
-              "fieldUrl": "https://course.mytcas.com/universities/191/faculties/06/fields/03",
+              "program": "คศ.บ. ออกแบบแฟชั่นและการจัดการสินค้า",
+              "url": "https://course.mytcas.com/programs/31941207800101A",
+              "fieldUrl": "https://course.mytcas.com/universities/194/faculties/07/fields/01",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์",
+              "campus": "ศาลายา",
+              "faculty": "คณะบริหารธุรกิจ",
+              "program": "บธ.บ. การตลาดดิจิทัล - นวัตกรรมการค้าปลีกสมัยใหม่",
+              "url": "https://course.mytcas.com/programs/31950105610602A",
+              "fieldUrl": "https://course.mytcas.com/universities/195/faculties/05/fields/06",
               "rounds": [
                 "รอบ 1",
                 "รอบ 2",
@@ -41053,19 +41060,6 @@
           "detail": "เรียนการออกแบบสื่อการสอนที่สวย เข้าใจง่าย และใช้ได้จริง",
           "programs": [
             {
-              "university": "มหาวิทยาลัยมหิดล",
-              "campus": "ศาลายา",
-              "faculty": "คณะแพทยศาสตร์ศิริราชพยาบาล",
-              "program": "หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีการศึกษาแพทยศาสตร์",
-              "url": "https://course.mytcas.com/programs/10060101111401A",
-              "fieldUrl": "https://course.mytcas.com/universities/006/faculties/01/fields/14",
-              "rounds": [
-                "รอบ 1",
-                "รอบ 2",
-                "รอบ 3"
-              ]
-            },
-            {
               "university": "มหาวิทยาลัยศิลปากร",
               "campus": "สนามจันทร์",
               "faculty": "คณะศึกษาศาสตร์",
@@ -41084,6 +41078,17 @@
               "program": "ศษ.บ. สาขาวิชาเทคโนโลยีดิจิทัลและสื่อสารการศึกษา",
               "url": "https://course.mytcas.com/programs/10100218701501A",
               "fieldUrl": "https://course.mytcas.com/universities/010/faculties/18/fields/15",
+              "rounds": [
+                "รอบ 1"
+              ]
+            },
+            {
+              "university": "มหาวิทยาลัยมหาสารคาม",
+              "campus": "มหาสารคาม",
+              "faculty": "คณะศึกษาศาสตร์",
+              "program": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+              "url": "https://course.mytcas.com/programs/10210105701501A",
+              "fieldUrl": "https://course.mytcas.com/universities/021/faculties/05/fields/15",
               "rounds": [
                 "รอบ 1"
               ]
