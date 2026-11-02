@@ -6,6 +6,40 @@ export type RiasecType =
   | "enterprising"
   | "conventional";
 
+/** Fixed RIASEC order; also the tie-break order when two scores are equal. */
+export const RIASEC_ORDER: RiasecType[] = [
+  "realistic",
+  "investigative",
+  "artistic",
+  "social",
+  "enterprising",
+  "conventional",
+];
+
+/** Database `riasec_letter` ↔ the type names used in the app. */
+export type RiasecLetter = "R" | "I" | "A" | "S" | "E" | "C";
+
+export const LETTER_TO_TYPE: Record<RiasecLetter, RiasecType> = {
+  R: "realistic",
+  I: "investigative",
+  A: "artistic",
+  S: "social",
+  E: "enterprising",
+  C: "conventional",
+};
+
+export const isRiasecLetter = (v: unknown): v is RiasecLetter =>
+  typeof v === "string" && v in LETTER_TO_TYPE;
+
+/** Matches the `user_group` enum in the database design. */
+export type UserGroup = "high_school" | "university" | "working";
+
+export const USER_GROUPS: { value: UserGroup; title: string; description: string }[] = [
+  { value: "high_school", title: "กำลังเรียน ม.ปลาย", description: "กำลังมองหาคณะและมหาวิทยาลัยที่ใช่" },
+  { value: "university", title: "กำลังเรียนมหาวิทยาลัย", description: "อยากรู้ว่าเส้นทางอาชีพไหนเหมาะกับตัวเอง" },
+  { value: "working", title: "ทำงานแล้ว", description: "อยากสำรวจงานใหม่ หรือมองหาการเรียนต่อ" },
+];
+
 export type Character = {
   type: RiasecType;
   letter: "R" | "I" | "A" | "S" | "E" | "C";
