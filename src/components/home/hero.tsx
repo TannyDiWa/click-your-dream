@@ -1,8 +1,8 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Cloud, DriftingCloud } from "@/components/clouds";
-import { ArrowRightIcon, StarIcon } from "@/components/icons";
+import { QuizCta } from "@/components/home/quiz-cta";
+import { StarIcon } from "@/components/icons";
 import { CHARACTERS, type RiasecType } from "@/lib/riasec/types";
 
 type Placement = {
@@ -174,14 +174,7 @@ export function Hero() {
             <br />
             แล้วค้นหาความฝันที่ใช่ไปด้วยกัน !
           </p>
-          <Link
-            href="/quiz"
-            className="group mt-7 inline-flex items-center gap-3 whitespace-nowrap rounded-full border-2 border-dream/70 bg-blush px-6 py-3 text-lg font-semibold text-white shadow-[0_6px_0_#d36aa3] transition hover:-translate-y-0.5 hover:bg-blush-deep active:translate-y-1 active:shadow-[0_2px_0_#d36aa3] sm:gap-4 sm:px-8 sm:py-3.5 sm:text-2xl"
-          >
-            <StarIcon className="size-5 fill-sun stroke-white sm:size-6" strokeWidth={1.5} />
-            เริ่มทำแบบทดสอบ
-            <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1 sm:size-6" />
-          </Link>
+          <QuizCta />
 
           {/* Phones: the six mascots sit on a cloud under the button */}
           <div className="relative mt-8 w-full max-w-sm md:hidden">
