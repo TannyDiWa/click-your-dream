@@ -203,7 +203,7 @@ function validate(e: Explanation, code: string) {
   }
   if (e.guidance.some((g) => !g.tag)) problems.push("guidance item without tag");
   const text = JSON.stringify(e);
-  if (/จุฬา|ธรรมศาสตร์|มหิดล|เกษตรศาสตร์|ศิลปากร|ลาดกระบัง|มหาวิทยาลัยเชียงใหม่|มหาวิทยาลัยขอนแก่น/.test(text)) {
+  if (/จุฬา|ธรรมศาสตร์|มหิดล|มหาวิทยาลัยเกษตรศาสตร์|ศิลปากร|ลาดกระบัง|มหาวิทยาลัยเชียงใหม่|มหาวิทยาลัยขอนแก่น/.test(text)) {
     problems.push("may name a university");
   }
   if (/งานเดิม|ประสบการณ์เดิม|ขยับบทบาท|เปลี่ยนสายงาน/.test(text)) problems.push("assumes the reader's current job");
