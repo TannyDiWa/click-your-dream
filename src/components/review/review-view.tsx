@@ -9,7 +9,7 @@ import { LETTER_TO_TYPE, RIASEC_ORDER, USER_GROUPS, type RiasecLetter, type Rias
 export type ReviewItem = { code: string; group: UserGroup; explanation: ResultExplanation };
 
 const LETTERS = [..."RIASEC"] as RiasecLetter[];
-const STORAGE_KEY = "click-your-dream:reviewed";
+const REVIEWER_KEY = "click-your-dream:reviewer";
 // Sample scores for review: the code's letters first, the rest in RIASEC order.
 const SAMPLE_SCORES = [86, 74, 62, 41, 33, 25];
 const SAMPLE_DATE = "2026-11-02T00:00:00.000Z";
@@ -25,31 +25,53 @@ const panel = "rounded-[30px] border-2 border-white bg-paper shadow-[0_10px_15px
 const idOf = (item: ReviewItem) => `${item.code}-${item.group}`;
 const groupTitle = (g: UserGroup) => USER_GROUPS.find((x) => x.value === g)!.title;
 
-function loadChecked(): Set<string> {
-  try {
-    return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]"));
-  } catch {
-    return new Set();
-  }
+type Reviewed = Record<string, { by: string; at: string }>;
+
+async function fetchReviewed(): Promise<Reviewed> {
+  const res = await fetch("/api/review", { cache: "no-store" });
+  const body = await res.json();
+  if (!res.ok) throw new Error(body.error ?? res.statusText);
+  return body.reviewed;
 }
 
-/** One explanation at a time, laid out like /result, with a local "checked" list that becomes SQL. */
+/**
+ * One explanation at a time, laid out like /result. Ticks are saved through /api/review into
+ * supabase/review/<reviewer>.json, so reviewers can take turns by committing and pulling.
+ */
 export function ReviewView({ items }: { items: ReviewItem[] }) {
   const [index, setIndex] = useState(0);
-  const [checked, setChecked] = useState<Set<string>>(() => new Set());
+  const [reviewed, setReviewed] = useState<Reviewed>({});
+  const [reviewer, setReviewer] = useState("");
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const checked = useMemo(() => new Set(Object.keys(reviewed)), [reviewed]);
   const [copied, setCopied] = useState(false);
   // result_profiles content by top type, loaded once per type from the real API.
   const [profiles, setProfiles] = useState<Partial<Record<RiasecType, ResultProfile>>>({});
   const [profileError, setProfileError] = useState<string | null>(null);
 
-  // Restore the position from the URL hash (#ERA-university) and the checked list from this browser.
+  // Restore the position from the URL hash (#ERA-university) and the reviewer name from this browser.
   useEffect(() => {
     const fromHash = items.findIndex((it) => idOf(it) === decodeURIComponent(location.hash.slice(1)));
     // Reading browser-only state after hydration keeps server and client markup identical.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (fromHash >= 0) setIndex(fromHash);
-    setChecked(loadChecked());
+    try {
+      setReviewer(localStorage.getItem(REVIEWER_KEY) ?? "");
+    } catch {
+      // Private mode: type the name each visit.
+    }
   }, [items]);
+
+  // Load everyone's ticks, and again when coming back to the tab (e.g. after a git pull).
+  useEffect(() => {
+    const load = () =>
+      fetchReviewed()
+        .then(setReviewed)
+        .catch((e) => setSaveError(`โหลดผลการตรวจไม่สำเร็จ: ${e instanceof Error ? e.message : e}`));
+    load();
+    window.addEventListener("focus", load);
+    return () => window.removeEventListener("focus", load);
+  }, []);
 
   const item = items[index];
   const go = useCallback(
@@ -72,18 +94,35 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [go, index]);
 
-  const toggle = (id: string) => {
-    setChecked((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify([...next]));
-      } catch {
-        // Private mode: keep the list for this visit only.
-      }
+  const toggle = async (id: string) => {
+    const name = reviewer.trim();
+    if (!name) {
+      setSaveError("ใส่ชื่อผู้ตรวจก่อน แล้วค่อยติ๊ก");
+      document.getElementById("reviewer-name")?.focus();
+      return;
+    }
+    const checking = !reviewed[id];
+    const before = reviewed;
+    // Optimistic: show the tick right away, undo it if saving fails.
+    setReviewed((prev) => {
+      const next = { ...prev };
+      if (checking) next[id] = { by: name, at: new Date().toISOString() };
+      else delete next[id];
       return next;
     });
+    setSaveError(null);
+    try {
+      const res = await fetch("/api/review", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ reviewer: name, id, checked: checking }),
+      });
+      const body = await res.json();
+      if (!res.ok) throw new Error(body.error ?? res.statusText);
+    } catch (e) {
+      setReviewed(before);
+      setSaveError(`บันทึกไม่สำเร็จ: ${e instanceof Error ? e.message : e}`);
+    }
   };
 
   const letter = item.code[0] as RiasecLetter;
@@ -92,6 +131,9 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
   const result = useMemo(() => sampleResult(item.code, item.group), [item.code, item.group]);
   const profile = profiles[result.topType];
   const isChecked = checked.has(idOf(item));
+  const checkedBy = reviewed[idOf(item)]?.by;
+  // Only the reviewer who ticked an item can untick it (it lives in their file).
+  const lockedByOther = isChecked && checkedBy !== reviewer.trim();
 
   useEffect(() => {
     if (profiles[result.topType]) return;
@@ -125,6 +167,23 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
         <p className="mt-0.5 text-base leading-normal sm:text-lg">
           หน้าผลลัพธ์จริงพร้อมคะแนนตัวอย่าง • ตรวจแล้ว <b className="text-violet">{checked.size}</b>/{items.length}
         </p>
+        <label className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-violet">
+          ชื่อผู้ตรวจ
+          <input
+            id="reviewer-name"
+            value={reviewer}
+            onChange={(e) => {
+              setReviewer(e.target.value);
+              try {
+                localStorage.setItem(REVIEWER_KEY, e.target.value);
+              } catch {
+                // Private mode: keep the name for this visit only.
+              }
+            }}
+            placeholder="เช่น mint"
+            className="w-40 rounded-[14px] border border-[#d6cae8] bg-white px-3 py-1.5 font-normal text-navy"
+          />
+        </label>
       </div>
 
       {/* Navigator */}
@@ -204,21 +263,34 @@ export function ReviewView({ items }: { items: ReviewItem[] }) {
 
         <div className="mt-3 flex flex-col gap-2 border-t border-[#e6e3f5] pt-3 sm:flex-row sm:items-center">
           <label className="flex flex-1 cursor-pointer items-center gap-3 rounded-[18px] bg-[#e9eeff] px-4 py-2.5 text-[15px] font-bold">
-            <input type="checkbox" checked={isChecked} onChange={() => toggle(idOf(item))} className="size-5 cursor-pointer accent-[#ec7cb5]" />
+            <input
+              type="checkbox"
+              checked={isChecked}
+              disabled={lockedByOther}
+              onChange={() => void toggle(idOf(item))}
+              className="size-5 cursor-pointer accent-[#ec7cb5] disabled:cursor-not-allowed"
+            />
             {item.code} • {groupTitle(item.group)} อ่านแล้ว ใช้ได้
+            {checkedBy && <span className="ml-auto text-[13px] font-normal text-muted">ตรวจโดย {checkedBy}</span>}
           </label>
           <button
             type="button"
             onClick={() => {
-              if (!isChecked) toggle(idOf(item));
-              go(index + 1);
+              if (!isChecked) void toggle(idOf(item));
+              if (reviewer.trim()) go(index + 1);
             }}
             className="cursor-pointer rounded-[30px] bg-[#f6a0ce] px-6 py-2.5 font-bold text-white hover:bg-blush-deep"
           >
             ผ่าน แล้วไปแบบถัดไป →
           </button>
         </div>
+        {saveError && (
+          <p role="alert" className="mt-2 text-sm font-bold text-[#c2477f]">
+            {saveError}
+          </p>
+        )}
         <p className="mt-2 text-[13px] text-muted">
+          บันทึกลง supabase/review/&lt;ชื่อผู้ตรวจ&gt;.json ทันทีที่ติ๊ก • ส่งต่อให้คนถัดไปด้วย <code>npm run review:push</code> •
           คะแนนในกราฟและการ์ดเป็นตัวอย่าง (เรียงตามรหัส) • ใช้ปุ่มลูกศร ← → บนคีย์บอร์ดเพื่อเปลี่ยนแบบได้
         </p>
       </section>
