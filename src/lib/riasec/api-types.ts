@@ -12,9 +12,9 @@ export type QuizQuestion = {
 export type AnswerValue = 1 | 2 | 3 | 4;
 export type Answers = Record<number, AnswerValue>;
 
-/** GET /api/quiz: the unfinished quiz (null when none) */
+/** GET /api/quiz: the unfinished quiz (null when none) and the privacy notice version the visitor agreed to */
 export type QuizProgress = { userGroup: UserGroup; step: number; answers: Answers };
-export type QuizState = { progress: QuizProgress | null; hasResult: boolean };
+export type QuizState = { progress: QuizProgress | null; hasResult: boolean; consentVersion: string | null };
 
 /** POST /api/quiz/submit */
 export type QuizScore = {

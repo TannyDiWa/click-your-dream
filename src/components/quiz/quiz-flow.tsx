@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { ConsentDialog } from "@/components/quiz/consent-dialog";
+import { PRIVACY } from "@/lib/privacy";
 import type { AnswerValue, Answers, QuizProgress, QuizQuestion, QuizState } from "@/lib/riasec/api-types";
 import { USER_GROUPS, type UserGroup } from "@/lib/riasec/types";
 
@@ -159,7 +161,14 @@ export function QuizFlow() {
     );
   }
   if (data === null) return <QuizHeading step={0} placeholder />;
-  return <QuizSteps questions={data.questions} initialProgress={data.state.progress} hasPreviousResult={data.state.hasResult} />;
+  return (
+    <QuizSteps
+      questions={data.questions}
+      initialProgress={data.state.progress}
+      hasPreviousResult={data.state.hasResult}
+      consented={data.state.consentVersion === PRIVACY.version}
+    />
+  );
 }
 
 function QuizHeading({ step, placeholder = false }: { step: Step; placeholder?: boolean }) {
@@ -188,18 +197,23 @@ function QuizSteps({
   questions,
   initialProgress,
   hasPreviousResult,
+  consented: initialConsented,
 }: {
   questions: QuizQuestion[];
   initialProgress: QuizProgress | null;
   hasPreviousResult: boolean;
+  consented: boolean;
 }) {
   const router = useRouter();
   const titleId = useId();
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const consentRef = useRef<HTMLDialogElement>(null);
   const advanceTimer = useRef<number | undefined>(undefined);
   const total = questions.length;
 
-  const [step, setStep] = useState<Step>(() => Math.min(Math.max(initialProgress?.step ?? 0, 0), total));
+  // Without consent to the current notice, a resumed quiz goes back to the group step to ask for it.
+  const [consented, setConsented] = useState(initialConsented);
+  const [step, setStep] = useState<Step>(() => (initialConsented ? Math.min(Math.max(initialProgress?.step ?? 0, 0), total) : 0));
   const [userGroup, setUserGroup] = useState<UserGroup | null>(initialProgress?.userGroup ?? null);
   const [answers, setAnswers] = useState<Answers>(initialProgress?.answers ?? {});
   const [submitting, setSubmitting] = useState(false);
@@ -229,9 +243,25 @@ function QuizSteps({
 
   function goTo(next: Step) {
     window.clearTimeout(advanceTimer.current);
+    if (step === 0 && userGroup) {
+      // Nothing is stored until the visitor agrees to the privacy notice.
+      if (!consented) {
+        consentRef.current?.showModal();
+        return;
+      }
+      save("/api/quiz/start", "POST", { userGroup });
+    } else {
+      save("/api/quiz/progress", "PATCH", { step: next });
+    }
     setStep(next);
-    if (step === 0 && userGroup) save("/api/quiz/start", "POST", { userGroup });
-    else save("/api/quiz/progress", "PATCH", { step: next });
+  }
+
+  function acceptConsent() {
+    if (!userGroup) return;
+    consentRef.current?.close();
+    setConsented(true);
+    save("/api/quiz/start", "POST", { userGroup, consentVersion: PRIVACY.version });
+    setStep(1);
   }
 
   function choose(v: AnswerValue) {
@@ -368,6 +398,8 @@ function QuizSteps({
           <p className="mt-1 text-center text-[13px] text-[#7d89af]">ไม่มีคำตอบถูกหรือผิด แค่ตอบในแบบที่เป็นคุณ ♡</p>
         </div>
       </section>
+
+      <ConsentDialog ref={consentRef} userGroup={userGroup} onAccept={acceptConsent} onDecline={() => router.push("/")} />
 
       <dialog
         ref={dialogRef}

@@ -56,12 +56,15 @@ const LETTER_TAG: Record<Letter, string> = {
 // What `guidance` holds for each group; the result page shows it under `heading`.
 //   high_school: careers + faculties/fields   university: careers + skills
 //   working: skills + careers (shown as "positions")
+// High school results list more fields so the recommendations cover most TCAS field groups.
+const GUIDANCE_COUNT: Record<UserGroup, number> = { high_school: 5, university: 3, working: 3 };
+
 const GROUP_INFO: Record<UserGroup, { who: string; heading: string; guidance: string }> = {
   high_school: {
     who: "นักเรียน ม.ปลาย ที่กำลังเลือกคณะและสาขาเพื่อเข้ามหาวิทยาลัย",
     heading: "คณะและสาขาที่น่าสนใจ",
     guidance:
-      "3 สาขาวิชาที่น่าลองดู: title = ชื่อประเภทสาขา (เช่น “วิศวกรรมคอมพิวเตอร์” หรือ “นิเทศศาสตร์ สาขาภาพยนตร์”), tag = ชื่อคณะที่สาขานั้นมักอยู่ (เช่น “วิศวกรรมศาสตร์”), detail = หนึ่งถึงสองประโยคว่าทำไมเข้ากับรหัสนี้และเรียนอะไรบ้าง",
+      "5 สาขาวิชาที่น่าลองดู ไม่ซ้ำแนวกัน: title = ชื่อประเภทสาขา (เช่น “วิศวกรรมคอมพิวเตอร์” หรือ “นิเทศศาสตร์ สาขาภาพยนตร์”), tag = ชื่อคณะที่สาขานั้นมักอยู่ (เช่น “วิศวกรรมศาสตร์”), detail = หนึ่งถึงสองประโยคว่าทำไมเข้ากับรหัสนี้และเรียนอะไรบ้าง",
   },
   university: {
     who: "นักศึกษามหาวิทยาลัยที่อยากรู้ว่าเส้นทางอาชีพไหนเหมาะกับตัวเอง",
@@ -118,7 +121,7 @@ const SCHEMA = {
     },
     guidance: {
       type: "array",
-      description: "3 รายการเฉพาะกลุ่มผู้อ่าน",
+      description: "รายการเฉพาะกลุ่มผู้อ่าน (จำนวนตามที่ระบุในคำสั่ง)",
       items: {
         type: "object",
         properties: { title: { type: "string" }, tag: { type: "string" }, detail: { type: "string" } },
@@ -189,14 +192,14 @@ function requestParams(code: string, group: UserGroup): Anthropic.MessageCreateP
 }
 
 /** Problems with a result, to fix by hand or resubmit with --only. */
-function validate(e: Explanation, code: string) {
+function validate(e: Explanation, code: string, group: UserGroup) {
   const problems: string[] = [];
   const count = (name: string, n: number, min: number, max: number) => {
     if (n < min || n > max) problems.push(`${name}: ${n} (want ${min}–${max})`);
   };
   count("strengths", e.strengths.length, 3, 4);
   count("careers", e.careers.length, 6, 6);
-  count("guidance", e.guidance.length, 3, 3);
+  count("guidance", e.guidance.length, GUIDANCE_COUNT[group], GUIDANCE_COUNT[group]);
   count("try_this_week", e.try_this_week.length, 3, 3);
   const allowed = new Set([...code].map((l) => LETTER_TAG[l as Letter]));
   for (const c of e.careers) {
@@ -305,7 +308,7 @@ async function sample(client: Anthropic, n: number) {
       output += message.usage.output_tokens;
       console.log(`${id}: ${message.usage.input_tokens} in / ${message.usage.output_tokens} out (${message.stop_reason})`);
       const content = parseMessage(message);
-      const problems = validate(content, code);
+      const problems = validate(content, code, group);
       if (problems.length) console.warn(`  ${id}: ${problems.join("; ")}`);
       rows[id] = { code, group, model: message.model, content };
     }),
@@ -369,7 +372,7 @@ async function collect(client: Anthropic, batchId: string) {
     try {
       const { code, group } = parseCustomId(id);
       const content = parseMessage(message);
-      const problems = validate(content, code);
+      const problems = validate(content, code, group);
       if (problems.length) {
         console.warn(`${id}: ${problems.join("; ")}`);
         flagged.push(id);
@@ -398,7 +401,7 @@ async function main() {
   if (args.includes("--write-sql")) {
     const rows = readRows("explanations");
     for (const [id, r] of Object.entries(rows)) {
-      const problems = validate(r.content, r.code);
+      const problems = validate(r.content, r.code, r.group);
       if (problems.length) console.warn(`${id}: ${problems.join("; ")}`);
     }
     writeOutputs("explanations", rows);

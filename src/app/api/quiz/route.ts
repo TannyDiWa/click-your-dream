@@ -7,11 +7,11 @@ export async function GET() {
   try {
     const supabase = await createUserSupabase();
     const userId = await getUserId(supabase);
-    if (!userId) return Response.json({ progress: null, hasResult: false } satisfies QuizState);
+    if (!userId) return Response.json({ progress: null, hasResult: false, consentVersion: null } satisfies QuizState);
 
     const [progress, profile, answers, result] = await Promise.all([
       supabase.from("quiz_progress").select("current_step").eq("user_id", userId).maybeSingle(),
-      supabase.from("profiles").select("user_group").eq("id", userId).maybeSingle(),
+      supabase.from("profiles").select("user_group, pdpa_notice_version, pdpa_consented_at").eq("id", userId).maybeSingle(),
       supabase.from("quiz_answers").select("question_id, value").eq("user_id", userId),
       supabase.from("quiz_results").select("user_id", { count: "exact", head: true }).eq("user_id", userId),
     ]);
@@ -27,6 +27,7 @@ export async function GET() {
             }
           : null,
       hasResult: (result.count ?? 0) > 0,
+      consentVersion: profile.data?.pdpa_consented_at ? profile.data.pdpa_notice_version ?? "" : null,
     };
     return Response.json(state);
   } catch (error) {
