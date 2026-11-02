@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { ResultExplanation } from "@/lib/riasec/api-types";
+import type { FieldProgram, ResultExplanation } from "@/lib/riasec/api-types";
 import { DIMENSION_LABELS } from "@/lib/riasec/profiles";
 import type { RiasecType, UserGroup } from "@/lib/riasec/types";
 
@@ -131,6 +131,59 @@ export function ScoreDots({ label, score }: { label: string; score: number }) {
         })}
       </span>
     </div>
+  );
+}
+
+/** High school: one card per recommended field, listing universities that run it in TCAS this year. */
+export function FieldUniversities({ fields }: { fields: ResultExplanation["guidance"] }) {
+  return (
+    <section aria-labelledby="uni-title" className="mt-12">
+      <h2 id="uni-title" className="text-2xl font-bold leading-normal sm:text-[28px]">
+        มหาวิทยาลัยที่เปิดคณะที่น่าสนใจ
+      </h2>
+      <p className="mt-1 text-[15px] text-muted">แยกตามสาขาที่แนะนำ • แตะชื่อหลักสูตรเพื่อดูรายละเอียดและจำนวนรับบน myTCAS</p>
+      <ul className="mt-5 grid items-start gap-6 lg:grid-cols-3">
+        {fields.map((f) => (
+          <li key={f.title} className={`${panel} px-5 py-5 sm:px-6`}>
+            {f.tag && <span className={tag}>{f.tag}</span>}
+            <h3 className="mt-1 text-lg font-bold leading-normal">{f.title}</h3>
+            {f.programs?.length ? (
+              <ul className="mt-3 flex flex-col gap-2.5">
+                {f.programs.map((p) => (
+                  <li key={p.url}>
+                    <ProgramLink program={p} />
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-3 text-sm text-muted">ยังไม่พบหลักสูตรที่เปิดรับใน TCAS ปีนี้</p>
+            )}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-4 text-[13px] text-muted">
+        ข้อมูลหลักสูตรและรอบรับสมัครจาก myTCAS ปีการศึกษา 2570 • ตรวจสอบเกณฑ์และคุณสมบัติล่าสุดก่อนสมัครทุกครั้ง
+      </p>
+    </section>
+  );
+}
+
+function ProgramLink({ program: p }: { program: FieldProgram }) {
+  return (
+    <a
+      href={p.url}
+      target="_blank"
+      rel="noreferrer"
+      className="block rounded-[18px] border border-[#e6e3f5] bg-white px-4 py-3 transition hover:-translate-y-0.5 hover:border-[#f6a0ce] hover:shadow-[0_8px_16px_rgba(121,130,184,0.12)]"
+    >
+      <span className="block text-[15px] font-bold leading-normal">{p.university}</span>
+      <span className="block text-[13px] font-bold leading-normal text-violet">{p.faculty}</span>
+      <span className="block text-[13px] leading-normal text-muted">{p.program}</span>
+      <span className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+        {p.rounds.length > 0 && <span className={tag}>TCAS • {p.rounds.join(", ")}</span>}
+        <span className="ml-auto text-[13px] font-bold underline underline-offset-2">ดูหลักสูตร ↗</span>
+      </span>
+    </a>
   );
 }
 

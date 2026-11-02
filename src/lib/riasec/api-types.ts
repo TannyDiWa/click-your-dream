@@ -46,6 +46,20 @@ export type ResultProfile = {
   universities: University[];
 };
 
+/** A TCAS program for a recommended field (high_school only), from scripts/attach-programs.ts */
+export type FieldProgram = {
+  university: string;
+  campus: string;
+  faculty: string;
+  program: string;
+  /** myTCAS program page */
+  url: string;
+  /** myTCAS page of this faculty's programs in the same field */
+  fieldUrl: string;
+  /** admission rounds open this TCAS year, e.g. ["รอบ 1", "รอบ 2"] */
+  rounds: string[];
+};
+
 /** GET /api/explanations/[code]?group=: pre-generated, reviewed content (null when none) */
 export type ResultExplanation = {
   title: string;
@@ -54,6 +68,6 @@ export type ResultExplanation = {
   /** 6 careers; `tag` is the 1–2 RIASEC dimensions it uses, e.g. "ค้นคว้า • ลงมือทำ" (shown as positions for working) */
   careers: { title: string; reason: string; tag: string }[];
   /** 3 items. high_school: fields (tag = faculty), university and working: skills (tag = how to practise) */
-  guidance: { title: string; tag: string; detail: string }[];
+  guidance: { title: string; tag: string; detail: string; programs?: FieldProgram[] }[];
   tryThisWeek: string[];
 };
