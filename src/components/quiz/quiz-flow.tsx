@@ -235,6 +235,13 @@ function QuizSteps({
 
   useEffect(() => () => window.clearTimeout(advanceTimer.current), []);
 
+  // Leaving /quiz only hides this page (Cache Components keep it in <Activity>), so an open
+  // modal dialog would stay in the top layer and make the next page inert. Close them on hide.
+  useEffect(() => {
+    const dialogs = [dialogRef.current, consentRef.current];
+    return () => dialogs.forEach((d) => d?.close());
+  }, []);
+
   const question = step > 0 ? questions[step - 1] : null;
   const isLast = step === total;
   const answered = questions.filter((q) => answers[q.id]).length;
@@ -298,6 +305,7 @@ function QuizSteps({
       });
       const body = await res.json();
       if (!res.ok) throw new Error(body.error ?? res.statusText);
+      dialogRef.current?.close();
       router.push("/result");
     } catch (e) {
       setSubmitError(e instanceof Error ? e.message : String(e));
@@ -399,7 +407,15 @@ function QuizSteps({
         </div>
       </section>
 
-      <ConsentDialog ref={consentRef} userGroup={userGroup} onAccept={acceptConsent} onDecline={() => router.push("/")} />
+      <ConsentDialog
+        ref={consentRef}
+        userGroup={userGroup}
+        onAccept={acceptConsent}
+        onDecline={() => {
+          consentRef.current?.close();
+          router.push("/");
+        }}
+      />
 
       <dialog
         ref={dialogRef}

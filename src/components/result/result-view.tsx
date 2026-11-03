@@ -241,7 +241,10 @@ export function ResultDetails({
                     {result.hollandCode}
                   </p>
                 </div>
+                {/* Unoptimized: the optimizer serves JPEG (no transparency) to the card capture on
+                    iOS/iPadOS, whose Accept header has no image/webp; that showed as a black box. */}
                 <Image
+                  unoptimized
                   src={character.src}
                   alt=""
                   width={character.width}

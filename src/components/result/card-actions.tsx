@@ -6,6 +6,15 @@ import { ShareIcon } from "@/components/icons";
 const button =
   "cursor-pointer whitespace-nowrap rounded-[35px] px-5 py-3 text-base font-bold sm:px-6 sm:py-3.5 sm:text-lg transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-70";
 
+/** Resolves once the image has loaded or failed. Not img.decode(): it can hang on images already decoded. */
+function loaded(img: HTMLImageElement) {
+  if (img.complete) return Promise.resolve();
+  return new Promise<void>((resolve) => {
+    img.addEventListener("load", () => resolve(), { once: true });
+    img.addEventListener("error", () => resolve(), { once: true });
+  });
+}
+
 /** Renders the dream card to a PNG file at 3× for sharp posts. */
 async function cardToFile(card: HTMLElement, fileName: string) {
   // Loaded on click only, so the result page stays light.
@@ -13,7 +22,10 @@ async function cardToFile(card: HTMLElement, fileName: string) {
   // The card's decorations are lazy images; load them now, or the capture waits for its timeout.
   const images = [...card.querySelectorAll("img")];
   for (const img of images) img.loading = "eager";
-  await Promise.all([document.fonts.ready, ...images.map((img) => img.decode().catch(() => {}))]);
+  await Promise.race([
+    Promise.all([document.fonts.ready, ...images.map(loaded)]),
+    new Promise((resolve) => setTimeout(resolve, 5000)),
+  ]);
   const blob = await domToBlob(card, { scale: 3, type: "image/png", timeout: 8000 });
   return new File([blob], fileName, { type: "image/png" });
 }
