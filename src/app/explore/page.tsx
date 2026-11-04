@@ -91,6 +91,15 @@ export default function ExplorePage() {
             <div id="explore">
               <SectionHeading number="01" title="เลือกหลักสูตรที่อยากเข้า" subtitle="ดูวิชาที่ต้องสมัครสอบ สัดส่วนคะแนนรอบ 3 วันสอบ และเกณฑ์ขั้นต่ำ จากข้อมูล myTCAS" />
             </div>
+            <p role="note" className="mt-3 flex gap-2.5 rounded-2xl border border-[#f3d9a6] bg-[#fff8e6] px-4 py-3 text-sm leading-relaxed">
+              <span aria-hidden className="mt-px grid size-5 shrink-0 place-items-center rounded-full bg-[#f0b648] text-xs font-bold text-white">
+                !
+              </span>
+              <span>
+                <b>หมายเหตุ:</b> ข้อมูลในหน้านี้รวบรวมจาก myTCAS และอาจคลาดเคลื่อน ไม่ครบ หรือไม่เป็นปัจจุบัน
+                โปรดตรวจสอบรายละเอียดจากประกาศทางการของมหาวิทยาลัยและ myTCAS อย่างละเอียดอีกครั้งก่อนสมัคร
+              </span>
+            </p>
             <div className="mt-4">
               <Suspense fallback={<div className={`${card} h-[118px]`} aria-busy="true" />}>
                 <ProgramExplorer universities={index.universities} />
@@ -186,7 +195,8 @@ export default function ExplorePage() {
               {thaiDate(index.fetchedAt.slice(0, 10))}
             </p>
             <p className="mt-1 text-sm leading-relaxed text-muted">
-              กำหนดการอาจเปลี่ยนแปลง และแต่ละหลักสูตรอาจกำหนดรายละเอียดต่างกัน ตรวจประกาศของมหาวิทยาลัยก่อนสมัครทุกครั้ง
+              ข้อมูลอาจมีความผิดพลาด และกำหนดการหรือเกณฑ์ของแต่ละหลักสูตรอาจเปลี่ยนแปลงได้ โปรดตรวจสอบจากประกาศทางการของมหาวิทยาลัยและ
+              myTCAS อย่างละเอียดก่อนสมัครทุกครั้ง
             </p>
             <div className="mt-3 flex flex-wrap gap-x-10 gap-y-2 text-[15px]">
               <a href="https://www.mytcas.com/" target="_blank" rel="noreferrer" className={link}>
