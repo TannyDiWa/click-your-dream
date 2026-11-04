@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "explanations": "node --env-file-if-exists=.env.local scripts/generate-explanations.ts",
-    "review:push": "node scripts/review-push.ts"
+    "review:push": "node scripts/review-push.ts",
+    "tcas": "node scripts/build-tcas.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.7.0",
