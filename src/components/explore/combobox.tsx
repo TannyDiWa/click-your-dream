@@ -118,6 +118,7 @@ export function Combobox({
           <circle cx="8.5" cy="8.5" r="5.5" />
           <path d="M13 13l4 4" strokeLinecap="round" />
         </svg>
+        {/* leading-8: an input clips text to its line box, and stacked Thai marks (ชื่อ) need the room. */}
         <input
           ref={inputRef}
           id={id}
@@ -143,7 +144,7 @@ export function Combobox({
             setQuery("");
           }}
           onKeyDown={onKeyDown}
-          className={`w-full truncate rounded-[20px] border-[1.5px] bg-[#f4f7ff] py-3 pl-11 pr-11 text-[15px] text-navy transition placeholder:text-[#8a97c2] hover:border-[#c4d0ee] hover:bg-white focus:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5397e9] disabled:cursor-not-allowed disabled:opacity-60 ${
+          className={`w-full truncate rounded-[20px] border-[1.5px] bg-[#f4f7ff] py-2 pl-11 pr-11 text-[15px] leading-8 text-navy transition placeholder:text-[#8a97c2] hover:border-[#c4d0ee] hover:bg-white focus:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5397e9] disabled:cursor-not-allowed disabled:opacity-60 ${
             open ? "border-[#f6a0ce] bg-white" : "border-[#dbe3f5]"
           }`}
         />
