@@ -77,6 +77,8 @@ export type TcasAdmission = {
 export type TcasSubject = {
   name: string;
   short: string;
+  /** Short Thai name for lists, e.g. "คณิต 1" (A-Level, GPA); falls back to short */
+  label?: string;
   group: string;
   exam?: { date: string; time: string };
 };

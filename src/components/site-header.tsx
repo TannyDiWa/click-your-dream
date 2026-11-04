@@ -4,6 +4,7 @@ import { MenuIcon, StarIcon } from "@/components/icons";
 const NAV = [
   { href: "/", label: "หน้าแรก" },
   { href: "/about", label: "เกี่ยวกับเรา" },
+  { href: "/explore", label: "สำรวจเส้นทาง" },
   { href: "/result", label: "ผลลัพธ์ของฉัน" },
   { href: "/contact", label: "ติดต่อเรา" },
 ];

@@ -77,7 +77,9 @@ async function pool<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>
 }
 
 const num = (v: unknown) => (v === undefined || v === null || v === "" ? NaN : Number(v));
-const text = (v: unknown) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim() : "");
+// Some university texts carry Word/HTML markup (<o:p …>, &nbsp;); keep the words only.
+const text = (v: unknown) =>
+  typeof v === "string" ? v.replace(/<[^>]*>/g, " ").replace(/&nbsp;|&#160;/g, " ").replace(/\s+/g, " ").trim() : "";
 const shorten = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);
 const hasInfo = (s: string) => s !== "" && !s.includes("ไม่มี");
 
