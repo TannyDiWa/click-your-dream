@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Combobox } from "@/components/explore/combobox";
 import { label, REGISTRATION, sittingOf, subject, thaiDate, thaiRange, type Sitting } from "@/lib/tcas/subjects";
 import type { TcasAdmission, TcasProgram } from "@/lib/tcas/types";
 
@@ -194,6 +195,18 @@ function Option({ a, program }: { a: TcasAdmission; program: TcasProgram }) {
   );
 }
 
+// Up to this many round-3 options show as buttons; more get a searchable list (some programs have 30).
+const MAX_OPTION_BUTTONS = 3;
+
+/** "TPAT5 30% • ฟิสิกส์ 30% • กลุ่มวิชา 40%" — the weights at a glance, to tell options apart. */
+function weightSummary(a: TcasAdmission) {
+  const parts = [
+    ...a.weights.map((w) => `${w.codes.map(label).join("/")} ${fmt(w.weight)}%`),
+    ...(a.group ? [`กลุ่มวิชา ${fmt(a.group.weight)}%`] : []),
+  ];
+  return parts.length ? parts.join(" • ") : "ไม่ระบุสัดส่วนคะแนน";
+}
+
 /** One program: seats per round, round 3 scoring, what to register for and when, round 1–2 projects. */
 export function ProgramCard({ program, university, faculty }: { program: TcasProgram; university: string; faculty: string }) {
   const [optionIndex, setOptionIndex] = useState(0);
@@ -228,25 +241,48 @@ export function ProgramCard({ program, university, faculty }: { program: TcasPro
 
       {option ? (
         <div className="mt-6">
-          {options.length > 1 && (
-            <div role="tablist" aria-label="รูปแบบการยื่นคะแนนรอบ 3" className="mb-4 flex flex-wrap gap-2">
-              {options.map((o, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  role="tab"
-                  aria-selected={o === option}
-                  onClick={() => setOptionIndex(i)}
-                  className={`cursor-pointer rounded-full border-2 px-4 py-2 text-[15px] font-bold transition ${
-                    o === option ? "border-[#f6a0ce] bg-[#fff6fb] text-[#c75d97]" : "border-white bg-paper text-navy hover:border-[#dbe3f5]"
-                  }`}
-                >
-                  รูปแบบที่ {i + 1} • {o.seats} คน
-                </button>
-              ))}
+          {options.length > MAX_OPTION_BUTTONS ? (
+            <div className="mb-4 max-w-[640px]">
+              <Combobox
+                label={`รอบ 3 มี ${options.length} รูปแบบ — เลือกรูปแบบหรือวิชาเอกที่สนใจ`}
+                placeholder="พิมพ์ค้นหา เช่น ชื่อวิชาเอกหรือวิชาที่เลือกสอบ"
+                unit="รูปแบบ"
+                options={options.map((o, i) => ({
+                  value: String(i),
+                  label: o.name ?? `รูปแบบที่ ${i + 1}`,
+                  meta: `รับ ${o.seats} คน • ${weightSummary(o)}`,
+                }))}
+                value={String(options.indexOf(option))}
+                onChange={(v) => setOptionIndex(Number(v))}
+              />
+              {/* The field truncates long names on phones; spell out the chosen one. */}
+              <p className="mt-2 text-sm leading-snug text-muted">
+                กำลังดู: <b className="text-navy">{option.name ?? `รูปแบบที่ ${options.indexOf(option) + 1}`}</b> • รับ {option.seats} คน
+              </p>
             </div>
+          ) : (
+            options.length > 1 && (
+              <>
+                <div role="tablist" aria-label="รูปแบบการยื่นคะแนนรอบ 3" className="mb-4 flex flex-wrap gap-2">
+                  {options.map((o, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      role="tab"
+                      aria-selected={o === option}
+                      onClick={() => setOptionIndex(i)}
+                      className={`cursor-pointer rounded-full border-2 px-4 py-2 text-[15px] font-bold transition ${
+                        o === option ? "border-[#f6a0ce] bg-[#fff6fb] text-[#c75d97]" : "border-white bg-paper text-navy hover:border-[#dbe3f5]"
+                      }`}
+                    >
+                      รูปแบบที่ {i + 1} • {o.seats} คน
+                    </button>
+                  ))}
+                </div>
+                {option.name && <p className="mb-3 text-[15px] text-muted">{option.name}</p>}
+              </>
+            )
           )}
-          {options.length > 1 && option.name && <p className="mb-3 text-[15px] text-muted">{option.name}</p>}
           <Option a={option} program={program} />
         </div>
       ) : (
