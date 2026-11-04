@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Mali, Patrick_Hand } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
@@ -28,6 +29,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         {children}
         <SiteFooter />
+        {/* Cookieless page-view counts (Vercel Web Analytics); listed in the privacy notice */}
+        <Analytics />
       </body>
     </html>
   );
