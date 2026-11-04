@@ -1,0 +1,54 @@
+name: Refresh TCAS data
+
+# Re-fetches the myTCAS program data for /explore (npm run tcas) and commits it to main when
+# programs, seats or criteria changed. Exam dates in src/lib/tcas/*.ts are still updated by hand.
+on:
+  schedule:
+    - cron: "0 1 * * 1" # Mondays 08:00 Thai time
+  workflow_dispatch: # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tcas-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # The script uses only Node built-ins, so no npm install is needed.
+      - name: Fetch myTCAS data
+        run: node scripts/build-tcas.ts | tee tcas.log
+
+      - name: Warn about subject codes without a name
+        run: |
+          if grep -q "Subject codes missing" tcas.log; then
+            echo "::warning title=New TCAS subject codes::Add them to src/lib/tcas/subjects.json — $(grep -A20 'Subject codes missing' tcas.log | tr '\n' ' ')"
+          fi
+
+      - name: Commit when the data changed
+        run: |
+          # index.json always gets a new fetchedAt; only commit when something else changed too.
+          changed_files=$(git status --porcelain -- public/tcas | { grep -v 'index.json$' || true; } | wc -l)
+          index_changes=$(git diff -U0 -- public/tcas/*/index.json | { grep '^[+-] ' || true; } | { grep -v '"fetchedAt"' || true; } | wc -l)
+          if [ "$changed_files" -eq 0 ] && [ "$index_changes" -eq 0 ]; then
+            echo "No TCAS data changes."
+            exit 0
+          fi
+          # Commit as the repository owner (GitHub noreply address) so Vercel deploys it.
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git add public/tcas
+          git commit -m "be(chore):Refresh TCAS data from myTCAS" -m "Automated weekly run of npm run tcas."
+          git push origin HEAD:main
